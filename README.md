@@ -41,7 +41,6 @@ Notas importantes:
   * Limpar Cache e verificar páginas
 
 # Histórico de Desenvolvimento/Revisões
-# HISTÓRICO DE DESENVOLVIMENTO
 
 ## 📅 29 Dezembro 2024
 - **Correção de bugs** em funcionalidades específicas
@@ -135,7 +134,6 @@ Versões mais recentes de PHP:
   * Este plugin está em desenvolvimento ativo, com melhorias contínuas na compatibilidade com versões mais recentes do PHP.
   * Recomenda-se verificar atualizações regularmente para garantir o funcionamento ideal.
   * Problemas conhecidos com PHP 8.x estão a ser corrigidos em atualizações futuras.
-
 
 # CARACTERÍSTICAS PRINCIPAIS
 
