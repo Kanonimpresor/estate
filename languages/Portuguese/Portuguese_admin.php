@@ -1,683 +1,631 @@
 <?php
 /*
-+ ----------------------------------------------------------------------------+
-|     e107 website system - Language File.
++---------------------------------------------------------------+
+|	e107 content management system - Portuguese language file
 |
 |     $Source:  $
 |     $Revision$
 |     $Date$
 |     $Author$
-+----------------------------------------------------------------------------+
++---------------------------------------------------------------+
 */
 
-define("EST_AWARN_NOCOUNTY1A", "NO COUNTIES FOUND");
-define("EST_AWARN_NOCITY1A", "NO CITIES/COUNTIES FOUND");
-define("EST_AWARN_CLICKHERE", "Click Here to fix this");
+define("EST_AWARN_NOCOUNTY1A", "NENHUMA REGIÃO ENCONTRADA");
+define("EST_AWARN_NOCITY1A", "NENHUMA CIDADE/REGIÃO ENCONTRADA");
+define("EST_AWARN_CLICKHERE", "Clica aqui para corrigir");
 
+define("EST_AWARN_000", "As tuas credenciais de login não permitem");
+define("EST_AWARN_001", "Permissão de Utilizador Negada");
+define("EST_AWARN_002", "acessar este plugin.");
+define("EST_AWARN_003", "Por favor, contacta o Administrador Principal do Site para te atribuir a uma das seguintes classes: Agente Imobiliário, Gestor Imobiliário ou Administrador Imobiliário");
 
-define("EST_AWARN_000", "Your login credentials do not allow");
-define("EST_AWARN_001", "User Permission Denied");
-define("EST_AWARN_002", "you to accesss this plugin.");
-define("EST_AWARN_003", "Please contact the Main Site Administraitor to assign you to one of the following classes: Estate Agent, Estate Manager, or Estate Admin");
+define("EST_AWARN_004", "Se és o Administrador Principal, precisas de te atribuir à Classe de Utilizador Administrador Imobiliário. Também podes delegar outros Administradores que queiras que tenham acesso total a este plugin para esta Classe de Utilizador.");
+define("EST_AWARN_005", "Se NÃO és um Administrador Principal, precisas de pedir ao Administrador principal para te atribuir à Classe de Utilizador apropriada");
 
-define("EST_AWARN_004", "If you are the Main Admin, you need to assign yourself to the User Class Estate Admin. You can also delegate other Admins whom you want to have full access to this plugin to this User Class.");
-define("EST_AWARN_005", "If you are NOT a Main Admin, you need to ask the Main admin to assign you to the appropriate User Class");
+define("EST_AWARN_006", "NÃO TENS PERMISSÕES DE AGENTE!");
+define("EST_AWARN_007", "NÃO TENS UM ID DE AGENTE!");
+define("EST_AWARN_008", "NÃO ESTÁS ATRIBUÍDO A UMA AGÊNCIA!");
+define("EST_AWARN_009", "NÃO ESTÁS ATRIBUÍDO A UMA EMPRESA!");
 
+define("EST_AWARN_010", "carregamento de ficheiros");
+define("EST_AWARN_011", "eliminação de ficheiros");
+define("EST_AWARN_012", "modificação de dados");
+define("EST_AWARN_013", "eliminar esta propriedade");
 
-define("EST_AWARN_006", "YOU DO NOT HAVE AGENT PERMISSIONS!");
-define("EST_AWARN_007", "YOU DO NOT HAVE AN AGENT ID!");
-define("EST_AWARN_008", "YOU ARE NOT ASSIGNED TO AN AGENCY!");
-define("EST_AWARN_009", "YOU ARE NOT ASSIGNED TO A COMPANY!");
+define("EST_UNINSTALL1","Qualquer utilizador que seja Administrador E tenha Permissões para aceder a este plugin - e APENAS este plugin - teve os seus direitos de Administrador removidos. ");
+define("EST_UNINSTALL2","Os Administradores Principais NÃO deverão ter sido afetados.");
+define("EST_UNINSTALL3","Por favor, revê os teus Utilizadores e107 para confirmar o seu estado atual de Administrador.");
 
-define("EST_AWARN_010", "uploading of files");
-define("EST_AWARN_011", "deleting files");
-define("EST_AWARN_012", "modifying data");
-define("EST_AWARN_013", "you to delete this property");
+define("EST_AMENU_MENUTIT1", "Propriedade");
+define("EST_AMENU_PROPLIST", "Listagens");
+define("EST_AMENU_AGENCIES","Agências");
+define("EST_AMENU_AGENCY","Agência");
+define("EST_AMENU_NEWPROP", "Adicionar/Editar Propriedade");
+define("EST_AMENU_CITYLIST", "Cidades");
+define("EST_AMENU_NEWCITY", "Adicionar/Editar Cidade");
 
-define("EST_UNINSTALL1","Any user who is an Admin AND had Permissions to access this plugin - and ONLY this plugin - have had their Admin rights removed. ");
-define("EST_UNINSTALL2","Main Admins should NOT have been affected.");
-define("EST_UNINSTALL3","Please review your e107 Users to confirm their current Admin status.");
+define("EST_AGT_CLEARDATA","Limpar Dados do Agente?");
+define("EST_AGT_PROPIC","Imagem de Perfil");
+define("EST_AGT_USEPROPIC","Usar Imagem de Perfil?");
 
-define("EST_AMENU_MENUTIT1", "Property");
-define("EST_AMENU_PROPLIST", "Listings");
-define("EST_AMENU_AGENCIES","Agencies");
-define("EST_AMENU_AGENCY","Agency");
-define("EST_AMENU_NEWPROP", "Add/Edit Property");
-define("EST_AMENU_CITYLIST", "Cities");
-define("EST_AMENU_NEWCITY", "Add/Edit City");
+define("EST_COMP_IMPORTDTA","Importar Dados De");
+define("EST_COMP_IMPORTDTA1","Seleciona uma Empresa da qual importar predefinições de dados");
+define("EST_COMP_NOZONCATS","Não há Categorias de Zoneamento");
+define("EST_COMP_SELZONIMP","Importar Zoneamento");
+define("EST_COMP_SELZONIMP1","Importar Categorias e Predefinições de Zoneamento Selecionadas");
 
-define("EST_AGT_CLEARDATA","Clear Agent Data?");
-define("EST_AGT_PROPIC","Profile Image");
-define("EST_AGT_USEPROPIC","Use Profile Image?");
+define("EST_PRESETS_SELZONKEEP","Categorias de Zoneamento");
+define("EST_PRESETS_SELZONINGSAVEHINT","Guardar Categorias de Zoneamento");
+define("EST_PRESETS_SELZONEDITTTL","Adicionar & Editar Categorias de Zoneamento");
 
+define("EST_AGT_UPAGTDTA","Atualizar Dados do Agente?");
 
-define("EST_COMP_IMPORTDTA","Import Data From");
-define("EST_COMP_IMPORTDTA1","Select a Company from which to import data presets");
-define("EST_COMP_NOZONCATS","There are no Zoning Categories");
-define("EST_COMP_SELZONIMP","Import Zoning");
-define("EST_COMP_SELZONIMP1","Import Selected Zoning Categories and Presets");
+define("EST_ERR_500","Erros do Servidor: Verifica a Consola Javascript para detalhes");
+define("EST_ERR_AGENTIDZERO","Guarda o Agente Primeiro");
+define("EST_ERR_AGENTIDZERO1","O Perfil do Agente deve ser guardado antes de poderes adicionar");
+define("EST_ERR_AGYIDZERO","Guarda a Agência Primeiro");
+define("EST_ERR_AGYIDZERO1","Os Dados da Agência devem ser guardados antes de poderes adicionar");
+define("EST_ERR_COMPIDZERO","Guarda a Empresa Primeiro");
+define("EST_ERR_COMPIDZERO1","A Empresa deve ser guardada antes de poderes adicionar");
 
-define("EST_PRESETS_SELZONKEEP","Zoning Categories");
-define("EST_PRESETS_SELZONINGSAVEHINT","Save Zoning Categories");
-define("EST_PRESETS_SELZONEDITTTL","Add & Edit Zoning Categories");
+define("EST_ERR_DATANOTARRAY","Os dados enviados não estão no Formato de Array");
+define("EST_ERR_DUPEAGENT","Informação de Agente Duplicada.");
+define("EST_ERR_DUPEAGENT1","O Nome do Agente submetido já existe.");
+define("EST_ERR_DUPEAGENCY","Informação de Agência Duplicada.");
+define("EST_ERR_DUPEAGENCY1","O Nome da Agência submetido já existe.");
+define("EST_ERR_DUPEUSER","Informação de Utilizador Duplicada.");
+define("EST_ERR_DUPEUSER1","Nome de Exibição, Nome de Login, Nome Real ou Email submetido já existe.");
+define("EST_ERR_FAILADDNEW","Falha ao Adicionar Novo");
+define("EST_ERR_FAILDELETE","Falha ao Eliminar");
+define("EST_ERR_FILEDIR1","Diretório de Ficheiros");
+define("EST_ERR_FINISETUP","Concluir Configuração");
 
+define("EST_ERR_ISNOTDIR","não é um Diretório válido");
+define("EST_ERR_ISNOTWRITE","não tem permissões de escrita");
 
-define("EST_AGT_UPAGTDTA","Update Agent Data?");
+define("EST_ERR_KEYFIELD1","Campo Chave Não Encontrado");
+define("EST_ERR_KEYFIELD2","Campo de Índice da BD Não Encontrado");
+define("EST_ERR_LOSTRESULT","Base de Dados Atualizada mas o Elemento do formulário não está definido");
 
+define("EST_ERR_NOAGENCIES0","Sem Agências");
+define("EST_ERR_NOAGENCIES1","Não há agências no sistema!");
+define("EST_ERR_NOAGENCIES2","Por favor, clica no botão + para criares a tua primeira Agência");
+define("EST_ERR_NOCONDATA","Os Dados de Contacto devem ter pelo menos 3 caracteres");
+define("EST_ERR_NOCONTKEYS","Faltam Dados de Tipo de Contacto");
+define("EST_ERR_NOCONTKEYS1","Nenhum Tipo de Contacto foi definido. ");
+define("EST_ERR_NOCONTYPE","Por favor, define o Tipo de Contacto");
 
-define("EST_ERR_500","Server Errors: See Javascript Console for details");
-define("EST_ERR_AGENTIDZERO","Save Agent First");
-define("EST_ERR_AGENTIDZERO1","Agent Profile must be saved before you can add");
-define("EST_ERR_AGYIDZERO","Save Agency First");
-define("EST_ERR_AGYIDZERO1","Agency Data must be saved before you can add");
-define("EST_ERR_COMPIDZERO","Save Company First");
-define("EST_ERR_COMPIDZERO1","Company must be saved before you can add");
+define("EST_ERR_NOMAP","Mapa Chave->Valor não definido");
+define("EST_ERR_NOTAUTH1","Não estás autorizado a fazer isto");
+define("EST_ERR_NOUSERSINCLASS","NÃO HÁ UTILIZADORES ATRIBUÍDOS A QUALQUER CLASSE DE UTILIZADOR IMOBILIÁRIO");
+define("EST_ERR_NOUSERSINCLASS1","Por favor, atribui pelo menos um utilizador (tu mesmo) à classe de utilizador Administrador Imobiliário (podes atribuir-te também às classes Gestor Imobiliário e Agente Imobiliário, mas não é obrigatório).");
 
-define("EST_ERR_DATANOTARRAY","Data sent is not in Array Format");
-define("EST_ERR_DUPEAGENT","Duplicate Agent Information.");
-define("EST_ERR_DUPEAGENT1","Agent Name submitted already exists.");
-define("EST_ERR_DUPEAGENCY","Duplicate Agency Information.");
-define("EST_ERR_DUPEAGENCY1","Agency Name submitted already exists.");
-define("EST_ERR_DUPEUSER","Duplicate User Information.");
-define("EST_ERR_DUPEUSER1","User Display Name, Login Name, Real Name, or Email submitted already exists.");
-define("EST_ERR_FAILADDNEW","Failed to Add New");
-define("EST_ERR_FAILDELETE","Failed to Delete");
-define("EST_ERR_FILEDIR1","File Directory");
-define("EST_ERR_FINISETUP","Finish Setup");
+define("EST_ERR_PROPIDZERO","A Propriedade deve ser guardada primeiro");
+define("EST_ERR_SETUPINCOMP","Deves concluir a Configuração Inicial antes de poderes aceder a outras partes deste plugin.");
+define("EST_ERR_TABLE1","Tabela da Base de Dados Não Encontrada");
+define("EST_ERR_TABLE2","Incompatibilidade na Contagem de Campos");
+define("EST_ERR_UPLNOREAD","Incapaz de abrir e examinar o ficheiro carregado");
+define("EST_ERR_UPLNOPHP","Ficheiros PHP Não Permitidos");
+define("EST_ERR_UPLNOEXT","Tipo de ficheiro desconhecido: Sem Extensão");
+define("EST_ERR_UPFILEREM","Ficheiro carregado removido");
 
-define("EST_ERR_ISNOTDIR","is not a valid Directory");
-define("EST_ERR_ISNOTWRITE","is not a writable");
+define("EST_ERR_CLASSMIS1","Faltam algumas Classes de Utilizador especiais");
+define("EST_ERR_CLASSMIS2","Este plugin depende destas classes de utilizador para funcionar corretamente. Por favor, adiciona as classes em falta à tua lista de Classes de Utilizador do e107");
 
-define("EST_ERR_KEYFIELD1","Key Field Not Found");
-define("EST_ERR_KEYFIELD2","DB Index Field Not Found");
-define("EST_ERR_LOSTRESULT","Database Updated but form Element not defined");
+define("EST_ERR_UPFILEREMFAIL","Ficheiro carregado NÃO removido");
+define("EST_ERR_FILENOTFOUND","Ficheiro NÃO Encontrado");
 
+define("EST_ERR_FILENOTALLOWED","Tipo de Ficheiro Não Permitido");
+define("EST_ERR_FILENOTSAVED","Falha ao guardar ficheiro");
 
-define("EST_ERR_NOAGENCIES0","No Agencies");
-define("EST_ERR_NOAGENCIES1","There are no agencies in the system!");
-define("EST_ERR_NOAGENCIES2","Please click the + button to create your first Agency");
-define("EST_ERR_NOCONDATA","Contact Data must be  at least 3 characters");
-define("EST_ERR_NOCONTKEYS","Missing Contact Type Data");
-define("EST_ERR_NOCONTKEYS1","No Contact Types have been defined. ");
-define("EST_ERR_NOCONTYPE","Please set Contact Type");
+define("EST_ERR_DBMEDIAREMOVED","Entrada de Média da Base de Dados Removida");
 
-define("EST_ERR_NOMAP","Option Key->Value Map not defined");
-define("EST_ERR_NOTAUTH1","You are Not authorized to do this");
-define("EST_ERR_NOUSERSINCLASS","THERE ARE NO USERS ASSIGNED TO ANY ESTATE USER CLASSES");
-define("EST_ERR_NOUSERSINCLASS1","Please assign at least one user (yourself) to the Estate Admin userclass (you may assign yourself to Estate Manager and Estate Agent classes too, but it is not required).");
+define("EST_EVNT_DETAILS","Adicionar detalhes do Evento se necessário");
+define("EST_EVNT_END","Data & Hora de Fim");
+define("EST_EVNT_NAME","Nome do Evento");
+define("EST_EVNT_START","Data & Hora de Início");
+define("EST_EVNT_TEXTLAB","Detalhes do Evento");
+define("EST_EVNT_TYPE","Tipo de Evento");
 
-define("EST_ERR_PROPIDZERO","Property must be saved first");
-define("EST_ERR_SETUPINCOMP","You must finish the Initial Setup before you can access other parts of this plugin.");
-define("EST_ERR_TABLE1","Database Table Not Found");
-define("EST_ERR_TABLE2","Field Count Mismatch");
-define("EST_ERR_UPLNOREAD","Unable to open and examine uploaded file");
-define("EST_ERR_UPLNOPHP","PHP files Not Allowed");
-define("EST_ERR_UPLNOEXT","Unknown file type: No file Extension");
-define("EST_ERR_UPFILEREM","Uploaded file removed");
+define("EST_FEAT_NAMEPLCH","Quarto, Casa de Banho, Espaço Exterior, etc");
 
-define("EST_ERR_CLASSMIS1","Some special User Classes are missing");
-define("EST_ERR_CLASSMIS2","This plugin relies on these user classes in order to function properly. Please add the missing classes to your e107 User Class list");
+define("EST_GEN_ACTIVE1", "Publicação Agendada");
+define("EST_GEN_ACTIVE2", "Ativo Agora - Ignorar Agenda de Publicação");
+define("EST_GEN_ACCESS","Acesso");
+define("EST_GEN_ADDEDAS","Adicionado como");
+define("EST_GEN_ADDEDNEW","Adicionado Novo");
+define("EST_GEN_ADDEDTO","Adicionado a");
+define("EST_GEN_ADDNEWUSER","Adicionar Novo Utilizador");
+define("EST_GEN_ADDNEWUSERHLP","Quem pode adicionar um Novo Utilizador através deste plugin.");
+define("EST_GEN_ADMINACCLEVEL", "Nível de Acesso de Administrador");
+define("EST_GEN_ADMINUSERS", "Utilizadores Administradores");
+define("EST_GEN_ADDNEW", "Adicionar Novo");
+define("EST_GEN_ADDUSERS","Adicionar Utilizadores como Agentes");
+define("EST_GEN_ADDNEWROOM", "Adicionar Novo Espaço");
+define("EST_GEN_AGENTLOGNAME","Nome de Login do Agente");
+define("EST_GEN_AGENTSAGENCIES", "Agentes & Agências");
+define("EST_GEN_ANDIS","e é");
+define("EST_GEN_ANDISNOT","e NÃO é");
+define("EST_GEN_ASSUSRCLASSES","Atribuir Classes de Utilizador");
+define("EST_GEN_CANTDELZONE","Não é Possível Eliminar Categoria de Zoneamento");
+define("EST_GEN_CLKCUSTOM","Clica em Etiqueta Personalizada");
+define("EST_GEN_CLKSAVEFOROPTS","Clica em Guardar para ver as novas opções");
 
+define("EST_GEN_CLKHLDCUSTOM","Clica e Mantém para Etiqueta Personalizada");
+define("EST_GEN_COMPANYPLCH", "ex. Imobiliária Sundance");
+define("EST_GEN_CREATEAGENT", "Criar Perfil de Agente para");
+define("EST_GEN_CUSTOMPROFIMG", "Imagem de Perfil Personalizada");
 
-define("EST_ERR_UPFILEREMFAIL","Uploaded file NOT removed");
-define("EST_ERR_FILENOTFOUND","File NOT Found");
-
-define("EST_ERR_FILENOTALLOWED","File Type Not Allowed");
-define("EST_ERR_FILENOTSAVED","Failed to save file");
-
-define("EST_ERR_DBMEDIAREMOVED","Media Database Entry Removed");
-
-
-define("EST_EVNT_DETAILS","Add Event details if needed");
-define("EST_EVNT_END","End Date & Time");
-define("EST_EVNT_NAME","Event Name");
-define("EST_EVNT_START","Start Date & Time");
-define("EST_EVNT_TEXTLAB","Event Details");
-define("EST_EVNT_TYPE","Event Type");
-
-define("EST_FEAT_NAMEPLCH","Bedroom, Bathroom, Outdoor Living, etc");
-
-define("EST_GEN_ACTIVE1", "Scheduled Publication");
-define("EST_GEN_ACTIVE2", "Live Now - Ignore Publication Schedule");
-define("EST_GEN_ACCESS","Access");
-define("EST_GEN_ADDEDAS","Added as");
-define("EST_GEN_ADDEDNEW","Added New");
-define("EST_GEN_ADDEDTO","Added to");
-define("EST_GEN_ADDNEWUSER","Add New User");
-define("EST_GEN_ADDNEWUSERHLP","Who can add a New User through this plugin.");
-define("EST_GEN_ADMINACCLEVEL", "Admin Access Level");
-define("EST_GEN_ADMINUSERS", "Admin Users");
-define("EST_GEN_ADDNEW", "Add New");
-define("EST_GEN_ADDUSERS","Add Users as Agents");
-define("EST_GEN_ADDNEWROOM", "Add New Room");
-define("EST_GEN_AGENTLOGNAME","Agent Login Name");
-define("EST_GEN_AGENTSAGENCIES", "Agents & Agencies");
-define("EST_GEN_ANDIS","and is");
-define("EST_GEN_ANDISNOT","and is NOT");
-define("EST_GEN_ASSUSRCLASSES","Assign User Classes");
-define("EST_GEN_CANTDELZONE","Cannot Delete Zoning Category");
-define("EST_GEN_CLKCUSTOM","Click Custom Label");
-define("EST_GEN_CLKSAVEFOROPTS","Click Save to see the new options");
-
-define("EST_GEN_CLKHLDCUSTOM","Click & Hold for Custom Label");
-define("EST_GEN_COMPANYPLCH", "eg. Sundance Realty");
-define("EST_GEN_CREATEAGENT", "Create Agent Profile for");
-define("EST_GEN_CUSTOMPROFIMG", "Custom Profile Image");
-
-
-define("EST_GEN_DATAPRESETS","Data Presets");
-define("EST_GEN_DATASOURCE","Data Source");
-define("EST_GEN_DBRECORDSREMOVED","Database Records Removed");
-define("EST_GEN_DBNOTUPDATED","Database NOT Updated");
-define("EST_GEN_DBUPDATED","Database Updated");
-define("EST_GEN_DELETEDPROPERTY","Deleted Property");
-define("EST_GEN_DELZONECAT","Delete Zoning Category Results");
-define("EST_GEN_DOESEXIST","does exist");
-define("EST_GEN_DOESNOTEXIST","does NOT exist");
-define("EST_GEN_ELEMNT","Element");
-define("EST_GEN_FEATURESFOR","Features For");
-define("EST_GEN_FEATURESFOR1","Categories For");
-define("EST_GEN_FEATURELISTDTA","Feature List Data");
-define("EST_GEN_FIELD","Field");
-define("EST_GEN_FIRST","First");
-define("EST_GEN_FIRSTTIME","First Time");
-define("EST_GEN_FRONTENDACCESS","Front End Access");
-define("EST_GEN_FORM","Form");
-define("EST_GEN_GENERALOPTS", "General Options");
-define("EST_GEN_GENERALOPTSHLP1", "Set general options for this plugin");
-define("EST_GEN_HIDEOTHERUSERS", "Hide Other Users");
-define("EST_GEN_HOWTO","Help & How To");
-define("EST_GEN_IMPORTANT","IMPORTANT!");
-
+define("EST_GEN_DATAPRESETS","Predefinições de Dados");
+define("EST_GEN_DATASOURCE","Fonte de Dados");
+define("EST_GEN_DBRECORDSREMOVED","Registos da Base de Dados Removidos");
+define("EST_GEN_DBNOTUPDATED","Base de Dados NÃO Atualizada");
+define("EST_GEN_DBUPDATED","Base de Dados Atualizada");
+define("EST_GEN_DELETEDPROPERTY","Propriedade Eliminada");
+define("EST_GEN_DELZONECAT","Resultados da Eliminação de Categoria de Zoneamento");
+define("EST_GEN_DOESEXIST","existe");
+define("EST_GEN_DOESNOTEXIST","NÃO existe");
+define("EST_GEN_ELEMNT","Elemento");
+define("EST_GEN_FEATURESFOR","Características Para");
+define("EST_GEN_FEATURESFOR1","Categorias Para");
+define("EST_GEN_FEATURELISTDTA","Dados da Lista de Características");
+define("EST_GEN_FIELD","Campo");
+define("EST_GEN_FIRST","Primeiro");
+define("EST_GEN_FIRSTTIME","Primeira Vez");
+define("EST_GEN_FRONTENDACCESS","Acesso ao Front End");
+define("EST_GEN_FORM","Formulário");
+define("EST_GEN_GENERALOPTS", "Opções Gerais");
+define("EST_GEN_GENERALOPTSHLP1", "Define opções gerais para este plugin");
+define("EST_GEN_HIDEOTHERUSERS", "Ocultar Outros Utilizadores");
+define("EST_GEN_HOWTO","Ajuda & Como Fazer");
+define("EST_GEN_IMPORTANT","IMPORTANTE!");
 
 define("EST_GEN_LAYOUT", "Layout");
-define("EST_GEN_LISTYPES", "Listing Types");
-define("EST_GEN_LOGO", "Logo");
-define("EST_GEN_MAINADMIN", "Main Admin");
-define("EST_GEN_MAPOPTS", "Map Options");
-define("EST_GEN_MAPOPTSHLP1", "Set map options for this plugin");
-define("EST_GEN_MISSING","Missing");
-define("EST_GEN_NAMEADDRESS","Name & Address");
-define("EST_GEN_NEWAGENT", "New Agent Profile");
-define("EST_GEN_NEWCAT","New Category");
-define("EST_GEN_NEWCOMPANY", "New Company");
-define("EST_GEN_NEWEVENTNAME", "New Event Preset");
-define("EST_GEN_NEWFEATURE","New Feature");
-define("EST_GEN_NEWGROUP","New Group");
-define("EST_GEN_NEWMESSAGES", "New Messages");
-define("EST_GEN_NEWUSERAGENT","New User/Agent");
-define("EST_GEN_NOMESSAGES", "No Messages");
-define("EST_GEN_NOMESSAGESTXT1", "You have no new [x]");
-define("EST_GEN_NOMESSAGESTXT2", "You have no old [x]");
+define("EST_GEN_LISTYPES", "Tipos de Listagem");
+define("EST_GEN_LOGO", "Logótipo");
+define("EST_GEN_MAINADMIN", "Administrador Principal");
+define("EST_GEN_MAPOPTS", "Opções de Mapa");
+define("EST_GEN_MAPOPTSHLP1", "Define opções de mapa para este plugin");
+define("EST_GEN_MISSING","Em Falta");
+define("EST_GEN_NAMEADDRESS","Nome & Morada");
+define("EST_GEN_NEWAGENT", "Novo Perfil de Agente");
+define("EST_GEN_NEWCAT","Nova Categoria");
+define("EST_GEN_NEWCOMPANY", "Nova Empresa");
+define("EST_GEN_NEWEVENTNAME", "Nova Predefinição de Evento");
+define("EST_GEN_NEWFEATURE","Nova Característica");
+define("EST_GEN_NEWGROUP","Novo Grupo");
+define("EST_GEN_NEWMESSAGES", "Novas Mensagens");
+define("EST_GEN_NEWUSERAGENT","Novo Utilizador/Agente");
+define("EST_GEN_NOMESSAGES", "Sem Mensagens");
+define("EST_GEN_NOMESSAGESTXT1", "Não tens novas [x]");
+define("EST_GEN_NOMESSAGESTXT2", "Não tens antigas [x]");
 
-define("EST_GEN_NOAGENCYFOUND0","Agency Not Found");
-define("EST_GEN_NOAGENCYFOUND1","Was not found in the database. If you know that the Agency ID is correct, you may not have permissions to edit the data.");
-define("EST_GEN_NOCHANGEADMIN", "You cannot change a Main Admin");
-define("EST_GEN_NONADMINACCESS", "Non-Admin Access");
-define("EST_GEN_NONADMINLISTINGS", "Non-Admin Listings");
-define("EST_GEN_NONAGENTLISTINGS","Non-Agent Listings");
-define("EST_GEN_NONAGENTLISTINGHLP1","Set options for listings posted by non-agents");
-define("EST_GEN_NONAGENTAPPROVED","Auto Approve");
-define("EST_GEN_NONAGENTAPPROVEDHLP","Automatically Approve New Non-Agent Listing Submissions");
-define("EST_GEN_NONAGENTEXP","Stale Listing Expiration");
-define("EST_GEN_NONAGENTEXPHLP","Set how long Inactive Non-Agent Listings will remain visible");
+define("EST_GEN_NOAGENCYFOUND0","Agência Não Encontrada");
+define("EST_GEN_NOAGENCYFOUND1","Não foi encontrada na base de dados. Se sabes que o ID da Agência está correto, podes não ter permissões para editar os dados.");
+define("EST_GEN_NOCHANGEADMIN", "Não podes alterar um Administrador Principal");
+define("EST_GEN_NONADMINACCESS", "Acesso Não-Administrador");
+define("EST_GEN_NONADMINLISTINGS", "Listagens Não-Administrador");
+define("EST_GEN_NONAGENTLISTINGS","Listagens Não-Agente");
+define("EST_GEN_NONAGENTLISTINGHLP1","Define opções para listagens publicadas por não-agentes");
+define("EST_GEN_NONAGENTAPPROVED","Aprovação Automática");
+define("EST_GEN_NONAGENTAPPROVEDHLP","Aprova Automaticamente Novas Submissões de Listagens por Não-Agentes");
+define("EST_GEN_NONAGENTEXP","Expiração de Listagens Inativas");
+define("EST_GEN_NONAGENTEXPHLP","Define quanto tempo as Listagens Inativas de Não-Agentes permanecerão visíveis");
 
+define("EST_GEN_NONAGENTNOTIFY1","Notificação de Nova Submissão");
+define("EST_GEN_NONAGENTNOTIFY1HLP","Escolhe quem receberá Notificações por email quando novas listagens que requerem aprovação forem submetidas por Não-Agentes.");
 
-define("EST_GEN_NONAGENTNOTIFY1","New Submission Notification");
-define("EST_GEN_NONAGENTNOTIFY1HLP","Choose who will receive email Notifications when new listings that require approval are submitted by Non-Agents.");
+define("EST_GEN_NONAGENTIMGCT","Máx. de Imagens");
+define("EST_GEN_NONAGENTIMGCTHLP","Define o número máximo de imagens que um Não-Agente pode carregar por listagem (min: 3, máx 18).");
+define("EST_GEN_NONAGENTMOD","Moderado Por");
+define("EST_GEN_NONAGENTMODS","Moderadores");
+define("EST_GEN_NONAGENTMODHLP","Escolhe quem pode Moderar Listagens de Não-Agentes");
 
+define("EST_GEN_NONADMINUSERS", "Utilizadores Não-Administradores");
+define("EST_GEN_NOTALLOWEDADDUSER","O teu Nível de Acesso não te permite adicionar um Novo Utilizador a este website através deste plugin.");
+define("EST_GEN_DBNOCHANGES","Não foram feitas alterações a");
+define("EST_GEN_NONEFOUND","Nenhum Encontrado");
+define("EST_GEN_NOTASSIGNEDAGENCY","Não atribuído a uma Agência");
+define("EST_GEN_NOTADDEDAS","NÃO adicionado como");
+define("EST_GEN_NOTDEFINED","Não Definido");
 
-define("EST_GEN_NONAGENTIMGCT","Max Images");
-define("EST_GEN_NONAGENTIMGCTHLP","Set the maximum number of images a Non-Agent can upload per listing (min: 3, max 18).");
-define("EST_GEN_NONAGENTMOD","Moderated By");
-define("EST_GEN_NONAGENTMODS","Moderators");
-define("EST_GEN_NONAGENTMODHLP","Choose who can Moderate Non-Agent Listings");
+define("EST_GEN_PLUGADMINONLY","AVISO: O PLUGIN IMOBILIÁRIO É VISÍVEL APENAS PARA ADMINISTRADORES");
+define("EST_GEN_PLUGNOTINST","AVISO DE ADMINISTRAÇÃO: O PLUGIN IMOBILIÁRIO NÃO ESTÁ INSTALADO");
+define("EST_GEN_PRIVATESHOWINGS","Visitas Privadas");
+define("EST_GEN_PRESETS","Predefinições");
+define("EST_GEN_PREFERENCES","Preferências");
+define("EST_GEN_PROFILEVISIB","Visibilidade do Perfil");
 
-define("EST_GEN_NONADMINUSERS", "Non-Admin Users");
-define("EST_GEN_NOTALLOWEDADDUSER","Your Access Level does not allow you to add a New User to this website though this plugin.");
-define("EST_GEN_DBNOCHANGES","No Changes were made to");
-define("EST_GEN_NONEFOUND","None Found");
-define("EST_GEN_NOTASSIGNEDAGENCY","Not assigned to an Agency");
-define("EST_GEN_NOTADDEDAS","NOT added as");
-define("EST_GEN_NOTDEFINED","Not Defined");
+define("EST_GEN_READMESSAGES", "Mensagens Lidas");
+define("EST_GEN_REMOVEAGT", "Remover Agente de todas as Agências");
+define("EST_GEN_REMOVEAGTC1", "Clica em OK para Eliminar o Perfil deste Agente. Isto removerá o Agente de todas as suas Listagens também.");
+define("EST_GEN_REMOVEAGTLOC","Remover Agente da Lista Atribuída");
+define("EST_GEN_REMAGENCY1", "Clica em OK para Remover o Perfil desta Agência. Terás a opção de reatribuir quaisquer listagens e Agentes a outra Agência.");
+define("EST_GEN_REMAGENCYX", "Não podes remover esta Agência - não há outras Agências às quais possas atribuir os teus Agentes e Listagens.");
 
-define("EST_GEN_PLUGADMINONLY","NOTICE: THE ESTATE PLUGIN IS VISIBLE ONLY TO ADMINS");
-define("EST_GEN_PLUGNOTINST","ADMIN NOTICE: THE ESTATE PLUGIN IS NOT INSTALLED");
-define("EST_GEN_PRIVATESHOWINGS","Private Showings");
-define("EST_GEN_PRESETS","Presets");
-define("EST_GEN_PREFERENCES","Preferences");
-define("EST_GEN_PROFILEVISIB","Profile Visibility");
+define("EST_GEN_REORDER","Reordenar");
+define("EST_GEN_REORDERABLE","Reordenável");
+define("EST_GEN_RESETDEF","Repor para Predefinição");
+define("EST_GEN_SCHEDULING","Agendamento");
 
-
-
-define("EST_GEN_READMESSAGES", "Read Messages");
-define("EST_GEN_REMOVEAGT", "Remove Agent from all Agencies");
-define("EST_GEN_REMOVEAGTC1", "Click OK to Delete this Agent's Profile. This will remove the Agent from all of their Listings as well.");
-define("EST_GEN_REMOVEAGTLOC","Remove Agent From Assigned List");
-define("EST_GEN_REMAGENCY1", "Click OK to Remove this Agency's Profile. You will have an option to reassign any listings and Agents to another Agency.");
-define("EST_GEN_REMAGENCYX", "You cannot remove this Agency - there are no other Agencies to which you can assign your Agents and Listings.");
-
-define("EST_GEN_REORDER","Re-order");
-define("EST_GEN_REORDERABLE","Re-orderable");
-define("EST_GEN_RESETDEF","Reset to Default");
-define("EST_GEN_SCHEDULING","Scheduling");
-
-define("EST_GEN_SCHEDULEOPTS","Scheduling Options");
-define("EST_GEN_SCHEDULEOPTSHLP1","Set Default Schedule Options");
+define("EST_GEN_SCHEDULEOPTS","Opções de Agendamento");
+define("EST_GEN_SCHEDULEOPTSHLP1","Define Opções de Agendamento Predefinidas");
 
 define("EST_GEN_SEO", "SEO");
-define("EST_GEN_SHOW", "Show");
-define("EST_GEN_SUCCESS", "Success");
-define("EST_GEN_SHOWALLUSERS", "Show All Users");
+define("EST_GEN_SHOW", "Mostrar");
+define("EST_GEN_SUCCESS", "Sucesso");
+define("EST_GEN_SHOWALLUSERS", "Mostrar Todos os Utilizadores");
 
-define("EST_GEN_UPDATEDWITH","Updated with");
-define("EST_GEN_UPDATEREQ","Update Required");
-define("EST_GEN_UPFOLDER","Upload folder");
-define("EST_GEN_USERAVATAR", "User Avatar");
-define("EST_GEN_USERCLASS","User Class");
-define("EST_GEN_USER","User");
-define("EST_GEN_USERS","Users");
-define("EST_GEN_USERSASSIGNED", "Users Assigned");
-define("EST_GEN_USERLIST","User List");
-define("EST_GEN_USERSAVAIL", "Available Users");
-define("EST_GEN_USERLOGIN", "User Login");
-define("EST_GEN_VISIBLETO","Visible To");
-define("EST_GEN_WRITABLE","writable");
-define("EST_GEN_YOURSELF","Yourself");
+define("EST_GEN_UPDATEDWITH","Atualizado com");
+define("EST_GEN_UPDATEREQ","Atualização Necessária");
+define("EST_GEN_UPFOLDER","Pasta de Carregamento");
+define("EST_GEN_USERAVATAR", "Avatar do Utilizador");
+define("EST_GEN_USERCLASS","Classe de Utilizador");
+define("EST_GEN_USER","Utilizador");
+define("EST_GEN_USERS","Utilizadores");
+define("EST_GEN_USERSASSIGNED", "Utilizadores Atribuídos");
+define("EST_GEN_USERLIST","Lista de Utilizadores");
+define("EST_GEN_USERSAVAIL", "Utilizadores Disponíveis");
+define("EST_GEN_USERLOGIN", "Login do Utilizador");
+define("EST_GEN_VISIBLETO","Visível Para");
+define("EST_GEN_WRITABLE","gravável");
+define("EST_GEN_YOURSELF","Tu Mesmo");
 
+define("EST_GRP_GROUPPLCH", "Piso Principal, Segundo Piso, Exterior, etc");
 
-define("EST_GRP_GROUPPLCH", "Main Floor, Second Floor, Exterior, etc");
+define("EST_HINT_NONAGENTLISTINGS","Permite que os utilizadores publiquem as suas próprias propriedades neste website.");
 
+define("EST_INST_FIRSTRUN1","Parece que esta é a primeira vez que estás a usar este plugin. Cada Listagem requer um Agente com credenciais de login apropriadas. Estas credenciais incluem ser um Administrador com acesso ao Plugin de Agência Imobiliária (que tu tens) assim como estar atribuído a uma das novas Classes de Utilizador usadas por este plugin.");
+define("EST_INST_FIRSTRUN2","Parece que és um Administrador Principal, tens acesso total a este plugin. Também podes criar Perfis de Agente para outros Utilizadores do teu website atribuindo-os a uma ou mais das seguintes Classes de Utilizador:");
+define("EST_INST_FIRSTRUN3","Assim que isto estiver feito, volta aqui para concluir a configuração inicial criando um novo Perfil de Agente para ti mesmo e outros Agentes que queiras que tenham acesso.");
+define("EST_INST_FIRSTRUN4","Por favor, pede ao Administrador Principal para atribuir a Classe de Utilizador apropriada e criar um Perfil de Agente para ti mesmo baseado no teu papel dentro deste website.");
+define("EST_INST_FIRSTRUN5","Assim que o Administrador Principal tiver feito isto, poderás então aceder ao Plugin de Agência Imobiliária.");
 
-define("EST_HINT_NONAGENTLISTINGS","Allow users to post their own properties to this website.");
+define("EST_INST_INITSETUP","Configuração Inicial");
+define("EST_INST_LOOKFORADMWPERMS","À procura de Administradores com permissões para este plugin");
 
+define("EST_INST_FISRTAGENT","Adicionado Novo Perfil de Agente para");
+define("EST_INST_FISRTAGENTFAIL","Este plugin não conseguiu encontrar quaisquer Perfis de Utilizador Administrador Principal e não conseguiu criar Perfis de Agente predefinidos para ninguém");
+define("EST_INST_FISRTAGENTASSIGN","Primeiro Agente Atribuído à Propriedade de Exemplo");
 
+define("EST_INST_SETCLASS1","Este plugin usa diferentes níveis de acesso para prevenir que os utilizadores alterem dados que não lhes pertencem. Qualquer utilizador atribuído a estas classes de utilizador especiais deve também ser pelo menos um Administrador regular com privilégios que incluam o plugin Imobiliário. É possível tornar qualquer utilizador um Administrador e depois conceder acesso apenas a este plugin para os manter fora de outras áreas sensíveis do teu website. Aqui está o que os utilizadores com estes níveis de acesso podem fazer:");
 
-//EST_HLPMNU_INIT13
-define("EST_INST_FIRSTRUN1","It looks like this is the first time you are using this plugin. Every Listing requires an Agent with approptiate Login credentials. These credentials include being an Admin with access to the Estate Agency Plugin (which you do) as well as being assigned to one of new User Classes used by this plugin.");
-define("EST_INST_FIRSTRUN2","It looks like you are a Main Admin, you have full access to this plugin. You can also create Agent Profiles for other Users of your website by assigning them to one or more of the following User Classes:");
-define("EST_INST_FIRSTRUN3","Once this is done, return here to finish the initial setup by creating a new Agent Profile for yourself and other Agents you want to have access.");
-define("EST_INST_FIRSTRUN4","Please ask the Main Admin to assign the appropriate User Class and create an Agent Profile for yourself based on your role within this website.");
-define("EST_INST_FIRSTRUN5","Once the Main Admin has done this, you will then be able to access the Estate Agency Plugin.");
+define("EST_INST_CLASS0","Um Agente Imobiliário pode apenas Criar, Editar e Remover as suas próprias Listagens e Editar o seu próprio Perfil de Agente");
+define("EST_INST_CLASS1","Um Gestor Imobiliário pode Criar, Editar e Remover Listagens e Agentes dentro da sua Agência, e Editar o seu Perfil de Agência");
+define("EST_INST_CLASS2","Um Administrador Imobiliário pode Criar, Editar, & Remover Listagens, Criar e Editar Agências, e Criar, Editar, Remover Agentes e Gestores.");
+define("EST_INST_CLASS3","Os Administradores Principais têm acesso total a tudo e são os únicos utilizadores que podem atribuir os Utilizadores do teu website e107 como Administradores Imobiliários.");
 
-define("EST_INST_INITSETUP","Initial Setup");
-define("EST_INST_LOOKFORADMWPERMS","Looking for Admins with permissions for this plugin");
+define("EST_INST_SETCLASS2","Além das regras acima, os Administradores Imobiliários e Gestores Imobiliários podem criar novos Perfis de Utilizador (detalhes de Login do Website) diretamente dentro deste plugin e atribuir Utilizadores como um Agente Imobiliário, Gestor Imobiliário ou Administrador Imobiliário, dependendo do Nível de Acesso do Utilizador que está a criar o novo Login.");
 
-define("EST_INST_FISRTAGENT","Added New Agent Profile for");
-define("EST_INST_FISRTAGENTFAIL","This plugin was unable to find any Main Admin User Profiles and was not able to create default Agent Profiles for anyone");
-define("EST_INST_FISRTAGENTASSIGN","First Agent Assigned to Sample Property");
+define("EST_INST_FIRSTTIME1","Esta é a primeira vez que usas o Plugin Imobiliário. Antes de começares, precisas de criar o teu próprio Perfil de Agente para ti mesmo, mesmo que não sejas um Agente real. Poderás criar Perfis de Agente adicionais para outros Utilizadores assim que este passo estiver concluído.");
+define("EST_INST_FIRSTTIME2","Tem em mente que todos os Agentes têm de ser um Administrador com permissão para aceder ao Plugin Imobiliário e atribuído à Classe de Utilizador apropriada (Agente Imobiliário para Agentes, Gestor Imobiliário para Gestores). Qualquer utilizador que seja um Administrador Principal terá controlo total sobre este plugin.");
 
+define("EST_INST_SETCLASS3","Parece que és um Administrador Principal. Quando clicares no botão Configurar, serás guiado através dos passos de Configuração Inicial para criares a tua primeira Agência e Perfil de Agente.");
 
-define("EST_INST_SETCLASS1","This plugin uses different access levels to prevent users from changing data that does not belong to them. Any user assigned to these special user classes must also be at least a regular Admin with privilages that include the Estate plugin. It is possible to make any user an Admin and then grant access only to this plugin to keep them out of other sensitive areas of your website. Here are what users with these access levels can do:");
+define("EST_INST_SETCLASS4","Apenas um Administrador Principal pode inicializar este plugin. Por favor, contacta um Administrador Principal para concluir a configuração inicial.");
 
-define("EST_INST_CLASS0","An Estate Agent can only Create, Edit, and Remove their own Listings and Edit their own Agent Profile");
-define("EST_INST_CLASS1","An Estate Manager can Create, Edit, and Remove Listings and Agents within their Agency, and Edit their Agency Profile");
-define("EST_INST_CLASS2","An Estate Admin can Create, Edit, & Remove Listings, Create and Edit Agencies, and Create, Edit, Remove Agents and Managers.");
-define("EST_INST_CLASS3","Main Admins have full access to everything and are the only users who can assign your e107 website Users as Estate Admins.");
+define("EST_INST_SETUP1","Por favor, cria o teu primeiro Perfil de Agente para ti mesmo. Cada Agente precisa de estar ligado a uma Empresa e Agência para aceder a este plugin. Poderás adicionar outras empresas, localizações de agências e agentes mais tarde.");
+define("EST_INST_SETUP2","(define desconhecido)");
 
-define("EST_INST_SETCLASS2","In addition to the above rules, Estate Admins and Estate Managers can create new User Profiles (Website Login detsails) directly within this  plugin and assign Users as an Estate Agent, Estate Manager, or Estate Admin, depending of the Access Level of the User who is creating the new Login.");
+define("EST_INST_NOPDTAIMP1","Não há outras Empresas das quais possas importar Categorias de Zoneamento e Dados Predefinidos. Clica no botão Editar ao lado do Filtro de Zoneamento acima para adicionar novas Categorias de Zoneamento para a tua Empresa.");
+define("EST_INST_NOPDTAIMP2","Quando guardares as tuas novas Categorias de Zoneamento, novas Predefinições de Dados serão automaticamente adicionadas a este formulário sem necessidade de clicar no botão de atualização.");
 
-define("EST_INST_FIRSTTIME1","This is your first time using the Estate Plugin. Before you can start you need to create your own Agent Profile for yourself, even if you are not an actual Agent. You will be able to create additional Agent Profiles for other Users once this step is done.");
-define("EST_INST_FIRSTTIME2","Keep in mind that all Agents have to be an Admin with permission to access the Estate Plugin and assigned to the appropriate User Class (Estate Agent for Agents, Estate Manager for Managers). Any user who is a Main Admin will have full control over this plugin.");
+define("EST_INST_AGENTS1","Agentes e Agências de Exemplo adicionados à Base de Dados. USERID #1 foi adicionado como Agente 1 ");
+define("EST_INST_AGENTS2","ERRO: Agentes e Agências de Exemplo NÃO foram adicionados à Base de Dados");
 
-define("EST_INST_SETCLASS3","It looks like you are a Main Admin. When you click the Configure button you will be guided through the Initial Setup steps to create your first Agency and Agent Profile.");
+define("EST_INST_FEATURES1","Tipos de Listagem, Características e Categorias de Exemplo adicionados à Base de Dados");
+define("EST_INST_FEATURES2","ERRO: Tipos de Listagem, Características e Categorias de Exemplo NÃO foram adicionados à Base de Dados");
 
-define("EST_INST_SETCLASS4","Only a Main Admin can initialize this plugin. Please contact a Main Admin to finish the initial setup.");
+define("EST_INST_STATES1","Estados dos EUA de Exemplo adicionados à Base de Dados");
+define("EST_INST_STATES2","ERRO: Estados dos EUA de Exemplo NÃO foram adicionados à Base de Dados");
 
+define("EST_INST_SAMPLEPROP1","Listagem de Propriedade de Exemplo adicionada à Base de Dados");
+define("EST_INST_SAMPLEPROP2","ERRO: Listagem de Propriedade de Exemplo NÃO foi adicionada à Base de Dados");
 
-define("EST_INST_SETUP1","Please create your first Agent Profile for yourself. Every Agent needs to be linked to a Company and Agency in order to access this plugin. You will be able to add other companies, agency locations, and agents later.");
-define("EST_INST_SETUP2","(unknown define)");
+define("EST_INST_SAMPLEMEDIA0","Falha ao copiar imagens de exemplo para");
+define("EST_INST_SAMPLEMEDIA1","O Diretório NÃO é acessível");
+define("EST_INST_SAMPLEMEDIA2","A Base de Dados de Média não foi inicializada");
+define("EST_INST_SAMPLEMEDIA3","Algumas Imagens de Exemplo Falharam ao copiar para a Pasta de Média");
+define("EST_INST_SAMPLEMEDIA4"," Ficheiro não encontrado");
+define("EST_INST_SAMPLEMEDIA5"," Não é um Ficheiro");
+define("EST_INST_SAMPLEMEDIA10","Imagens de exemplo copiadas com sucesso para a Pasta de Média");
+define("EST_INST_SAMPLIST","Uma Listagem de exemplo com Imagens foi adicionada para explorares e veres como este plugin funciona.");
 
-define("EST_INST_NOPDTAIMP1","There are no other Companies from which you can import Zoning Categories and Preset Data. Click the Edit button next to the Zoning Filter above to add new Zoning Categories for your Company.");
-define("EST_INST_NOPDTAIMP2","When you save your new Zoning Categories, new Data Presets will be automatically added to this form without needing to click the update button.");
+define("EST_MYAGENTPROFILE","O Meu Perfil de Agente");
 
+define("EST_PLCH75","Um pouco sobre mim");
 
+define("EST_PLCH85","A Minha Informação da Empresa");
+define("EST_PLCH95","ex. Sede Principal");
+define("EST_PLCH97","Informação Adicional da Agência");
 
-define("EST_INST_AGENTS1","Sample Agents & Agencies added to Database. USERID #1 has been added as Agent 1 ");
-define("EST_INST_AGENTS2","ERROR: Sample Agents & Agencies were NOT added to Database");
+define("EST_PREF_ADMINONLY","Fechar ".EST_PLUGNAME." ao público");
+define("EST_PREF_ADMINONLYHLP","Se ativado, apenas Administradores podem ver este plugin");
 
-define("EST_INST_FEATURES1","Sample Listing Types, Features & Categories added to Database");
-define("EST_INST_FEATURES2","ERROR: Sample Listing Types, Features & Categories were NOT added to Database");
-
-define("EST_INST_STATES1","Sample US States added to Database");
-define("EST_INST_STATES2","ERROR: Sample US States were NOT added to Database");
-
-define("EST_INST_SAMPLEPROP1","Sample Property Listing added to Database");
-define("EST_INST_SAMPLEPROP2","ERROR: Sample Property Listing was NOT added to Database");
-
-define("EST_INST_SAMPLEMEDIA0","Failed to copy sample images to");
-define("EST_INST_SAMPLEMEDIA1","Directory is NOT accessable");
-define("EST_INST_SAMPLEMEDIA2","Media Database was not initialized");
-define("EST_INST_SAMPLEMEDIA3","Some Sample Images Failed to copy over to the Media Folder");
-define("EST_INST_SAMPLEMEDIA4"," File not found");
-define("EST_INST_SAMPLEMEDIA5"," Not a File");
-define("EST_INST_SAMPLEMEDIA10","Successfully copied sample images to the Media Folder");
-define("EST_INST_SAMPLIST","A sample Listing with Images has been added for you to explore to see how this plugin works.");
-
-
-define("EST_MYAGENTPROFILE","My Agent Profile");
-
-
-define("EST_PLCH75","A little about me");
-
-define("EST_PLCH85","My Company Info");
-define("EST_PLCH95","eg. Main Office");
-define("EST_PLCH97","Additional Agency Info");
-
-
-
-
-
-define("EST_PREF_ADMINONLY","Close ".EST_PLUGNAME." to public");
-define("EST_PREF_ADMINONLYHLP","If enabled, only Admins can view this plugin");
-
-
-define("EST_PREF_CLICKSAVETEMPL","Click Save to Change Template");
-define("EST_PREF_CONTACTCC","Allow CC Sender*");
-define("EST_PREF_CONTACTCCHLP","Users in this class can opt to have a copy of their email sent to their email address. MAY BE MISUSED, set with caution! REQUIRES your Site Prefs to allow Email Copy Sender.");
-define("EST_PREF_CONTACTFORM","Contact Form");
-define("EST_PREF_CONTACTFORMACC","Contact Form Access");
-define("EST_PREF_CONTACTFORMACCHLP","Who can use the Estate Plugin's Contact Form");
-define("EST_PREF_CONTACTLIFE","Message Life");
-define("EST_PREF_CONTACTLIFEHLP","How long the system keeps a record of sent messages. Works with Message Maximum to prevent abuse of the contact system");
-define("EST_PREF_CONTACTMAX","Message Maximum");
-define("EST_PREF_CONTACTMAXHLP","Sets the Maximum number of messages a visitor can send during the Message Life duration.");
-define("EST_PREF_CONTACTMODE","Contact Form Mode");
-define("EST_PREF_CONTACTMODE0","Agent & Non-Agent Listings - Hide e-mail");
-define("EST_PREF_CONTACTMODE1","Agent & Non-Agent Listings - Display e-mail");
-define("EST_PREF_CONTACTMODE2","Only Agent Listings - Hide e-mail");
-define("EST_PREF_CONTACTMODE3","Only Agent Listings - Display e-mail");
-define("EST_PREF_CONTACTMODEHLP","Choose which Listings will include a Contact Form and if the Agent/Seller e-mail address is displayed. Listings that do not include a Contact Form will always display a contacte-mail address");
-define("EST_PREF_CONTACTNOTIFY","Agent/Seller Notifications");
-define("EST_PREF_CONTACTNOTIFYHLP","Notify the Agent/Seller via email when someone uses the Contact Form. Agents/Sellers can always review activity on this website");
-define("EST_PREF_CONTACTPHONEREQ","Require Phone Number");
-define("EST_PREF_CONTACTPHONEREQHLP","If enabled, the Sender will be required to include their phone number");
-define("EST_PREF_CONTACTMAXTO","Maximum Applies To");
-define("EST_PREF_CONTACTMAXTO0","All Messages Sent");
-define("EST_PREF_CONTACTMAXTO1","Messages Sent Per Property Listing");
-define("EST_PREF_CONTACTMAXTO2","All Unread Messages");
-define("EST_PREF_CONTACTMAXTO3","Unread Messages Sent Per Property Listing");
-define("EST_PREF_CONTACTMAXTOHLP","Maximum Applies To");
+define("EST_PREF_CLICKSAVETEMPL","Clica em Guardar para Alterar o Modelo");
+define("EST_PREF_CONTACTCC","Permitir CC ao Remetente*");
+define("EST_PREF_CONTACTCCHLP","Utilizadores nesta classe podem optar por ter uma cópia do seu email enviada para o seu endereço de email. PODE SER MAL USADO, define com cuidado! REQUER que as Preferências do teu Site permitam Cópia de Email ao Remetente.");
+define("EST_PREF_CONTACTFORM","Formulário de Contacto");
+define("EST_PREF_CONTACTFORMACC","Acesso ao Formulário de Contacto");
+define("EST_PREF_CONTACTFORMACCHLP","Quem pode usar o Formulário de Contacto do Plugin Imobiliário");
+define("EST_PREF_CONTACTLIFE","Tempo de Vida da Mensagem");
+define("EST_PREF_CONTACTLIFEHLP","Quanto tempo o sistema mantém um registo de mensagens enviadas. Funciona com o Máximo de Mensagens para prevenir abuso do sistema de contacto");
+define("EST_PREF_CONTACTMAX","Máximo de Mensagens");
+define("EST_PREF_CONTACTMAXHLP","Define o Número Máximo de mensagens que um visitante pode enviar durante a duração do Tempo de Vida da Mensagem.");
+define("EST_PREF_CONTACTMODE","Modo do Formulário de Contacto");
+define("EST_PREF_CONTACTMODE0","Listagens de Agente & Não-Agente - Ocultar e-mail");
+define("EST_PREF_CONTACTMODE1","Listagens de Agente & Não-Agente - Mostrar e-mail");
+define("EST_PREF_CONTACTMODE2","Apenas Listagens de Agente - Ocultar e-mail");
+define("EST_PREF_CONTACTMODE3","Apenas Listagens de Agente - Mostrar e-mail");
+define("EST_PREF_CONTACTMODEHLP","Escolhe quais Listagens incluirão um Formulário de Contacto e se o endereço de e-mail do Agente/Vendedor é mostrado. Listagens que não incluam um Formulário de Contacto mostrarão sempre um endereço de e-mail de contacto");
+define("EST_PREF_CONTACTNOTIFY","Notificações do Agente/Vendedor");
+define("EST_PREF_CONTACTNOTIFYHLP","Notifica o Agente/Vendedor via email quando alguém usa o Formulário de Contacto. Agentes/Vendedores podem sempre rever atividade neste website");
+define("EST_PREF_CONTACTPHONEREQ","Requerer Número de Telefone");
+define("EST_PREF_CONTACTPHONEREQHLP","Se ativado, o Remetente será obrigado a incluir o seu número de telefone");
+define("EST_PREF_CONTACTMAXTO","Máximo Aplica-se A");
+define("EST_PREF_CONTACTMAXTO0","Todas as Mensagens Enviadas");
+define("EST_PREF_CONTACTMAXTO1","Mensagens Enviadas Por Listagem de Propriedade");
+define("EST_PREF_CONTACTMAXTO2","Todas as Mensagens Não Lidas");
+define("EST_PREF_CONTACTMAXTO3","Mensagens Não Lidas Enviadas Por Listagem de Propriedade");
+define("EST_PREF_CONTACTMAXTOHLP","Máximo Aplica-se A");
 define("EST_PREF_CONTACTPROPHLP","");
-define("EST_PREF_CONTACTTERMS","Contact Terms");
-define("EST_PREF_CONTACTTERMSHLP","The Terms a visitor must agree to to send a message through the Contact Form. If left blank, the default Terms written for this plugin will be used");
+define("EST_PREF_CONTACTTERMS","Termos de Contacto");
+define("EST_PREF_CONTACTTERMSHLP","Os Termos que um visitante deve concordar para enviar uma mensagem através do Formulário de Contacto. Se deixado em branco, os Termos predefinidos escritos para este plugin serão usados");
 
+define("EST_PREF_DEFAGTHRS","Horas Predefinidas do Agente");
+define("EST_PREF_DEFAGTHRSHLP","As horas predefinidas para criar um Novo Agente. Cada Agente pode personalizar as suas próprias horas");
 
+define("EST_PREF_DEFCOUNTRYHLP","O País predefinido selecionado ao criar uma Nova Listagem");
+define("EST_PREF_DEFEVTLEN","Predefinições de Evento");
+define("EST_PREF_DEFEVTLENHLP","Uma lista de Predefinições de Evento disponíveis ao adicionar um evento ao calendário de uma propriedade. Os primeiros 5 eventos não podem ser eliminados mas podem ter os seus nomes e durações alterados. Predefinições de Evento adicionais podem ser adicionadas: AVISO: remover um evento irá re-etiquetar quaisquer eventos existentes em todos os calendários.");
+define("EST_PREF_DEFHRSHINT0","Hora de Início do Primeiro Evento");
+define("EST_PREF_DEFHRSHINT1","Hora de Início do Último Evento");
+define("EST_PREF_DEFPUBHRS","Horas Públicas Predefinidas");
+define("EST_PREF_DEFPUBHRSHLP","As horas públicas predefinidas para criar uma Nova Listagem de Propriedade. As horas de cada Listagem de Propriedade podem ser personalizadas");
 
-define("EST_PREF_DEFAGTHRS","Default Agent Hours");
-define("EST_PREF_DEFAGTHRSHLP","The default hours for creating a New Agent. Each Agent can customize their own hours");
-
-define("EST_PREF_DEFCOUNTRYHLP","The default Country selected when creating a New Listing");
-define("EST_PREF_DEFEVTLEN","Default Event Presets");
-define("EST_PREF_DEFEVTLENHLP","A list of Event Presets available when adding an event to a property's calendar.The first 5 events cannot be deleted but can have their names and lengths altered. Additional Event Presets can be added: WARNING: removing an event will re-label any existing events in all calendars.");
-define("EST_PREF_DEFHRSHINT0","First Event Start Time");
-define("EST_PREF_DEFHRSHINT1","Last Event Start Time");
-define("EST_PREF_DEFPUBHRS","Default Public Hours");
-define("EST_PREF_DEFPUBHRSHLP","The default Public hours for creating a New Property Listing. Each Property Listing's hours can be customized");
-
-
-define("EST_PREF_DIMU1","Units Of Measure");
+define("EST_PREF_DIMU1","Unidades de Medida");
 define("EST_PREF_DIMU1A","Imperial");
-define("EST_PREF_DIMU1B","Metric");
-define("EST_PREF_DIMU1HLP","Set the default Unit Of Measure");
+define("EST_PREF_DIMU1B","Métrico");
+define("EST_PREF_DIMU1HLP","Define a Unidade de Medida predefinida");
 
-define("EST_PREF_DIMU2","Land Measurement");
-define("EST_SQFOOTX","Sq Feet");
-define("EST_SQMTRX","Sq Meeter");
-define("EST_PREF_DIMU2HLP","Set the default Unit Of Land Measurement");
+define("EST_PREF_DIMU2","Medição de Terreno");
+define("EST_SQFOOTX","Metros Quadrados");
+define("EST_SQMTRX","Metros Quadrados");
+define("EST_PREF_DIMU2HLP","Define a Unidade de Medição de Terreno predefinida");
 
-define("EST_PREF_EVENTNAME","Event Name");
-define("EST_PREF_EVENTLEN","Event Length");
+define("EST_PREF_EVENTNAME","Nome do Evento");
+define("EST_PREF_EVENTLEN","Duração do Evento");
 
-define("EST_PREF_GALBG","Gallery Background");
-define("EST_PREF_HELPINFULL","Expanded Help Menu");
-define("EST_PREF_HELPINFULLHLP","If enabled, the Help Menu will always be shown in full height.");
+define("EST_PREF_GALBG","Fundo da Galeria");
+define("EST_PREF_HELPINFULL","Menu de Ajuda Expandido");
+define("EST_PREF_HELPINFULLHLP","Se ativado, o Menu de Ajuda será sempre mostrado em altura total.");
 
-define("EST_PREF_LAYOUT_NOLISTINGS","No Listings To Preview");
-define("EST_PREF_LISTINGCAVI1","Off Market listings are allways hidden from the public.");
-define("EST_PREF_LISTINGCAVI2","Sold Properties are always visible to Admins and the Agent/Owner of the listing.");
-define("EST_PREF_LISTINGDISP1","Listing Visibility");
-define("EST_PREF_LISTINGDISP1HLP","Show or hide Properties based on Listing Status. Applies only to visitors who are not logged in.");
-define("EST_PREF_LISTINGSAVE","Listing Saves");
-define("EST_PREF_LISTINGSAVEHLP","Who can Save Listings on their Device (Uses cookies). ");
-define("EST_PREF_LISTPAGESECT","Listing Page Layout");
+define("EST_PREF_LAYOUT_NOLISTINGS","Sem Listagens para Pré-visualizar");
+define("EST_PREF_LISTINGCAVI1","Listagens fora do mercado estão sempre ocultas ao público.");
+define("EST_PREF_LISTINGCAVI2","Propriedades vendidas estão sempre visíveis para Administradores e para o Agente/Proprietário da listagem.");
+define("EST_PREF_LISTINGDISP1","Visibilidade da Listagem");
+define("EST_PREF_LISTINGDISP1HLP","Mostrar ou ocultar Propriedades com base no Estado da Listagem. Aplica-se apenas a visitantes que não estão autenticados.");
+define("EST_PREF_LISTINGSAVE","Gravações de Listagens");
+define("EST_PREF_LISTINGSAVEHLP","Quem pode Gravar Listagens no seu Dispositivo (Usa cookies). ");
+define("EST_PREF_LISTPAGESECT","Layout da Página de Listagem");
 
-define("EST_PREF_MAPLISTABOVE","Map Above Listings");
-define("EST_PREF_MAPLISTBELOW","Map Below Listings");
+define("EST_PREF_MAPLISTABOVE","Mapa Acima das Listagens");
+define("EST_PREF_MAPLISTBELOW","Mapa Abaixo das Listagens");
 
+define("EST_PREF_MAPAGENCY","Incluir Marcadores de Agência");
+define("EST_PREF_MAPAGENCYHLP","Incluir marcadores de Agências próximas no Mapa na Página de Visualização");
+define("EST_PREF_MAPAGENCY_NO","Sem Marcadores de Agência");
+define("EST_PREF_MAPAGENCY_YES","Incluir Marcadores de Agências Próximas");
 
-define("EST_PREF_MAPAGENCY","Include Agency Pins");
-define("EST_PREF_MAPAGENCYHLP","Include nearby Agency Pins in the Map on the View Page");
-define("EST_PREF_MAPAGENCY_NO","No Agency Pins");
-define("EST_PREF_MAPAGENCY_YES","Include Nearby Agency Pins");
+define("EST_PREF_MAPACT1","Página de Listagem");
+define("EST_PREF_MAPACT1HLP","Incluir o Mapa na Página de Listagem");
 
-define("EST_PREF_MAPACT1","List Page");
-define("EST_PREF_MAPACT1HLP","Include the Map on the Listing Page");
+define("EST_PREF_MAPACT2","Página de Visualização");
+define("EST_PREF_MAPACT2HLP","Incluir o Mapa na página de visualização de cada propriedade");
 
-define("EST_PREF_MAPACT2","View Page");
-define("EST_PREF_MAPACT2HLP","Include the Map on each property's View page");
+define("EST_PREF_MAPMAP_JSSRC","Fonte para Ficheiros de Mapa");
+define("EST_PREF_MAPMAP_JSSRCHLP","Escolhe como os ficheiros Javascript do Leaflet são carregados. Se externos, estes ficheiros são chamados de um servidor remoto conforme definido abaixo.");
+define("EST_PREF_MAPMAP_JSSRCOPT0","Usar Ficheiros de Mapa Internos");
+define("EST_PREF_MAPMAP_JSSRCOPT1","Ficheiros de Mapa Externos");
+define("EST_PREF_MAPKEY","Chave de Integridade");
+define("EST_PREF_MAPKEYRESET","Repor Chave");
+define("EST_PREF_MAPKEYHLP","Esta chave é fornecida pelo Leaflet e usada para autenticar os ficheiros javascript de origem cruzada quando o teu website usa o protocolo HTTPS");
+define("EST_PREF_MAPURL","URL Remoto");
+define("EST_PREF_MAPURLRESET","Repor URL");
+define("EST_PREF_MAPURLHLP","Esta chave é fornecida pelo Leaflet e usada para autenticar os ficheiros javascript de origem cruzada quando o teu website usa o protocolo HTTPS");
 
-define("EST_PREF_MAPMAP_JSSRC","Source For Map Files");
-define("EST_PREF_MAPMAP_JSSRCHLP","Choose how the Leaflet Javascript files are loaded. If external, these files are called from a remote server as defined below.");
-define("EST_PREF_MAPMAP_JSSRCOPT0","Use Internal Map Files");
-define("EST_PREF_MAPMAP_JSSRCOPT1","External Map Files");
-define("EST_PREF_MAPKEY","Integrity Key");
-define("EST_PREF_MAPKEYRESET","Reset Key");
-define("EST_PREF_MAPKEYHLP","This key is provided by Leaflet and used to authenticate the cross-origin javascript files when your website uses the HTTPS protocal");
-define("EST_PREF_MAPURL","Remote URL");
-define("EST_PREF_MAPURLRESET","Reset URL");
-define("EST_PREF_MAPURLHLP","This key is provided by Leaflet and used to authenticate the cross-origin javascript files when your website uses the HTTPS protocal");
+define("EST_PREF_MAPINCLPROP","Marcadores na Vista de Lista");
+define("EST_PREF_MAPINCLPROPHLP","Mostrar ou ocultar Marcadores para propriedades não listadas como À Venda. Marcadores para propriedades fora do mercado estão sempre excluídos.");
+define("EST_PREF_MAPINCLPROPOPT0","Incluir Marcadores para Todas as Propriedades");
+define("EST_PREF_MAPINCLPROPOPT1","Ocultar Propriedades Vendidas");
+define("EST_PREF_MAPINCLPROPOPT2","Ocultar Propriedades Vendidas e Pendentes");
 
+define("EST_PREF_MULTICOMP","Multi-Empresa");
+define("EST_PREF_MULTICOMPHLP","Quando Ativado podes listar Agências de diferentes Empresas. Quando Desativado todas as Agências pertencem a uma única empresa");
 
-define("EST_PREF_MAPINCLPROP","List View Pins");
-define("EST_PREF_MAPINCLPROPHLP","Show or hide Pins for properties not listed as For Sale. Pins for Off Market properties are always excluded.");
-define("EST_PREF_MAPINCLPROPOPT0","Include Pins for All Properties");
-define("EST_PREF_MAPINCLPROPOPT1","Hide Sold Properties");
-define("EST_PREF_MAPINCLPROPOPT2","Hide Sold & Pending Properties");
+define("EST_PREF_SLIDESHOWACT","Apresentação de Slides");
+define("EST_PREF_SLIDESHOWACTHLP","Se ativado, isto fará ciclar as Imagens na Página de Visualização, caso contrário apenas a primeira imagem será mostrada.");
 
+define("EST_PREF_SLIDESHOWDELAY","Atraso de Início");
+define("EST_PREF_SLIDESHOWDELAYHLP","O tempo em Segundos antes que a Apresentação de Slides comece a ciclar pelos slides");
+define("EST_PREF_SLIDESHOWTIMING","Duração do Slide");
+define("EST_PREF_SLIDESHOWTIMINGHLP","O tempo em Segundos entre mudanças de slide");
 
-define("EST_PREF_MULTICOMP","Multi-Company");
-define("EST_PREF_MULTICOMPHLP","When Enabled you canlist Agencies from different Companies. When Disabled all Agencies belong to a single company");
+define("EST_PREF_TEMPLATES", "Modelos de Layout");
 
+define("EST_PREF_TEMPLATESDEF", array("Modelo de Lista Predefinido","Modelo de Visualização Predefinido","Modelo de Menu Predefinido"));
+define("EST_PREF_MENU", "Opções de Menu");
 
+define("EST_PREF_TEMPLATE_CUSTOM","Modelo Principal");
+define("EST_PREF_TEMPLATE_CUSTOMHLP","Podes substituir o Modelo Imobiliário incorporado por qualquer ficheiro de modelo válido carregado para a pasta \"estate/templates/custom\". Também podes definir os teus próprios Elementos de Modelo dentro do ficheiro de Tema do teu site");
 
+define("EST_PREF_TEMPLATE_LIST","Modelo de Página de Lista");
+define("EST_PREF_TEMPLATE_LISTHLP","Escolhe um modelo para a Página de Lista");
 
-define("EST_PREF_SLIDESHOWACT","Slideshow");
-define("EST_PREF_SLIDESHOWACTHLP","If enabled, this will cycle through Pictures on the View Page, otherwise only the first picture will be shown.");
+define("EST_PREF_TEMPLATE_MENU","Modelo de Menu");
+define("EST_PREF_TEMPLATE_MENUHLP","Escolhe um modelo para o Menu opcional");
+define("EST_PREF_TEMPLATE_MENUORD","Layout do Menu");
+define("EST_PREF_TEMPLATE_MENUORDHLP","Ativar/Desativar e reordenar cada secção do layout do Menu. Disponível apenas se o Modelo selecionado suportar reordenação. Também podes reordenar as secções diretamente nas páginas front end");
 
-define("EST_PREF_SLIDESHOWDELAY","Start Delay");
-define("EST_PREF_SLIDESHOWDELAYHLP","The time in Seconds before the Slideshow will start cycling though the slides");
-define("EST_PREF_SLIDESHOWTIMING","Slide Duration");
-define("EST_PREF_SLIDESHOWTIMINGHLP","The time in Seconds between slide changes");
+define("EST_PREF_TEMPLATE_NOORD","O Modelo não suporta reordenação");
+define("EST_PREF_TEMPLATE_VIEW","Modelo de Página de Visualização");
+define("EST_PREF_TEMPLATE_VIEWHLP","Escolhe um modelo para a Página de Visualização");
 
-define("EST_PREF_TEMPLATES", "Template Layouts");
+define("EST_PREF_TEMPLATE_VIEWORD","Layout da Página de Visualização");
+define("EST_PREF_TEMPLATE_VIEWORDHLP","Ativar/Desativar e reordenar cada secção do layout da Página de Visualização. Disponível apenas se o Modelo selecionado suportar reordenação. Também podes reordenar as secções diretamente nas páginas front end");
 
-define("EST_PREF_TEMPLATESDEF", array("Default List Template","Default View Template","Default Menu Template"));
-define("EST_PREF_MENU", "Menu Options");
+define("EST_HLP_FEATURES0","Uma lista categorizada multi-nível de Características predefinidas que podes adicionar às tuas listagens.");
+define("EST_HLP_FEATURES1","O NÍVEL SUPERIOR é uma Categoria usada para definir um Espaço, Sala, ou Comodidade (Quarto, Casa de Banho, Segurança, etc) e contém uma sub-lista de Características comuns a essa Categoria.");
+define("EST_HLP_FEATURES2","Cada Característica pode ter a sua própria lista de Opções adicionais e predefinidas que podes incluir onde necessário. Clica no Alternador ao lado de uma Característica para ativar as suas Opções.");
+define("EST_HLP_FEATURES3","Alterar um Nome de Categoria ou Característica AFETARÁ listagens existentes, mas alterar as suas Opções não.");
+define("EST_HLP_LISTTYPE0","Estes são usados para filtrar outras opções nas tuas listagens. Alterar um Tipo de Listagem AFETARÁ Listagens existentes.");
+define("EST_HLP_SPACESGRP0","Grupos são usados para combinar Espaços/Salas em listas separadas na Página de Visualização.");
+define("EST_HLP_SPACESGRP1","Alterar um Nome de Grupo AFETARÁ Listagens existentes.");
 
+define("EST_TT_ADMPERMIS1","Conceder acesso à Área de Administração do Plugin Imobiliário");
+define("EST_TT_ADMPERMIS2","Tornar este utilizador um Administrador e conceder acesso a este plugin?");
+define("EST_TT_FRONTENDFORM","Concede acesso ao Formulário de Listagens no front end");
 
-define("EST_PREF_TEMPLATE_CUSTOM","Master Template");
-define("EST_PREF_TEMPLATE_CUSTOMHLP","You can replace the built-in Estate Template with any valid template file uploaded to the \"estate/templates/custom\" folder. You can also define your own template Elements within your site's Theme file");
+define("EST_HLPMNU_AGENTPROF01", "O Perfil do Agente estende o Perfil do Utilizador e está incluído com as Listagens do agente.");
+define("EST_HLPMNU_AGENTPROF02", "O Perfil de um Agente também é editável dentro do Formulário de Listagem de Propriedade.");
+define("EST_HLPMNU_AGENTPROF03", "Como novo Agente precisas de escolher uma Agência. Dependendo da Classe de Utilizador atribuída a ti pelo Administrador do website, podes ou não poder alterar isto após este passo.");
+define("EST_HLPMNU_AGENTPROF04", "Podes alterar a tua Atribuição de Agência a qualquer momento, assim como reatribuir outros agentes.");
+define("EST_HLPMNU_AGENTPROF05", "Precisarás de contactar um Administrador de Agência para alterar a tua atribuição de Agência.");
+define("EST_HLPMNU_AGENTPROF06","Passa o rato sobre a Imagem do Perfil e clica no Botão Fonte para alternar entre o Avatar do Utilizador ou uma imagem personalizada.");
+define("EST_HLPMNU_AGENTPROF07","Qualquer Nova imagem personalizada será carregada quando este formulário for guardado.");
+define("EST_HLPMNU_AGENTPROF08","Contactos Requerem um Perfil de Agente guardado e são guardados individualmente deste formulário.");
+define("EST_HLPMNU_AGENTPROF09","Clica no Botão Etiqueta para editar o Tipo de contacto ou escolher de uma lista de Etiquetas existentes.");
+define("EST_HLPMNU_AGENTPROF10","Contactos Atuais incluem botões de Ordenar e Eliminar. Clica e arrasta o botão Ordenar para reordenar os contactos. O botão Eliminar mudará para um botão Guardar se alterares o contacto.");
 
-define("EST_PREF_TEMPLATE_LIST","List Page Template");
-define("EST_PREF_TEMPLATE_LISTHLP","Choose a template for the List Page");
+define("EST_HLPMNU_AGCY00","Informação Geral sobre esta agência.");
+define("EST_HLPMNU_AGCY01","Passa o rato sobre o Logótipo e clica no Botão Fonte para alternar entre usar o logótipo deste website ou carregar um Logótipo personalizado.");
+define("EST_HLPMNU_AGCY02","Podes escolher ocultar a página de perfil desta Agência da vista pública. Isto é útil para incluir Agentes Independentes onde nenhuma afiliação de Agência é desejada.");
+define("EST_HLPMNU_AGCY10","Esta é uma lista de Propriedades atualmente atribuídas à Agência.");
 
-define("EST_PREF_TEMPLATE_MENU","Menu Template");
-define("EST_PREF_TEMPLATE_MENUHLP","Choose a template for the otpional Menu");
-define("EST_PREF_TEMPLATE_MENUORD","Menu Layout");
-define("EST_PREF_TEMPLATE_MENUORDHLP","Enable/Disable and reorder each section of the Menu layout. Available only if the Template selected supports re-ordering. You can also reorder the sections directly on the front end pages");
+define("EST_HLPMNU_AGCY20","Lista de Agências");
+define("EST_HLPMNU_AGCY21","Esta é uma lista de Agências para as quais tens permissões de acesso. Usa o Dropdown no topo da lista para filtrar por localização.");
+define("EST_HLPMNU_AGCY22","botão no topo da lista para adicionar uma nova Agência.");
+define("EST_HLPMNU_AGCY23","botão para qualquer Agência para alterar a sua Visibilidade pública");
 
-define("EST_PREF_TEMPLATE_NOORD","Template does not support re-ordering");
-define("EST_PREF_TEMPLATE_VIEW","View Page Template");
-define("EST_PREF_TEMPLATE_VIEWHLP","Choose a template for the View Page");
+define("EST_HLPMNU_CONTACTS01","Clica no botão Etiqueta para escolher o Tipo de Contacto ou criar uma etiqueta personalizada.");
+define("EST_HLPMNU_CONTACTS02","Clica no botão Guardar para atualizar o contacto. Novos Contactos serão adicionados à lista principal, que pode então ser ordenada arrastando as setas Cima/Baixo.");
 
-define("EST_PREF_TEMPLATE_VIEWORD","View Page Layout");
-define("EST_PREF_TEMPLATE_VIEWORDHLP","Enable/Disable and reorder each section of the View Page layout. Available only if the Template selected supports re-ordering. You can also reorder the sections directly on the front end pages");
+define("EST_HLPMNU_COMMUNITY1","Este Separador contém informação sobre a área da Propriedade e as responsabilidades que o proprietário tem para com essa área, assim como comodidades.");
+define("EST_HLPMNU_COMMUNITY2","Escolhe uma Subdivisão para carregar automaticamente detalhes sobre a Comunidade da propriedade. Todos os dados no separador Comunidade da Propriedade são guardados com a Propriedade individual.");
+define("EST_HLPMNU_COMMUNITY3","Clica no botão Editar da Subdivisão para Adicionar/Editar estes dados predefinidos juntamente com outra informação sobre a Subdivisão. Os dados no Sub-Formulário da Subdivisão são guardados separadamente dos dados da Propriedade e não afetarão os dados da Comunidade de outras Propriedades.");
+define("EST_HLPMNU_COMMUNITY4","Dito isto, o Sub-Formulário também guarda informação para a Subdivisão que está fora do âmbito de uma Propriedade individual, incluindo comodidades comuns e a sua própria galeria de fotos, que será mostrada com todas as Propriedades nessa Subdivisão.");
 
+define("EST_HLPMNU_PREF_CONTACTFORM01","Definições para o Formulário de Contacto incorporado que permite aos visitantes contactar Vendedores e Agentes diretamente a partir da Página de Visualização de uma Listagem.");
 
-
-
-
-define("EST_HLP_FEATURES0","A multi-level, Categorized list of pre-defined Features you can add to your listings.");
-define("EST_HLP_FEATURES1","The TOP LEVEL is a Category used to define a Space, Room, or Amenity (Bedroom, Bathroom, Security, etc) and contains a sub-list of Features common to that Catagory.");
-define("EST_HLP_FEATURES2","Each Feature can have its own list of additional, default Options that you can include where needed. Click the Toggle next to a Feature to enable its Options.");
-define("EST_HLP_FEATURES3","Changing a Category or Feature Name WILL affect existing listings, but changing their Options will not.");
-define("EST_HLP_LISTTYPE0","These are used to filter other options in your listings. Changing a Listing Type WILL affect existing Listings.");
-define("EST_HLP_SPACESGRP0","Groups are used to combine Spaces/Rooms into separate lists on the View Page.");
-define("EST_HLP_SPACESGRP1","Changing a Group Name WILL affect existing Listings.");
-
-
-define("EST_TT_ADMPERMIS1","Grant access to the Estate Plugin Admin Area");
-define("EST_TT_ADMPERMIS2","Make this user an Admin and grant access to this plugin?");
-define("EST_TT_FRONTENDFORM","Grants access to front end Listings Form");
-
-define("EST_HLPMNU_AGENTPROF01", "The Agent Profile extends the User Profile and is included with the agent's Listings.");
-define("EST_HLPMNU_AGENTPROF02", "An Agent's Profile is also editable from within the Property Listing Form.");
-define("EST_HLPMNU_AGENTPROF03", "As a new Agent you need to choose an Agency. Depending on the User Class assigned to you by the website Admin, you may or may not be able to change this after this step.");
-define("EST_HLPMNU_AGENTPROF04", "You can change your Agency Assignment at any time, as well as re-assign other agents.");
-define("EST_HLPMNU_AGENTPROF05", "You will need to contact an Agency Administrator to change your Agency assignment.");
-//EST_HLP_CONTACTS01
-define("EST_HLPMNU_AGENTPROF06","Hover your mouse over the Profile Image and click the Source Button to toggle between the User's Avatar or a custom image.");
-define("EST_HLPMNU_AGENTPROF07","Any New Custom image will be uploaded when this form is saved.");
-define("EST_HLPMNU_AGENTPROF08","Contacts Require a saved Agent Profile and are saved individually from this form.");
-define("EST_HLPMNU_AGENTPROF09","Click the Label Button to edit the contact Type or choose from a list of existing Labels.");
-define("EST_HLPMNU_AGENTPROF10","Current Contacts include Sort and Delete buttons. Click and drag the Sort button to reorder the contacts. The Delete button will change to a Save button if you change the contact.");
-
-define("EST_HLPMNU_AGCY00","General Information about this agency.");
-define("EST_HLPMNU_AGCY01","Hover your mouse over the Logo and click the Source Button to toggle between using this website's logo or uploading a custom Logo.");
-define("EST_HLPMNU_AGCY02","You can choose to hide this Agency's profile page from public view. This is usefull for including Independent Agents where no Agency affiliation is desired.");
-define("EST_HLPMNU_AGCY10","This is a list of Properties currently assigned to the Agency.");
-
-define("EST_HLPMNU_AGCY20","Agency List");
-define("EST_HLPMNU_AGCY21","This is a list of Agencies that you have permissions to access. Use the Dropdown at the top of the list to filter by location.");
-define("EST_HLPMNU_AGCY22","button at the top of the list to add a new Agency.");
-define("EST_HLPMNU_AGCY23","button for any Agency to change its public Visibility");
-
-define("EST_HLPMNU_CONTACTS01","Click the Label button to choose the Contact Type or create a custom label.");
-define("EST_HLPMNU_CONTACTS02","Click the Save button to update the contact. New Contacts will be added to the main list, which can then be sorted by dragging the Up/Down arrows.");
-
-define("EST_HLPMNU_COMMUNITY1","This Tab contains information about the Property's area and the responsibilities the homeowner has to that area as well as amenities.");
-define("EST_HLPMNU_COMMUNITY2","Choose a Subdivision to auto-load details about the property's Community. All data on the Property's Community tab is saved with the individual Property.");
-define("EST_HLPMNU_COMMUNITY3","Click the Subdivision Edit button to Add/Edit this preset data along with other information about the Subdivision. The data in the Subdivision Sub-Form is saved seperately from the Property data and will not affect other Properties' Community data.");
-define("EST_HLPMNU_COMMUNITY4","That said, the Sub-Form also saves information for the Subdivision that is outside the scope of an individual Property, including common ammenities and its own photo gallery, which will be shown with all Properties in that Subdivision.");
-
-define("EST_HLPMNU_PREF_CONTACTFORM01","Settings for the built-in Contact Form that allows visitors to contact Sellers and Agents directly from a Listing's View Page.");
-
-define("EST_HLPMNU_DETAILS1","Add general details about the property, including Model Name (optional), Year Built, a brief Summary, and Detailed Description.");
-define("EST_HLPMNU_DETAILS2","Clicking on [i]Livable Space[/i] or [i]Roof Size[/i] fields reveals a button with an automatic value calculated from the square footage/meeter of all Spaces. Click this button to set the value in the field.");
-define("EST_HLPMNU_DETAILS3","The [i]Livable Space[/i] and [i]Roof Size[/i] fields include a button to choose the unit of measure (Sq Foot or Sq Meeter). These are tied together and changing one will change the other");
-define("EST_HLPMNU_DETAILS4","This option also sets the default setting when adding a new Space, though you can set a different measure for each individual Space.");
-define("EST_HLPMNU_DETAILS5","[i]Land Size[/i]. Optional. A button next to the field allows you to set the unit of measure. Clicking on the field will reveal options to append ¼, ½, and ¾ to the value in the field.");
-define("EST_HLPMNU_DETAILS6","The [i]Summary[/i] field has a limit of 255 characters, including Spaces and Punctuation. This text is used in both the [i]Browse Properties[/i] and [i]Property View[/i] Pages.");
-define("EST_HLPMNU_DETAILS7","The [i]Description[/i] field is used only in the [i]Property View[/i] Page, which includes the text in the [i]Summary[/i] field as a preface.");
-define("EST_HLPMNU_DETAILS8","This field has unlimited characters and retains paragraph separation. Standard e107 BB Code is allowed, such as ");
-define("EST_HLPMNU_DETAILS9a","bold text");
-define("EST_HLPMNU_DETAILS9b","italic text");
-define("EST_HLPMNU_DETAILS9c","underline");
+define("EST_HLPMNU_DETAILS1","Adiciona detalhes gerais sobre a propriedade, incluindo Nome do Modelo (opcional), Ano de Construção, um breve Resumo e Descrição Detalhada.");
+define("EST_HLPMNU_DETAILS2","Clicar nos campos [i]Espaço Habitável[/i] ou [i]Tamanho do Telhado[/i] revela um botão com um valor automático calculado a partir da metragem quadrada/metros de todos os Espaços. Clica neste botão para definir o valor no campo.");
+define("EST_HLPMNU_DETAILS3","Os campos [i]Espaço Habitável[/i] e [i]Tamanho do Telhado[/i] incluem um botão para escolher a unidade de medida (Metros Quadrados ou Pés Quadrados). Estes estão ligados e alterar um alterará o outro");
+define("EST_HLPMNU_DETAILS4","Esta opção também define a definição predefinida ao adicionar um novo Espaço, embora possas definir uma medida diferente para cada Espaço individual.");
+define("EST_HLPMNU_DETAILS5","[i]Tamanho do Terreno[/i]. Opcional. Um botão ao lado do campo permite-te definir a unidade de medida. Clicar no campo revelará opções para acrescentar ¼, ½, e ¾ ao valor no campo.");
+define("EST_HLPMNU_DETAILS6","O campo [i]Resumo[/i] tem um limite de 255 caracteres, incluindo Espaços e Pontuação. Este texto é usado tanto nas Páginas [i]Navegar Propriedades[/i] como [i]Visualização de Propriedade[/i].");
+define("EST_HLPMNU_DETAILS7","O campo [i]Descrição[/i] é usado apenas na Página [i]Visualização de Propriedade[/i], que inclui o texto no campo [i]Resumo[/i] como prefácio.");
+define("EST_HLPMNU_DETAILS8","Este campo tem caracteres ilimitados e retém a separação de parágrafos. O BB Code padrão e107 é permitido, tal como ");
+define("EST_HLPMNU_DETAILS9a","texto a negrito");
+define("EST_HLPMNU_DETAILS9b","texto em itálico");
+define("EST_HLPMNU_DETAILS9c","sublinhado");
 define("EST_HLPMNU_DETAILS9d","etc.");
 
-define("EST_HLPMNU_FEATURESTAB1","Add additional information about this property by selecting any appropriate Feature for each of the available Categories.");
-define("EST_HLPMNU_FEATURESTAB2","Active Features may have addional predefined information you can select in the button's drop down menu");
-define("EST_HLPMNU_FEATURESTAB3","You can edit and add new Features for each Category directly in this form. Categories can only be added in the Data Presets section of this plugin.");
+define("EST_HLPMNU_FEATURESTAB1","Adiciona informação adicional sobre esta propriedade selecionando qualquer Característica apropriada para cada uma das Categorias disponíveis.");
+define("EST_HLPMNU_FEATURESTAB2","Características Ativas podem ter informação predefinida adicional que podes selecionar no menu dropdown do botão");
+define("EST_HLPMNU_FEATURESTAB3","Podes editar e adicionar novas Características para cada Categoria diretamente neste formulário. Categorias só podem ser adicionadas na secção Predefinições de Dados deste plugin.");
 
-define("EST_HLPMNU_GALLERY1","Add, edit, or remove Media for the Main Gallery of this property.");
-define("EST_HLPMNU_GALLERY2","Click the Upload Media button to Add Media - NOTE: Media uploaded directly from the Gallery Tab is separate from other Sections of the Property Listing.");
-define("EST_HLPMNU_GALLERY3","The [b]Available Media[/b] section lists all Media for this property that is NOT included in the main gallery.");
+define("EST_HLPMNU_GALLERY1","Adiciona, edita ou remove Media para a Galeria Principal desta propriedade.");
+define("EST_HLPMNU_GALLERY2","Clica no botão Carregar Media para Adicionar Media - NOTA: Media carregada diretamente do Separador Galeria é separada de outras Secções da Listagem de Propriedade.");
+define("EST_HLPMNU_GALLERY3","A secção [b]Media Disponível[/b] lista toda a Media para esta propriedade que NÃO está incluída na galeria principal.");
 
-define("EST_HLPMNU_GALLERY4","Drag & Drop Media from [b]Available Media[/b] to [b]Media In Use[/b] to build the Property's Media Gallery. ");
+define("EST_HLPMNU_GALLERY4","Arrasta e Larga Media de [b]Media Disponível[/b] para [b]Media em Uso[/b] para construir a Galeria de Media da Propriedade. ");
 
-define("EST_HLPMNU_GALLERY5","The [b]Media In Use[/b] section lists all media included in the Main Gallery");
-define("EST_HLPMNU_GALLERY6","Drag & Drop Media within the [b]Media In Use[/b] section to change their order in the Main Gallery, or drag to the [b]Available Media[/b] section to remove it from the Main Gallery. This order is automatically saved.");
+define("EST_HLPMNU_GALLERY5","A secção [b]Media em Uso[/b] lista toda a media incluída na Galeria Principal");
+define("EST_HLPMNU_GALLERY6","Arrasta e Larga Media dentro da secção [b]Media em Uso[/b] para alterar a sua ordem na Galeria Principal, ou arrasta para a secção [b]Media Disponível[/b] para removê-la da Galeria Principal. Esta ordem é guardada automaticamente.");
 
-define("EST_HLPMNU_INBOX00","Your inbox is where you can find all messages that visitors have sent to you.");
-define("EST_HLPMNU_INBOX01","These Messages are \"One-Way\" and are not meat to be replied to through the Estate Plugin.");
-define("EST_HLPMNU_INBOX02","Contact the Sender via whatever method they have included and mark the message as Read once you make contact.");
-define("EST_HLPMNU_INBOX03","Messages marked as Read that are older than [x] days will be automatically deleted.");
-define("EST_HLPMNU_INBOX04","This Tab has Messages that have been marked as Read. Messages in this Tab that are older than [x] days will be automatically deleted.");
-define("EST_HLPMNU_INBOX05","You can mark any Read message as Unread to prevent Automatic Deletion.");
+define("EST_HLPMNU_INBOX00","A tua caixa de entrada é onde podes encontrar todas as mensagens que os visitantes te enviaram.");
+define("EST_HLPMNU_INBOX01","Estas Mensagens são \"Unidirecionais\" e não se destinam a ser respondidas através do Plugin Imobiliário.");
+define("EST_HLPMNU_INBOX02","Contacta o Remetente através do método que incluíram e marca a mensagem como Lida assim que fizeres contacto.");
+define("EST_HLPMNU_INBOX03","Mensagens marcadas como Lidas que são mais antigas que [x] dias serão automaticamente eliminadas.");
+define("EST_HLPMNU_INBOX04","Este Separador tem Mensagens que foram marcadas como Lidas. Mensagens neste Separador que são mais antigas que [x] dias serão automaticamente eliminadas.");
+define("EST_HLPMNU_INBOX05","Podes marcar qualquer mensagem Lida como Não Lida para prevenir Eliminação Automática.");
 
-define("EST_HLPMNU_INIT5","Create your first Agent Profile for yourself, even if you are not a participating Agent.");
-define("EST_HLPMNU_INIT6","All Agents are attached to an Agency.");
-define("EST_HLPMNU_INIT7","Even if you are using this plugin just for yourself as a single Agent, you will still need to create a new Agency profile. You can choose what information is displayed to the public.");
-define("EST_HLPMNU_INIT10","Choose what contact options are available for the agent. This information will be visible to the public.");
-define("EST_HLPMNU_INIT11","The same options are available for Company and Agency Profiles and information can [i]bubble[/i] down from Company and Agency. If an Agent's Office Phone number is left blank or not included, this plugin will display the Office Phone number for the Agency or Company, if available.");
-define("EST_HLPMNU_INIT12","The default Website for a new Agent, Agency, or Company is this website, followed by a special ShortCode for the corresponding section. You can change this to a Custom Page or an external website. Click the Sync button to restore to the default.");
-define("EST_HLPMNU_INIT14","(removed)");
-define("EST_HLPMNU_INIT15","Like the Agent's Profile Image, the default company logo defaults to the website logo. Hover your mouse over the Company Logo and click the Source Button to upload a custom Company Logo.");
-define("EST_HLPMNU_INIT16","Every Company needs to have at least one Agency to which Agents belong. You can have a single Agency (eg. Main Office) or have multiple Agencies (locations), and Agents can be designated to a specific Agency or set to All Agencies. Admins with the User Class Estate Manager can Add, Edit, or Remove Agencies, Agents, and Listings.");
-define("EST_HLPMNU_INIT17","The Agency Logo defaults to whatever the Company Logo has been set to. Hover your mouse over the Agency Logo and click the Source Button to upload a custom Agency Logo.");
-define("EST_HLPMNU_INIT18","You can choose to include any Agency's location on the vairous Maps displayed either on the Listings Main Page and/or each individual Property Listing Page.");
+define("EST_HLPMNU_INIT5","Cria o teu primeiro Perfil de Agente para ti mesmo, mesmo que não sejas um Agente participante.");
+define("EST_HLPMNU_INIT6","Todos os Agentes estão ligados a uma Agência.");
+define("EST_HLPMNU_INIT7","Mesmo que estejas a usar este plugin apenas para ti como um único Agente, ainda precisarás de criar um novo perfil de Agência. Podes escolher que informação é mostrada ao público.");
+define("EST_HLPMNU_INIT10","Escolhe que opções de contacto estão disponíveis para o agente. Esta informação será visível ao público.");
+define("EST_HLPMNU_INIT11","As mesmas opções estão disponíveis para Perfis de Empresa e Agência e a informação pode [i]descer[/i] da Empresa e Agência. Se o Número de Telefone do Escritório de um Agente estiver em branco ou não incluído, este plugin mostrará o Número de Telefone do Escritório da Agência ou Empresa, se disponível.");
+define("EST_HLPMNU_INIT12","O Website predefinido para um novo Agente, Agência ou Empresa é este website, seguido por um Código Curto especial para a secção correspondente. Podes alterar isto para uma Página Personalizada ou um website externo. Clica no botão Sincronizar para restaurar para o predefinido.");
+define("EST_HLPMNU_INIT14","(removido)");
+define("EST_HLPMNU_INIT15","Como a Imagem do Perfil do Agente, o logótipo predefinido da empresa é predefinido para o logótipo do website. Passa o rato sobre o Logótipo da Empresa e clica no Botão Fonte para carregar um Logótipo de Empresa personalizado.");
+define("EST_HLPMNU_INIT16","Cada Empresa precisa de ter pelo menos uma Agência à qual os Agentes pertencem. Podes ter uma única Agência (ex. Escritório Principal) ou ter múltiplas Agências (localizações), e os Agentes podem ser designados para uma Agência específica ou definidos para Todas as Agências. Administradores com a Classe de Utilizador Gestor Imobiliário podem Adicionar, Editar ou Remover Agências, Agentes e Listagens.");
+define("EST_HLPMNU_INIT17","O Logótipo da Agência é predefinido para o que o Logótipo da Empresa foi definido. Passa o rato sobre o Logótipo da Agência e clica no Botão Fonte para carregar um Logótipo de Agência personalizado.");
+define("EST_HLPMNU_INIT18","Podes escolher incluir a localização de qualquer Agência nos vários Mapas mostrados tanto na Página Principal de Listagens como/ou em cada página individual de Listagem de Propriedade.");
 
-define("EST_HLPMNU_LISTING1","Add general information about this property's listing, including a unique Listing Name.");
-define("EST_HLPMNU_LISTING2","Most Select Dropdown Lists thoughout this plugin include an Edit Button which allows you to quickly Add and Edit Options for that Dropdown.");
-define("EST_HLPMNU_LISTING3","Many Dropdown Lists may also filter options in other Dropdown Lists, and therfore may require a selected value before you can Select, Add, or Edit them.");
-define("EST_HLPMNU_LISTING4","Required: [i]Zoning Category[/i] selector sets the Primary Category for the Property and is used to filter many other options available in this plugin's forms, such as the [i]Property Type[/i] selector below it.");
-define("EST_HLPMNU_LISTING5","Required: The [i]Property Type[/i] selector further categorizes the Property and sets addtional filters used thoughout this plugin's forms.");
+define("EST_HLPMNU_LISTING1","Adiciona informação geral sobre a listagem desta propriedade, incluindo um Nome de Listagem único.");
+define("EST_HLPMNU_LISTING2","A maioria das Listas Dropdown em todo este plugin inclui um Botão Editar que te permite Adicionar e Editar rapidamente Opções para essa Dropdown.");
+define("EST_HLPMNU_LISTING3","Muitas Listas Dropdown podem também filtrar opções noutras Listas Dropdown, e portanto podem requerer um valor selecionado antes de poderes Selecionar, Adicionar ou Editá-las.");
+define("EST_HLPMNU_LISTING4","Obrigatório: o seletor [i]Categoria de Zoneamento[/i] define a Categoria Primária para a Propriedade e é usado para filtrar muitas outras opções disponíveis nos formulários deste plugin, como o seletor [i]Tipo de Propriedade[/i] abaixo dele.");
+define("EST_HLPMNU_LISTING5","Obrigatório: O seletor [i]Tipo de Propriedade[/i] categoriza ainda mais a Propriedade e define filtros adicionais usados em todo os formulários deste plugin.");
 
-define("EST_HLPMNU_PREF_TEMPLATES01","Set options for the List and View Page Templates");
-define("EST_HLPMNU_PREF_TEMPLATES02","Choose Custom Templates to use for this property's View Page");
-define("EST_HLPMNU_PREF_TEMPLATES03","You can also re-arrange the layout and choose to show or hide different sections if the selected templates support that feature");
-define("EST_HLPMNU_PREF_MENU01","Set Options for the Estate Menu");
+define("EST_HLPMNU_PREF_TEMPLATES01","Define opções para os Modelos de Página de Lista e Visualização");
+define("EST_HLPMNU_PREF_TEMPLATES02","Escolhe Modelos Personalizados para usar na Página de Visualização desta propriedade");
+define("EST_HLPMNU_PREF_TEMPLATES03","Também podes reorganizar o layout e escolher mostrar ou ocultar diferentes secções se os modelos selecionados suportarem essa funcionalidade");
+define("EST_HLPMNU_PREF_MENU01","Define Opções para o Menu Imobiliário");
 
-define("EST_HLPMNU_PRESETS30","These are lists of preset data used in your listings. You can add & edit this information directly in the Listing Form, too.");
-define("EST_HLPMNU_PRESETS33","This populates a drop-down list on the Property Listing Form used to define what type of property it is (Single Family, Apartment, Condo, etc).");
-define("EST_HLPMNU_PRESETS34","Spaces Groups are used to group Spaces¹ on the Listing View page");
-define("EST_HLPMNU_PRESETZONESEL","Select a Zoning Category to edit the asociated data. Click the Edit Button to add or edit Zoning Categories");
-define("EST_HLPMNU_PROPLIST1","Welcome to the Estate Property Listings Plugin for the e107 Website System.");
-define("EST_HLPMNU_PROPLIST2","Watch this space for help with each section of the Create/Edit modes.");
-define("EST_HLPMNU_PROPLIST3","Listing Page");
-define("EST_HLPMNU_PROPLIST4","This page is a listing of all properties that you can access. Click the [+] button above the list to add a new property, or click the edit icon of any listing to edit that property.");
-define("EST_HLPMNU_PROPLIST5","By default, properties are sorted by Listing Date, newest first. Click any column headding to sort by that column's values. Use the Filter options to filter the list if needed.");
-define("EST_HLPMNU_PROPLIST6","Thumbnails");
-define("EST_HLPMNU_PROPLIST7","Thumbnails are cached by your browser and may display in incorrect image if you have updated the file. Click any thumbnail in the list to reload a fresh version of the image.");
-define("EST_HLPMNU_PROPLIST8","Double-Click any thumbnail to choose a different thumbnail for this Property");
+define("EST_HLPMNU_PRESETS30","Estas são listas de dados predefinidos usados nas tuas listagens. Também podes adicionar & editar esta informação diretamente no Formulário de Listagem.");
+define("EST_HLPMNU_PRESETS33","Isto preenche uma lista dropdown no Formulário de Listagem de Propriedade usado para definir que tipo de propriedade é (Família Única, Apartamento, Condomínio, etc).");
+define("EST_HLPMNU_PRESETS34","Grupos de Espaços são usados para agrupar Espaços¹ na página de Visualização da Listagem");
+define("EST_HLPMNU_PRESETZONESEL","Seleciona uma Categoria de Zoneamento para editar os dados associados. Clica no Botão Editar para adicionar ou editar Categorias de Zoneamento");
+define("EST_HLPMNU_PROPLIST1","Bem-vindo ao Plugin de Listagens de Propriedades Imobiliárias para o Sistema de Website e107.");
+define("EST_HLPMNU_PROPLIST2","Observa este espaço para ajuda com cada secção dos modos Criar/Editar.");
+define("EST_HLPMNU_PROPLIST3","Página de Listagem");
+define("EST_HLPMNU_PROPLIST4","Esta página é uma listagem de todas as propriedades a que podes aceder. Clica no botão [+] acima da lista para adicionar uma nova propriedade, ou clica no ícone de edição de qualquer listagem para editar essa propriedade.");
+define("EST_HLPMNU_PROPLIST5","Por predefinição, as propriedades são ordenadas por Data de Listagem, mais recente primeiro. Clica em qualquer cabeçalho de coluna para ordenar pelos valores dessa coluna. Usa as opções de Filtro para filtrar a lista se necessário.");
+define("EST_HLPMNU_PROPLIST6","Miniaturas");
+define("EST_HLPMNU_PROPLIST7","As miniaturas são armazenadas em cache pelo teu navegador e podem mostrar uma imagem incorreta se atualizaste o ficheiro. Clica em qualquer miniatura na lista para recarregar uma versão fresca da imagem.");
+define("EST_HLPMNU_PROPLIST8","Duplo-Clica em qualquer miniatura para escolher uma miniatura diferente para esta Propriedade");
 
-define("EST_HLPMNU_PROPLIST9","Start a new listing by adding some basic information and clicking the \"Save & Continue\" button. ");
-define("EST_HLPMNU_PROPLIST9a","You will have the opportunity to change this data in the next step, including adding new options to drop-down selections.");
+define("EST_HLPMNU_PROPLIST9","Inicia uma nova listagem adicionando alguma informação básica e clicando no botão \"Guardar & Continuar\". ");
+define("EST_HLPMNU_PROPLIST9a","Terás a oportunidade de alterar estes dados no próximo passo, incluindo adicionar novas opções a seleções dropdown.");
 
+define("EST_HLPMNU_SCHED0","O sistema de Agendamento automatiza a publicação desta listagem quando o Estado está definido como Ativo. Se o Estado estiver definido como outra coisa, então estas datas são ignoradas.");
+define("EST_HLPMNU_SCHED5","A tabela de Eventos lista o calendário de Eventos da Propriedade.");
+define("EST_HLPMNU_SCHED6","É aqui que podes definir datas e horários para Visitas Privadas e Eventos de Portas Abertas ");
+define("EST_HLPMNU_SEO1","Opções de Otimização para Motores de Busca");
+define("EST_HLPMNU_SPACES1","Espaços podem ser qualquer coisa. Um Quarto, uma Garagem, um Pátio, até uma Área Comum num empreendimento.");
+define("EST_HLPMNU_SPACES2","Espaços são divididos em Grupos Personalizados que definem secções da página de visualização da Propriedade. Um grupo pode ser Piso Principal, outro grupo pode ser Quintal ou o que seja. Tu podes criar Grupos quando adicionas um novo Espaço.");
+define("EST_HLPMNU_SPACES3","Arrasta e Larga Espaços e Grupos usando os Ícones Cima/Baixo para alterar a sua ordem, que é guardada automaticamente. Podes até reatribuir Espaços arrastando-os para outro Grupo.");
+define("EST_HLPMNU_SPACES4","Grupos são guardados para cada propriedade individual, mas também são guardados para uso em qualquer outra propriedade com o mesmo Tipo de Zoneamento.");
+define("EST_HLPMNU_SPACES5","Cada espaço é ainda definido atribuindo-o a uma Categoria personalizada. Como Grupos, Categorias são guardadas para uso noutros Espaços e Listagens de Propriedade com o mesmo Tipo de Zoneamento.");
+define("EST_HLPMNU_SPACES6","Cada espaço tem uma lista de Características que podes preencher com detalhes sobre esse espaço. Estas Características estão ligadas à Categoria do Espaço para uso noutros Espaços com a mesma Categoria, e guardadas em Listagens de Propriedade com o mesmo Tipo de Zoneamento.");
+define("EST_HLPMNU_SPACES7","Media pode ser adicionada a cada Espaço e será incluída numa mini-galeria. Media adicionada aqui também estará disponível para adicionar à Galeria Principal para a Listagem de Propriedade.");
+define("EST_HLPMNU_SPACES8","Como a Galeria Principal, a Media será mostrada na mini-galeria na mesma ordem que aparecem na lista. Arrasta e Larga as Miniaturas para reorganizar a sua ordem.");
 
+define("EST_HLPMNU_USERS00", "Uma lista de todos os Membros do teu website, incluindo Tu, outros Administradores e todos os outros Membros.");
+define("EST_HLPMNU_USERS01", "Concede acesso à Área de Administração deste plugin. Isto estabelece o Utilizador como um Agente da tua empresa.");
+define("EST_HLPMNU_USERS02", "<i>Sempre Marcado.</i> Concede Acesso ao Formulário de Listagens a partir da área Front End do teu website.");
+define("EST_HLPMNU_USERS03a", "As Preferências Imobiliárias atualmente NÃO PERMITEM que utilizadores não administradores publiquem as suas próprias listagens.");
+define("EST_HLPMNU_USERS03b", "As Preferências Imobiliárias permitem que utilizadores não administradores publiquem as suas próprias listagens sem aceder à Área de Administração deste website.");
+define("EST_HLPMNU_USERS04", "Define o Nível de Acesso de um Administrador com Permissão para aceder à Área de Administração deste plugin atribuindo uma Classe de Utilizador especial.");
+define("EST_HLPMNU_USERS05", "O teu próprio Nível de Acesso determina que Nível podes definir para outros utilizadores e para quem os podes definir. ");
 
-define("EST_HLPMNU_SCHED0","The Scheduling system automates the publication of this listing when the Status is set to Active. If the Status is set to anything else, then these dates are ignored.");
-define("EST_HLPMNU_SCHED5","The Events table lists the Property's Events schecule.");
-define("EST_HLPMNU_SCHED6","This is where you can set up dates and times for Private Showings and Open House Events ");
-define("EST_HLPMNU_SEO1","Search Engine Optimization Options");
-define("EST_HLPMNU_SPACES1","Spaces can be anything. A Bedroom, a Garage, a Patio, even a Common Area in a development.");
-define("EST_HLPMNU_SPACES2","Spaces are divided into Custom Groups that define sections of the Property's display page. One group might be Main Floor, another group might be Back Yard or whatever. You get to create Groups when you add a new Space.");
-define("EST_HLPMNU_SPACES3","Drag & Drop Spaces and Groups using the Up/Down Icons to change their order, which is saved automatically. You can even re-assign Spaces by dragging them to another Group.");
-define("EST_HLPMNU_SPACES4","Groups are saved for each individual property, but are also saved for use in any other property with the same Zoning Type.");
-define("EST_HLPMNU_SPACES5","Each space is further defined by assigning it to a custom Category. Like Groups, Categories are saved for use in other Spaces and Property Listings with the same Zoning Type.");
-define("EST_HLPMNU_SPACES6","Each space has a list of Features that you can populate with details about that space. These Features are keyed to the Space's Category for use in other Spaces with the same Category, and saved across Property Listings with the same Zoning Type.");
-define("EST_HLPMNU_SPACES7","Media can be added to each Space and will be included a mini-gallery. Media added here will also be available to add to the Main Gallery for the Property Listing.");
-define("EST_HLPMNU_SPACES8","Like the Main Gallery, Media will be displayed in the mini-gallery in the same order as they appear in the list. Drag & Drop the Thumbnails to rearrange their order.");
+define("EST_HLPMNU_USERS07", "Uma lista de Agentes atualmente atribuídos a esta Agência.");
+define("EST_HLPMNU_USERS08", "Podes adicionar novos Agentes a esta Agência escolhendo utilizadores da tabela Não-Administrador.");
 
-define("EST_HLPMNU_USERS00", "A list of all Members of your website, including Yourself, other Admins, and all other Members.");
-define("EST_HLPMNU_USERS01", "Grants access to the Admin Area of this plugin. This establishes the User as an Agent of your company.");
-define("EST_HLPMNU_USERS02", "<i>Always Checked.</i> Grant Access to the Listings Form from the Front End area of your website.");
-define("EST_HLPMNU_USERS03a", "The Estate Preferences currently DO NOT allow Non admin users to post their own listings.");
-define("EST_HLPMNU_USERS03b", "The Estate Preferences allows Non admin users to post their own listings without accessing the Admin Area of this website.");
-define("EST_HLPMNU_USERS04", "Sets the Access Level of an Admin with Permission to access the Admin Area of this plugin by assigning a special User Class.");
-define("EST_HLPMNU_USERS05", "Your own Access Level determines what Level you can set for other users and who you can set them for. ");
+define("EST_HLPMNU_USERS11", "Administradores Principais não podem ser alterados. Desmarcar a caixa de Acesso à Área de Administração removerá a permissão para aceder à Área de Administração deste plugin. Se o Utilizador for um Administrador com permissões para outras áreas deste website, o seu Estado de Administrador permanecerá, caso contrário o seu estado como Administrador será removido.");
 
-define("EST_HLPMNU_USERS07", "A list of Agents currently assigned to this Agency.");
-define("EST_HLPMNU_USERS08", "You can add new Agents to this Agency by choosing users from the Non-Admin table.");
+define("EST_HLPMNU_USERS20", "Usa este formulário para adicionar rapidamente um Novo Utilizador e criar um novo Perfil de Agente.");
+define("EST_HLPMNU_USERS21", "Utilizadores adicionados via este formulário serão automaticamente tornados Administradores com Privilégios para este Plugin e concedido o nível de acesso Agente Imobiliário por predefinição.");
+define("EST_HLPMNU_USERS22", "Alguns itens para Dados de Utilizador e Dados de Agente são combinados neste formulário, como Nome de Exibição do Utilizador e Nome do Agente.");
+define("EST_HLPMNU_USERS23", "Podes carregar uma imagem de Perfil que será adicionada como o Avatar do utilizador e107. Uma imagem de Perfil de Agente personalizada também pode ser adicionada assim que o novo utilizador tiver sido criado.");
 
-define("EST_HLPMNU_USERS11", "Main Admins cannot be changed. Un-checking the Admin Area Access box will remove permission to access the Admin Area of this plugin. If the User is an Admin with permissions for other areas of this website, their Admin Status will remain, otherwise their status as an Admin will be removed.");
+define("EST_INSTADDEDMAINADMIN","foi atribuído como um Administrador Imobiliário");
 
-define("EST_HLPMNU_USERS20", "Use this form to quickly add a New User and create a new Agent Profile.");
-define("EST_HLPMNU_USERS21", "Users added via this form will automatically be made an Admin with Privilages for this Plugin and granted the Estate Agent access level by default.");
-define("EST_HLPMNU_USERS22", "Some items for User Data and Agent Data are combined on this form, such as User Display Name and Agent Name.");
-define("EST_HLPMNU_USERS23", "You can upload a Profile image that will beadded as that user's e107 User Avatar. A custom Agent Profile image can also be added once the neew user has been created.");
+define("EST_INSTSETUCLEVOK","As definições de Visibilidade e Gestão DEVEM SER definidas para ADMINISTRADOR PRINCIPAL para as Classes de Utilizador especiais deste plugin. Se isto não for feito, os utilizadores poderão definir o seu próprio nível de acesso para si mesmos na sua página de Definições de Utilizador. A Configuração tentou fazer isto por ti, os resultados devem estar listados abaixo.");
+define("EST_INSTSETUCLEVNOK1","Houve alguns erros ao definir as novas Classes de Utilizador");
+define("EST_INSTSETUCLEVNOK2","Por favor, vai à página Classes de Utilizador e define as definições de Visibilidade e Gestão para Administrador Principal para ADMINISTRADOR IMOBILIÁRIO, GESTOR IMOBILIÁRIO e AGENTE IMOBILIÁRIO");
 
-
-
-
-define("EST_INSTADDEDMAINADMIN","has been assigned as an Estate Admin");
-
-
-define("EST_INSTSETUCLEVOK","Visibility and Management settings MUST BE set to MAIN ADMIN for this plugin's special User Classes. If this is not done, users will be able to set their own access level for themselves on their User Settings page. Setup has attempted to do this for you, results should be listed below.");
-define("EST_INSTSETUCLEVNOK1","There were some errors setting the new User Classes");
-define("EST_INSTSETUCLEVNOK2","Please go to the User Classes page and set the Visibility and Management settings to Main Admin for ESTATE ADMIN, ESTATE MANAGER, and ESTATE AGENT");
-
-define("EST_INSTRNEXT1","Clicking the button below will take you to your Agent Profile. Be sure to review the Estate Preferences and Agency Locations and visit the Users List to assign members of your website as Estate Agents, Estate Managers, and Estate Admins.");
-define("EST_INSTRDONE","Get Started");
-define("EST_INSTRDONE1","Start Using the Estate plugin");
+define("EST_INSTRNEXT1","Clicar no botão abaixo levar-te-á ao teu Perfil de Agente. Certifica-te de rever as Preferências Imobiliárias e Localizações de Agências e visita a Lista de Utilizadores para atribuir membros do teu website como Agentes Imobiliários, Gestores Imobiliários e Administradores Imobiliários.");
+define("EST_INSTRDONE","Começar");
+define("EST_INSTRDONE1","Começar a Usar o plugin Imobiliário");
