@@ -462,9 +462,6 @@ define("EST_PREF_DEFLOCALESEL2","Use PHP Number formatting to display the Listin
 define("EST_PREF_DEFLOCALESEL3","Set the Locale Language and Currency Code ($, €, £, etc) to the desired setting.");
 
 
-
-
-
 define("EST_PROP_LANDSIZE", "Property Size");
 define("EST_PROP_YEARBUILT", "Year Built");
 

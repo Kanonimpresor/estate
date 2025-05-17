@@ -10,7 +10,7 @@
 +----------------------------------------------------------------------------+
 */
 
-if(!defined("LAN_PREFS")){define("LAN_PREFS","Preferencias");}
+//if(!defined("LAN_PREFS")){define("LAN_PREFS","Preferencias");}
 
 define("EST_PLUGNAME", "Agencia Inmobiliaria");
 define("EST_PLUGCONFIG1", "Configurar Agencia Inmobiliaria");
@@ -143,6 +143,7 @@ define("EST_GEN_CLICKTHE","Haz clic en");
 define("EST_GEN_CLIENT","Cliente");
 define("EST_GEN_CLOSE","Cerrar");
 define("EST_GEN_CLOSING","Cierre");
+define("EST_GEN_COMINGSOON","Próximamente");
 define("EST_GEN_COMMUNITY", "Comunidad");
 define("EST_GEN_COMMUNITYOF","Comunidad de");
 define("EST_GEN_COMMUNITYPREVIEW", "Vista previa de la comunidad");
@@ -150,13 +151,11 @@ define("EST_GEN_COMMUNITYSPACES", "Espacios de la comunidad");
 define("EST_GEN_COMMUNITYSUBDIV", "Comunidad/Urbanización");
 define("EST_GEN_COMPANY", "Empresa");
 define("EST_GEN_COMPANIES", "Empresas");
+define("EST_GEN_COMPLETE","Completo");
 define("EST_GEN_CONFIRMED","Confirmado");
 define("EST_GEN_CONDITION","Estado de la propiedad");
 define("EST_GEN_CONTACT","Contacto");
 define("EST_GEN_CONTACTS","Contactos");
-define("EST_GEN_COMINGSOON","Próximamente");
-define("EST_GEN_COMMUNITY","Comunidad");
-define("EST_GEN_COMPLETE","Completo");
 define("EST_GEN_COMPLEX","Complejo");
 define("EST_GEN_CREATE","Crear");
 define("EST_GEN_CREATEDBY","Creado por");
@@ -456,7 +455,7 @@ define("EST_PREF_DEFLOCALESEL1","Muestra el precio como un número entero sin se
 define("EST_PREF_DEFLOCALESEL2","Usa el formateo de números de PHP para mostrar el precio según la configuración regional seleccionada.");
 define("EST_PREF_DEFLOCALESEL3","Establece el idioma y el código de moneda ($, €, £, etc) deseados.");
 
-define("EST_PROP_INTSIZE", "Espacio interior");
+
 define("EST_PROP_LANDSIZE", "Tamaño de la propiedad");
 define("EST_PROP_YEARBUILT", "Año de construcción");
 
@@ -556,7 +555,6 @@ define("EST_PROP_ROOFSIZE", "Superficie total");
 define("EST_PROP_SEF", "URL amigable");
 define("EST_PROP_SELAGNCY", "Selecciona agencia");
 define("EST_PROP_SELAGNT", "Selecciona agente");
-define("EST_PROP_SEF", "URL amigable");
 define("EST_PROP_MAPADDR","Búsqueda de dirección en el mapa");
 
 define("EST_PROP_STATE", "Comunidad autónoma");
@@ -623,7 +621,7 @@ define("EST_PROP_MODELNAMEHLP","Opcional: los nombres de modelo pueden usarse pa
 define("EST_PROP_DATELIVEHLP", "La fecha en la que el anuncio será completamente visible para el público");
 define("EST_PROP_DATEPREVWHLP", "La fecha en la que los miembros de la web pueden previsualizar este anuncio como si estuviera publicado. Puede ser antes o después de ".EST_PROP_DATETEASE." pero debe ser igual o anterior a la fecha de publicación.");
 define("EST_PROP_DATEPULLHLP", "La fecha en la que este anuncio finalizará automáticamente. Déjalo en blanco para que el anuncio permanezca hasta que lo cambies manualmente a Inactivo");
-define("EST_PROP_DATETEASEHLP", "La fecha en la que este anuncio se hace visible, pero con datos limitados para el público. Puedes configurar qué datos se incluirán en el formulario de ".LAN_PREFS.".");
+define("EST_PROP_DATETEASEHLP", "La fecha en la que este anuncio se hace visible, pero con datos limitados para el público. Puedes configurar qué datos se incluirán en el formulario de referencias.");
 
 define("EST_PROP_ORIGPRICEHLP", "El precio original debe ser un número entero (0-9).");
 define("EST_PROP_PARCELIDHLP", "Opcional. El ID de parcela para esta propiedad");
@@ -720,7 +718,7 @@ define("EST_INSTR004e","Esta lista muestra los usuarios que tienes permiso para 
 define("EST_INSTR004f","También puedes añadir rápidamente un nuevo usuario con un nuevo perfil de agente a tu web e107 desde este plugin. Los nuevos usuarios añadidos desde este formulario tendrán automáticamente estado de administrador con acceso solo a este plugin. La información de este nuevo usuario se usará para crear un nuevo perfil de agente que podrás editar después. Este formulario imita el formulario rápido de añadir usuario de e107 (v2.3.3) pero también permite subir su imagen de perfil si la tienes.");
 define("EST_INSTR004g","NOTA: Un administrador principal puede controlar quién puede acceder al formulario de añadir nuevo usuario desde la página de preferencias del plugin Estate. Por defecto solo los Admins Principales y Admins Inmobiliarios pueden acceder a este formulario. Puedes permitir que los Gerentes Inmobiliarios también accedan, aunque cualquier nuevo usuario añadido se asignará a la misma agencia que el gerente.");
 
-define("EST_INSTR004g","Los Gerentes Inmobiliarios tienen un botón de menú llamado Perfil de agencia, que les permite modificar la agencia a la que están asignados, incluyendo añadir y quitar agentes de esa agencia. Además, la pestaña de lista de agentes permite a los gerentes seleccionar y añadir usuarios de tu web e107 para asignarlos como agentes.");
+define("EST_INSTR004h","Los Gerentes Inmobiliarios tienen un botón de menú llamado Perfil de agencia, que les permite modificar la agencia a la que están asignados, incluyendo añadir y quitar agentes de esa agencia. Además, la pestaña de lista de agentes permite a los gerentes seleccionar y añadir usuarios de tu web e107 para asignarlos como agentes.");
 define("EST_INSTR004h","La pestaña de lista de agentes muestra los agentes asignados actualmente a esa agencia y también los usuarios de la web e107 que no están asignados a otra agencia.");
 define("EST_INSTR004i","***");
 define("EST_INSTR004j","***");
