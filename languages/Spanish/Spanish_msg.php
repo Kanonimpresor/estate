@@ -1,78 +1,89 @@
 <?php
-define("EST_MSG_APROP", "a property");
-define("EST_MSG_CCME","Send a copy of this email to myself");
-define("EST_MSG_CONSBTN", "I agree to the Terms for sending this message");
-define("EST_MSG_CONSTXT1", "You agree to allow our website to send a message on your behalf and to sharing your contact information with the Seller/Agent chosen and the Administrators of this website. You also consent to this website retaining that Contact Information for future use by the Seller/Agent and Administrators and agree to hold the owner and operators of this website harmless should your information be obtained and/or used by \"Bad Actors\" through events beyond our control.");
-define("EST_MSG_CONSTXT2", "You consent to allowing this website to store a cookie on your device which is required for keeping a record of Properties that you have Saved as well as any communications with Seller and/or Agents, and allow this website to retain your IP address for future reference regarding this correspondence.");
-define("EST_MSG_CONSTXT3", "This website uses cookies to synchronize your device with our server. Click OK to Agree and continue.");
-define("EST_MSG_DELETE","Delete Message");
-define("EST_MSG_DELALERT","Click OK to Delete this Message");
-define("EST_MSG_DONOTRPLY","DO NOT REPLY TO THIS EMAIL");
-define("EST_MSG_EMSENT0","There was an error sending your message. Please confirm all fields are filled in and are correct.");
-define("EST_MSG_EMSENT1","An email has been sent to");
-define("EST_MSG_EMSENT4","A copy of the email has been sent to");
-define("EST_MSG_EMSENT5","as well.");
-define("EST_MSG_END","Please contact me as soon as you can.");
-define("EST_MSG_ERRNOTAGENT","This User is not able to sell another person's home.");
-define("EST_MSG_ERRUIDNOMATCH","Processed To User ID  does not match raw To User ID.");
-define("EST_MSG_ERRTOUSRNOTFOUND","To User ID Not Found in User table.");
-define("EST_MSG_ERRNOUID","Error: No User ID submitted with form.");
-define("EST_MSG_ERRTOUSRNOEMAIL","To User Email Not Found.");
-define("EST_MSG_ERRFROMUSRNOEMAIL","Sender's Email Address is Required.");
-define("EST_MSG_ERRFROMNOPHONE","A valid Phone Number is required.");
-define("EST_MSG_FNG","Please check that the form is properly completed");
-define("EST_MSG_FROMEMAIL","From Email");
-define("EST_MSG_FORYOU","Messages For You");
-define("EST_MSG_INBOX","Inbox");
-define("EST_MSG_INBOXNOTE1","Please mark your messages as read once you have replied via the contact information provided.");
-define("EST_MSG_IWANTOFFERA", "I want to make an Offer on this Property");
-define("EST_MSG_IWANTOFFERB", "I want to make a Backup Offer on this Property");
-define("EST_MSG_IWANTVIEW", "Request a Showing of this Property");
-define("EST_MSG_IWANTSELL", "I would like you to sell my property");
-define("EST_MSG_IWANTOTHER", "I have a different question");
-define("EST_MSG_MARKREAD", "Mark As Read");
-define("EST_MSG_MARKUNREAD", "Mark As Unread");
-define("EST_MSG_MSGTXTPL", "Add a brief message here...");
-define("EST_MSG_MYCONTINFO","My Contact Information");
-define("EST_MSG_NEWMESSAGES","New Messages");
-define("EST_MSG_NOTMEMBER","Sender is Not a Member");
-define("EST_MSG_OFFERS","Offers");
-define("EST_MSG_OTHERQUESTIONS","Other Questions");
-define("EST_MSG_PMALSOSENT","has also been notified via this website's Private Messaging system");
-define("EST_MSG_PMSENT","PM Sent");
-define("EST_MSG_PMNOTSENT","PM Not Sent");
-define("EST_MSG_PREVMSG","Previous Messages");
-define("EST_MSG_PRIVATEMSG","Private Message");
-define("EST_MSG_QUOTEREQ","Quote Requests");
-define("EST_MSG_REACHMAX1","You have reached the maximum number of messages that you can send to");
-define("EST_MSG_REACHMAX2","regarding this listing");
+/*
++ ----------------------------------------------------------------------------+
+|     e107 website system - Language File.
+|
+|     $Source:  $
+|     $Revision$
+|     $Date$
+|     $Author$
++----------------------------------------------------------------------------+
+*/
+
+define("EST_MSG_APROP", "una propiedad");
+define("EST_MSG_CCME","Enviarme una copia de este correo");
+define("EST_MSG_CONSBTN", "Acepto los Términos para enviar este mensaje");
+define("EST_MSG_CONSTXT1", "Aceptas permitir que nuestro sitio web envíe un mensaje en tu nombre y compartir tu información de contacto con el Vendedor/Agente elegido y los Administradores de este sitio web. También consientes que este sitio web conserve esa Información de Contacto para uso futuro por parte del Vendedor/Agente y Administradores y aceptas eximir de responsabilidad al propietario y operadores de este sitio web si tu información es obtenida y/o utilizada por \"actores maliciosos\" por causas fuera de nuestro control.");
+define("EST_MSG_CONSTXT2", "Consientes que este sitio web almacene una cookie en tu dispositivo, necesaria para guardar un registro de las Propiedades que has guardado así como cualquier comunicación con el Vendedor y/o Agentes, y permites que este sitio web conserve tu dirección IP para referencia futura respecto a esta correspondencia.");
+define("EST_MSG_CONSTXT3", "Este sitio web utiliza cookies para sincronizar tu dispositivo con nuestro servidor. Haz clic en OK para aceptar y continuar.");
+define("EST_MSG_DELETE","Eliminar mensaje");
+define("EST_MSG_DELALERT","Haz clic en OK para eliminar este mensaje");
+define("EST_MSG_DONOTRPLY","NO RESPONDAS A ESTE CORREO");
+define("EST_MSG_EMSENT0","Hubo un error al enviar tu mensaje. Por favor, asegúrate de que todos los campos estén completos y sean correctos.");
+define("EST_MSG_EMSENT1","Se ha enviado un correo a");
+define("EST_MSG_EMSENT4","También se ha enviado una copia del correo a");
+define("EST_MSG_EMSENT5","también.");
+define("EST_MSG_END","Por favor, contáctame lo antes posible.");
+define("EST_MSG_ERRNOTAGENT","Este usuario no puede vender la casa de otra persona.");
+define("EST_MSG_ERRUIDNOMATCH","El ID de usuario procesado no coincide con el ID de usuario original.");
+define("EST_MSG_ERRTOUSRNOTFOUND","ID de usuario de destino no encontrado en la tabla de usuarios.");
+define("EST_MSG_ERRNOUID","Error: No se envió un ID de usuario con el formulario.");
+define("EST_MSG_ERRTOUSRNOEMAIL","Correo electrónico del destinatario no encontrado.");
+define("EST_MSG_ERRFROMUSRNOEMAIL","Se requiere la dirección de correo electrónico del remitente.");
+define("EST_MSG_ERRFROMNOPHONE","Se requiere un número de teléfono válido.");
+define("EST_MSG_FNG","Por favor, revisa que el formulario esté correctamente completado");
+define("EST_MSG_FROMEMAIL","Correo del remitente");
+define("EST_MSG_FORYOU","Mensajes para ti");
+define("EST_MSG_INBOX","Bandeja de entrada");
+define("EST_MSG_INBOXNOTE1","Por favor, marca tus mensajes como leídos una vez hayas respondido usando la información de contacto proporcionada.");
+define("EST_MSG_IWANTOFFERA", "Quiero hacer una oferta por esta propiedad");
+define("EST_MSG_IWANTOFFERB", "Quiero hacer una oferta de respaldo por esta propiedad");
+define("EST_MSG_IWANTVIEW", "Solicitar una visita a esta propiedad");
+define("EST_MSG_IWANTSELL", "Quiero que vendas mi propiedad");
+define("EST_MSG_IWANTOTHER", "Tengo otra pregunta");
+define("EST_MSG_MARKREAD", "Marcar como leído");
+define("EST_MSG_MARKUNREAD", "Marcar como no leído");
+define("EST_MSG_MSGTXTPL", "Añade aquí un mensaje breve...");
+define("EST_MSG_MYCONTINFO","Mi información de contacto");
+define("EST_MSG_NEWMESSAGES","Nuevos mensajes");
+define("EST_MSG_NOTMEMBER","El remitente no es miembro");
+define("EST_MSG_OFFERS","Ofertas");
+define("EST_MSG_OTHERQUESTIONS","Otras preguntas");
+define("EST_MSG_PMALSOSENT","también ha sido notificado a través del sistema de Mensajería Privada de este sitio web");
+define("EST_MSG_PMSENT","Mensaje privado enviado");
+define("EST_MSG_PMNOTSENT","Mensaje privado no enviado");
+define("EST_MSG_PREVMSG","Mensajes anteriores");
+define("EST_MSG_PRIVATEMSG","Mensaje privado");
+define("EST_MSG_QUOTEREQ","Solicitudes de presupuesto");
+define("EST_MSG_REACHMAX1","Has alcanzado el número máximo de mensajes que puedes enviar a");
+define("EST_MSG_REACHMAX2","sobre este anuncio");
 define("EST_MSG_REACHMAX3","");
-define("EST_MSG_READ","Read");
-define("EST_MSG_RECD","Recieved");
-define("EST_MSG_RESULTS","Message Results");
-define("EST_MSG_SEND","Send Your Message To");
-define("EST_MSG_SENDEMAILTO","Send Email to [x]");
-define("EST_MSG_SENTBY","Sent By");
-define("EST_MSG_SHOWINGREQUESTS","Showing Requests");
-define("EST_MSG_SUB1A","Showing Request");
-define("EST_MSG_SUB2A","I Want To Buy");
-define("EST_MSG_SUB2B","Backup Offer");
-define("EST_MSG_SUB3","Request A Quote");
-define("EST_MSG_SUBJECT","Subject");
-define("EST_MSG_THANKS1","Thank you for contacting");
-define("EST_MSG_THANKS2","Please allow some time for the Agent/Seller to get back to you.");
-define("EST_MSG_TOPPER", "This is a new message from [x] to [y] regarding [z].");
-define("EST_MSG_TOSELLER","To This Seller");
-define("EST_MSG_TXT1A","I am interested in viewing");
-define("EST_MSG_TXT2A","I want to make an offer for");
-define("EST_MSG_TXT2B","I am interested in making a backup offer for");
-define("EST_MSG_TXT3","Please contact me about selling my own property. The address is: ");
-define("EST_MSG_UNREAD","Unead");
-define("EST_MSG_VIEWAGREE","View Terms");
-define("EST_MSG_YOUHAVESENT", "You Have Sent"); // [x] [y] to [z]
-define("EST_MSG_YOURNAME", "Your Name");
-define("EST_MSG_YOUREMAIL", "Your E-Mail");
-define("EST_MSG_YOUREPHONE", "Your Phone Number");
-define("EST_MSG_YOURMSG","Your Message");
+define("EST_MSG_READ","Leído");
+define("EST_MSG_RECD","Recibido");
+define("EST_MSG_RESULTS","Resultados de mensajes");
+define("EST_MSG_SEND","Enviar tu mensaje a");
+define("EST_MSG_SENDEMAILTO","Enviar correo a [x]");
+define("EST_MSG_SENTBY","Enviado por");
+define("EST_MSG_SHOWINGREQUESTS","Solicitudes de visita");
+define("EST_MSG_SUB1A","Solicitud de visita");
+define("EST_MSG_SUB2A","Quiero comprar");
+define("EST_MSG_SUB2B","Oferta de respaldo");
+define("EST_MSG_SUB3","Solicitar presupuesto");
+define("EST_MSG_SUBJECT","Asunto");
+define("EST_MSG_THANKS1","Gracias por contactar con");
+define("EST_MSG_THANKS2","Por favor, da un poco de tiempo para que el Agente/Vendedor te responda.");
+define("EST_MSG_TOPPER", "Este es un nuevo mensaje de [x] para [y] sobre [z].");
+define("EST_MSG_TOSELLER","A este vendedor");
+define("EST_MSG_TXT1A","Estoy interesado en ver");
+define("EST_MSG_TXT2A","Quiero hacer una oferta por");
+define("EST_MSG_TXT2B","Estoy interesado en hacer una oferta de respaldo por");
+define("EST_MSG_TXT3","Por favor, contáctame para vender mi propiedad. La dirección es: ");
+define("EST_MSG_UNREAD","No leído");
+define("EST_MSG_VIEWAGREE","Ver términos");
+define("EST_MSG_YOUHAVESENT", "Has enviado"); // [x] [y] a [z]
+define("EST_MSG_YOURNAME", "Tu nombre");
+define("EST_MSG_YOUREMAIL", "Tu correo electrónico");
+define("EST_MSG_YOUREPHONE", "Tu número de teléfono");
+define("EST_MSG_YOURMSG","Tu mensaje");
 
 ?>

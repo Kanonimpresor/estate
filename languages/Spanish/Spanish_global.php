@@ -10,854 +10,810 @@
 +----------------------------------------------------------------------------+
 */
 
-if(!defined("LAN_PREFS")){define("LAN_PREFS","Preferences");}
+if(!defined("LAN_PREFS")){define("LAN_PREFS","Preferencias");}
 
-define("EST_PLUGNAME", "Estate Agency");
-define("EST_PLUGCONFIG1", "Configure Estate Agency");
-define("EST_PLUGDESCRIPT", "A plugin for managing Real Estate listings");
-define("EST_PHPVERR0", "PHP Version Error");
-define("EST_PHPVERR1","This plugin was built to work on PHP versions 7.0 - 8.2.2 The current version of PHP on this server is");
-define("EST_PHPVERR2","Please change your server's PHP version to 8.2.2 in order to use this plugin");
+define("EST_PLUGNAME", "Agencia Inmobiliaria");
+define("EST_PLUGCONFIG1", "Configurar Agencia Inmobiliaria");
+define("EST_PLUGDESCRIPT", "Un plugin para gestionar listados inmobiliarios");
+define("EST_PHPVERR0", "Error de versión PHP");
+define("EST_PHPVERR1","Este plugin está diseñado para funcionar en versiones de PHP 7.0 - 8.2.2. La versión actual de PHP en este servidor es");
+define("EST_PHPVERR2","Por favor, cambia la versión de PHP de tu servidor a 8.2.2 para poder usar este plugin");
 define("EST_ERROR","ERROR");
 
-define("EST_ERR_AGYNOTFOUND","Agency Not Found");
-define("EST_ERR_HLP1a","The property ID");
-define("EST_ERR_HLP1b","Cannot be viewed or doesn't exist.");
-define("EST_ERR_JAVAFAIL","Javascript failed to load");
-define("EST_ERR_NOEMAILADMINS1","Email Notifications cannot be sent because there are no Moderators assigned to this task. Please contact the Main Site Admin to let them know of this issue");
-define("EST_ERR_NOEMAILADMINS2","Unable to find Moderators to contact for Listing Approval. You may have to wait a little longer for your listing to be approved for publication.");
-define("EST_ERR_NOEMAILSENT","Emails were not sent. Error unknown.");
-define("EST_ERR_NOTAGENT","Not an Agent");
-define("EST_ERR_NOTALLOWED","Not Allowed");
-define("EST_ERR_NOTYOURPROP","Not Your Property");
-define("EST_ERR_NOTYOURPROP1","This property does not belong to");
-define("EST_ERR_NOTYOURPROP2","You are not authorized to edit a Non-Agent's property");
-define("EST_ERR_NOTYOURPROP3","Not Your Agency's Property");
-define("EST_ERR_INFOCHANGED","Some information on this page has been automatically corrected upon loading.");
-define("EST_ERR_UPDATEDONE","The database has been successfully updated.");
-define("EST_ERR_UPDATENEEDED","Please be sure to click the Save/Update button to save your changes.");
-define("EST_ERR_NOTANIMG"," is not an image that can be edited by this plugin.");
+define("EST_ERR_AGYNOTFOUND","Agencia no encontrada");
+define("EST_ERR_HLP1a","El ID de la propiedad");
+define("EST_ERR_HLP1b","No se puede ver o no existe.");
+define("EST_ERR_JAVAFAIL","No se pudo cargar Javascript");
+define("EST_ERR_NOEMAILADMINS1","No se pueden enviar notificaciones por correo porque no hay moderadores asignados a esta tarea. Por favor, contacta con el Administrador Principal del sitio para informarle de este problema");
+define("EST_ERR_NOEMAILADMINS2","No se han encontrado moderadores para contactar para la aprobación del listado. Puede que tengas que esperar un poco más para que tu anuncio sea aprobado para su publicación.");
+define("EST_ERR_NOEMAILSENT","No se enviaron correos electrónicos. Error desconocido.");
+define("EST_ERR_NOTAGENT","No eres agente");
+define("EST_ERR_NOTALLOWED","No permitido");
+define("EST_ERR_NOTYOURPROP","No es tu propiedad");
+define("EST_ERR_NOTYOURPROP1","Esta propiedad no pertenece a");
+define("EST_ERR_NOTYOURPROP2","No estás autorizado para editar la propiedad de un No-Agente");
+define("EST_ERR_NOTYOURPROP3","No es una propiedad de tu agencia");
+define("EST_ERR_INFOCHANGED","Alguna información en esta página ha sido corregida automáticamente al cargar.");
+define("EST_ERR_UPDATEDONE","La base de datos se ha actualizado correctamente.");
+define("EST_ERR_UPDATENEEDED","Por favor, asegúrate de hacer clic en el botón Guardar/Actualizar para guardar tus cambios.");
+define("EST_ERR_NOTANIMG"," no es una imagen que pueda ser editada por este plugin.");
 
-define("EST_OAE_DONOTRPLY","Do Not Reply To This Email");
-define("EST_OAE_EMAILTOP", "This is an automatically generated email notification from [x] regarding a new or updated listing: [y] that was posted by [z].");
-define("EST_OAE_EMAILCLKHERE","Click Here to review and approve");
-define("EST_OAE_EMAILFOOT","Please Log in and check this listing as soon as you can.");
-define("EST_OAE_THANKYOU","Thank you for you submission. This website has sent an email to the following Moderators . Please allow some time for one of them to review your listing.");
+define("EST_OAE_DONOTRPLY","No respondas a este correo");
+define("EST_OAE_EMAILTOP", "Este es un correo automático de [x] sobre un nuevo o actualizado listado: [y] publicado por [z].");
+define("EST_OAE_EMAILCLKHERE","Haz clic aquí para revisar y aprobar");
+define("EST_OAE_EMAILFOOT","Por favor, inicia sesión y revisa este anuncio lo antes posible.");
+define("EST_OAE_THANKYOU","Gracias por tu envío. Esta web ha enviado un correo a los siguientes moderadores. Por favor, espera a que uno de ellos revise tu anuncio.");
 
+define("EST_ULVAGENT","AGENTE INMOBILIARIO");
+define("EST_ULVMANAGER","GERENTE INMOBILIARIO");
+define("EST_ULVADMIN","ADMIN INMOBILIARIO");
+define("EST_ULVMAINADMIN","ADMIN PRINCIPAL INMOBILIARIO");
 
-define("EST_ULVAGENT","ESTATE AGENT");
-define("EST_ULVMANAGER","ESTATE MANAGER");
-define("EST_ULVADMIN","ESTATE ADMIN");
-define("EST_ULVMAINADMIN","ESTATE MAIN ADMIN");
+define("EST_COUNTY", "Provincia");
+define("EST_INDEX","Índice");
+define("EST_LOCATION","Ubicación");
+define("EST_MEDIA","Medios");
+define("EST_NEW","Nuevo");
+define("EST_OPTION","Opción");
+define("EST_OPTIONS","Opciones");
+define("EST_SAVE","Guardar");
+define("EST_SAVES","Guardados");
+define("EST_SAVEANDNEW","Guardar y Nuevo");
+define("EST_SAVECLOSE","Guardar y Cerrar");
+define("EST_SQFOOT","Pies cuadrados,Pies2,ft2");
+define("EST_SQMTR","Metro cuadrado,M2,m2");
+define("EST_UPDATED","Actualizado");
+define("EST_UPLOAD","Subir");
+define("EST_XBYY","L x A");
 
-define("EST_COUNTY", "County");
-define("EST_INDEX","Index");
-define("EST_LOCATION","Location");
-define("EST_MEDIA","Media");
-define("EST_NEW","New");
-define("EST_OPTION","Option");
-define("EST_OPTIONS","Options");
-define("EST_SAVE","Save");
-define("EST_SAVES","Saves");
-define("EST_SAVEANDNEW","Save & New");
-define("EST_SAVECLOSE","Save & Close");
-define("EST_SQFOOT","Sq Feet,Sqft,f2");
-define("EST_SQMTR","Sq Meeter,SqMtr,m2");
-define("EST_UPDATED","Updated");
-define("EST_UPLOAD","Upload");
-define("EST_XBYY","L x W");
+define("EST_IMG_CROP","Recortar imagen");
+define("EST_IMG_CROPMAN","Formulario de recorte");
+define("EST_IMG_CROPSTART","Haz clic en la imagen para empezar");
+define("EST_IMG_FLIPH","Voltear horizontal");
+define("EST_IMG_FLIPV","Voltear vertical");
+define("EST_IMG_MOVEL","Mover a la izquierda");
+define("EST_IMG_MOVER","Mover a la derecha");
+define("EST_IMG_MOVEU","Mover arriba");
+define("EST_IMG_MOVED","Mover abajo");
+define("EST_IMG_RESETC","Restablecer área de recorte");
+define("EST_IMG_ROTL","Girar a la izquierda");
+define("EST_IMG_ROTR","Girar a la derecha");
+define("EST_IMG_ZOOMI","Acercar");
+define("EST_IMG_ZOOMO","Alejar");
 
-
-define("EST_IMG_CROP","Crop Image");
-define("EST_IMG_CROPMAN","Crop Data Form");
-define("EST_IMG_CROPSTART","Click Image to begin");
-define("EST_IMG_FLIPH","Flip Horizontal");
-define("EST_IMG_FLIPV","Flip Vertical");
-define("EST_IMG_MOVEL","Move Left");
-define("EST_IMG_MOVER","Move Right");
-define("EST_IMG_MOVEU","Move Up");
-define("EST_IMG_MOVED","Move Down");
-define("EST_IMG_RESETC","Reset Crop Area");
-define("EST_IMG_ROTL","Rotate Left");
-define("EST_IMG_ROTR","Rotate Right");
-define("EST_IMG_ZOOMI","Zoom In");
-define("EST_IMG_ZOOMO","Zoom Out");
-
-
-define("EST_GEN_ACRES","Acres");
-define("EST_GEN_ACTIVE", "Active");
-define("EST_GEN_ACTIVE1", "Active - Scheduled Publication");
-define("EST_GEN_ACTIVE2", "Live Now");
-define("EST_GEN_ADD1","Add");
-define("EST_GEN_ADDED","Added");
-define("EST_GEN_ADDRESS", "Address");
-define("EST_GEN_ADDITIONAL","Additional");
-define("EST_GEN_ADDNEWSPACE","Add New Space");
+define("EST_GEN_ACRES","Hectáreas");
+define("EST_GEN_ACTIVE", "Activo");
+define("EST_GEN_ACTIVE1", "Activo - Publicación programada");
+define("EST_GEN_ACTIVE2", "En directo ahora");
+define("EST_GEN_ADD1","Añadir");
+define("EST_GEN_ADDED","Añadido");
+define("EST_GEN_ADDRESS", "Dirección");
+define("EST_GEN_ADDITIONAL","Adicional");
+define("EST_GEN_ADDNEWSPACE","Añadir nuevo espacio");
 define("EST_GEN_ADMIN", "Admin");
-define("EST_GEN_ADMINAREA", "Admin Area");
+define("EST_GEN_ADMINAREA", "Área de administración");
 define("EST_GEN_ADMINS", "Admins");
-define("EST_GEN_ADMINISTRATOR", "Administrator");
-define("EST_GEN_ADMVIEW","Not visible to the public. Only Admins can see this information");
+define("EST_GEN_ADMINISTRATOR", "Administrador");
+define("EST_GEN_ADMVIEW","No visible para el público. Solo los administradores pueden ver esta información");
 
-define("EST_GEN_AGENCY", "Agency");
-define("EST_GEN_AGENCIES", "Agencies");
-define("EST_GEN_AGENCYLOCS", "Agency Locations");
-define("EST_GEN_AGENT", "Agent");
-define("EST_GEN_AGENTCONFLICT1", "The Assigned Agent has an Event for a different property at this time");
-define("EST_GEN_AGENTS", "Agents");
-define("EST_GEN_ALL","All");
-define("EST_GEN_ALTERNATE","Alternate");
-define("EST_GEN_AMOUNT", "Amount");
-define("EST_GEN_ANNUAL","Annual");
-define("EST_GEN_APPEND","Append");
-define("EST_GEN_APPLY","Apply");
-define("EST_GEN_APPLYFILTER","Apply Filter");
-define("EST_GEN_APPROVAL","Approval");
-define("EST_GEN_APPROVED","Approved");
-define("EST_GEN_ASSIGN","Assign");
+define("EST_GEN_AGENCY", "Agencia");
+define("EST_GEN_AGENCIES", "Agencias");
+define("EST_GEN_AGENCYLOCS", "Ubicaciones de la agencia");
+define("EST_GEN_AGENT", "Agente");
+define("EST_GEN_AGENTCONFLICT1", "El agente asignado tiene un evento para otra propiedad en este horario");
+define("EST_GEN_AGENTS", "Agentes");
+define("EST_GEN_ALL","Todo");
+define("EST_GEN_ALTERNATE","Alternativo");
+define("EST_GEN_AMOUNT", "Cantidad");
+define("EST_GEN_ANNUAL","Anual");
+define("EST_GEN_APPEND","Añadir al final");
+define("EST_GEN_APPLY","Aplicar");
+define("EST_GEN_APPLYFILTER","Aplicar filtro");
+define("EST_GEN_APPROVAL","Aprobación");
+define("EST_GEN_APPROVED","Aprobado");
+define("EST_GEN_ASSIGN","Asignar");
 define("EST_GEN_AUTO","Auto");
-define("EST_GEN_AVAILABLE","Available");
-define("EST_GEN_BADFILTER1","No reusults found. Try changing or clearing your Filters.");
-define("EST_GEN_BATH","Bath");
-define("EST_GEN_BATHS","Baths");
-define("EST_GEN_BATHROOMS","Bathrooms");
-define("EST_GEN_BATHTOT","Total Bathrooms");
-define("EST_GEN_BATHFULL","Full Baths");
-define("EST_GEN_BATHHALF","Half Baths");
-define("EST_GEN_BATHMAIN","Main Level Bathrooms");
-define("EST_GEN_BED","Bed");
-define("EST_GEN_BEDANDBATH","Bed & Bath Rooms");
-define("EST_GEN_BEDROOMS","Bedrooms");
-define("EST_GEN_BEDTOT","Total Bedrooms");
-define("EST_GEN_BEDMAIN","Main Level Bedrooms");
-define("EST_GEN_CAPTION","Caption");
-define("EST_GEN_CATEGORY","Category");
-define("EST_GEN_CATEGORIES","Categories");
-define("EST_GEN_CANCELREM","Cancel and remove form");
-define("EST_GEN_CANNOTBEEQOR", "Cannot be equal to or");
-define("EST_GEN_CHECKLATER","Please Check Back Later");
-define("EST_GEN_CHANGEIMGSRC","Change Image Source");
-define("EST_GEN_CHOOSETHM","Click to Choose Thumbnail");
-define("EST_GEN_CITYOF","City Of");
-define("EST_GEN_CITYPREVIEW","City Preview");
-define("EST_GEN_CITYSPACES","City Spaces");
-define("EST_GEN_CLEARFILTER","Clear Filter");
-define("EST_GEN_CLICKTHE","Click the");
-define("EST_GEN_CLIENT","Client");
-define("EST_GEN_CLOSE","Close");
-define("EST_GEN_CLOSING","Closing");
-define("EST_GEN_COMMUNITY", "Community");
-define("EST_GEN_COMMUNITYOF","Community Of");
-define("EST_GEN_COMMUNITYPREVIEW", "Community Preview");
-define("EST_GEN_COMMUNITYSPACES", "Community Spaces");
-define("EST_GEN_COMMUNITYSUBDIV", "Community/Subdivision");
-define("EST_GEN_COMPANY", "Company");
-define("EST_GEN_COMPANIES", "Companies");
-define("EST_GEN_CONFIRMED","Confirmed");
-define("EST_GEN_CONDITION","Property Condition");
-define("EST_GEN_CONTACT","Contact");
-define("EST_GEN_CONTACTS","Contacts");
-define("EST_GEN_COMINGSOON","Coming Soon");
-define("EST_GEN_COMMUNITY","Community");
-define("EST_GEN_COMPLETE","Complete");
-define("EST_GEN_COMPLEX","Complex");
-define("EST_GEN_CREATE","Create");
-define("EST_GEN_CREATEDBY","Created By");
-define("EST_GEN_CROP","Crop");
-define("EST_GEN_CUSTOM","Custom");
-define("EST_GEN_CURRENCY","Currency");
-define("EST_GEN_CURRENTLY","Currently");
-define("EST_GEN_DATA","Data");
-define("EST_GEN_DATE","Date");
-define("EST_GEN_DATESENT","Date Sent");
-define("EST_GEN_DAYS","Days");
-define("EST_GEN_DEFAULT","Default");
-define("EST_GEN_DELETE","Delete");
-define("EST_GEN_DELETED","Deleted");
-define("EST_GEN_DELETEEVTKEY","Delete Event Preset?");
-define("EST_GEN_DELETEPRCEHIST","Delete Price History");
-define("EST_GEN_DELETEPRCEHIST2","There is no History Data to delete");
-define("EST_GEN_DELETEPRCEHIST3","Original Price cannot be deleted");
-define("EST_GEN_DETAILS","Details");
-define("EST_GEN_DIMENSIONS","Dimensions");
-define("EST_GEN_DIRECTORY","Directory");
-define("EST_GEN_DISABLED","Disabled");
-define("EST_GEN_DONOTRELOAD","Please do not leave or reload this page.");
-define("EST_GEN_DRAGTO","Click And Drag To");
-define("EST_GEN_DRAGTOREORDER","Drag to reorder");
-define("EST_GEN_EDIT","Edit");
-define("EST_GEN_EMAIL","Email");
-define("EST_GEN_ENDOF","End of");
-define("EST_GEN_ENABLE","Enable");
-define("EST_GEN_ENABLEDIS","Enable/Disable");
+define("EST_GEN_AVAILABLE","Disponible");
+define("EST_GEN_BADFILTER1","No se han encontrado resultados. Prueba a cambiar o limpiar tus filtros.");
+define("EST_GEN_BATH","Baño");
+define("EST_GEN_BATHS","Baños");
+define("EST_GEN_BATHROOMS","Cuartos de baño");
+define("EST_GEN_BATHTOT","Baños totales");
+define("EST_GEN_BATHFULL","Baños completos");
+define("EST_GEN_BATHHALF","Aseos");
+define("EST_GEN_BATHMAIN","Baños en planta principal");
+define("EST_GEN_BED","Dormitorio");
+define("EST_GEN_BEDANDBATH","Dormitorios y baños");
+define("EST_GEN_BEDROOMS","Dormitorios");
+define("EST_GEN_BEDTOT","Dormitorios totales");
+define("EST_GEN_BEDMAIN","Dormitorios en planta principal");
+define("EST_GEN_CAPTION","Título");
+define("EST_GEN_CATEGORY","Categoría");
+define("EST_GEN_CATEGORIES","Categorías");
+define("EST_GEN_CANCELREM","Cancelar y eliminar formulario");
+define("EST_GEN_CANNOTBEEQOR", "No puede ser igual o");
+define("EST_GEN_CHECKLATER","Por favor, vuelve más tarde");
+define("EST_GEN_CHANGEIMGSRC","Cambiar origen de la imagen");
+define("EST_GEN_CHOOSETHM","Haz clic para elegir miniatura");
+define("EST_GEN_CITYOF","Ciudad de");
+define("EST_GEN_CITYPREVIEW","Vista previa de la ciudad");
+define("EST_GEN_CITYSPACES","Espacios de la ciudad");
+define("EST_GEN_CLEARFILTER","Limpiar filtro");
+define("EST_GEN_CLICKTHE","Haz clic en");
+define("EST_GEN_CLIENT","Cliente");
+define("EST_GEN_CLOSE","Cerrar");
+define("EST_GEN_CLOSING","Cierre");
+define("EST_GEN_COMMUNITY", "Comunidad");
+define("EST_GEN_COMMUNITYOF","Comunidad de");
+define("EST_GEN_COMMUNITYPREVIEW", "Vista previa de la comunidad");
+define("EST_GEN_COMMUNITYSPACES", "Espacios de la comunidad");
+define("EST_GEN_COMMUNITYSUBDIV", "Comunidad/Urbanización");
+define("EST_GEN_COMPANY", "Empresa");
+define("EST_GEN_COMPANIES", "Empresas");
+define("EST_GEN_CONFIRMED","Confirmado");
+define("EST_GEN_CONDITION","Estado de la propiedad");
+define("EST_GEN_CONTACT","Contacto");
+define("EST_GEN_CONTACTS","Contactos");
+define("EST_GEN_COMINGSOON","Próximamente");
+define("EST_GEN_COMMUNITY","Comunidad");
+define("EST_GEN_COMPLETE","Completo");
+define("EST_GEN_COMPLEX","Complejo");
+define("EST_GEN_CREATE","Crear");
+define("EST_GEN_CREATEDBY","Creado por");
+define("EST_GEN_CROP","Recortar");
+define("EST_GEN_CUSTOM","Personalizado");
+define("EST_GEN_CURRENCY","Moneda");
+define("EST_GEN_CURRENTLY","Actualmente");
+define("EST_GEN_DATA","Datos");
+define("EST_GEN_DATE","Fecha");
+define("EST_GEN_DATESENT","Fecha de envío");
+define("EST_GEN_DAYS","Días");
+define("EST_GEN_DEFAULT","Por defecto");
+define("EST_GEN_DELETE","Eliminar");
+define("EST_GEN_DELETED","Eliminado");
+define("EST_GEN_DELETEEVTKEY","¿Eliminar evento predefinido?");
+define("EST_GEN_DELETEPRCEHIST","Eliminar historial de precios");
+define("EST_GEN_DELETEPRCEHIST2","No hay datos de historial para eliminar");
+define("EST_GEN_DELETEPRCEHIST3","El precio original no se puede eliminar");
+define("EST_GEN_DETAILS","Detalles");
+define("EST_GEN_DIMENSIONS","Dimensiones");
+define("EST_GEN_DIRECTORY","Directorio");
+define("EST_GEN_DISABLED","Deshabilitado");
+define("EST_GEN_DONOTRELOAD","Por favor, no abandones ni recargues esta página.");
+define("EST_GEN_DRAGTO","Haz clic y arrastra para");
+define("EST_GEN_DRAGTOREORDER","Arrastra para reordenar");
+define("EST_GEN_EDIT","Editar");
+define("EST_GEN_EMAIL","Correo electrónico");
+define("EST_GEN_ENDOF","Fin de");
+define("EST_GEN_ENABLE","Habilitar");
+define("EST_GEN_ENABLEDIS","Habilitar/Deshabilitar");
 define("EST_GEN_ERROR","Error");
-define("EST_GEN_ESTATE","Estate");
-define("EST_GEN_ESTADMINS","Estate Admins");
-define("EST_GEN_ESTAGENTS","Estate Agents");
-define("EST_GEN_ESTMANAGERS","Estate Managers");
-define("EST_GEN_EVENT","Event");
-define("EST_GEN_EVENTS","Events");
-define("EST_GEN_FACEBOOK","FaceBook");
-define("EST_GEN_FAILED","Failed");
+define("EST_GEN_ESTATE","Inmobiliaria");
+define("EST_GEN_ESTADMINS","Admins inmobiliarios");
+define("EST_GEN_ESTAGENTS","Agentes inmobiliarios");
+define("EST_GEN_ESTMANAGERS","Gerentes inmobiliarios");
+define("EST_GEN_EVENT","Evento");
+define("EST_GEN_EVENTS","Eventos");
+define("EST_GEN_FACEBOOK","Facebook");
+define("EST_GEN_FAILED","Fallido");
 define("EST_GEN_FAX","Fax");
-define("EST_GEN_FEATURE","Feature");
-define("EST_GEN_FEATURECATS","Feature Categories");
-define("EST_GEN_FEATURES","Features");
-define("EST_GEN_FEATUREHEAD","Features Headline");
-define("EST_GEN_FEATURENOPROPID","This property must be saved before you can add additional Features");
-define("EST_GEN_FEATUREHEADHLP","A Comma (,) separated List of text that appears below the Property Name after the Listing Price. Commas will be replaced by a bullet. 255 character limit");
-define("EST_GEN_FEATURESHEADPLCHLDR","3 Bed,3 Bath,Pool,Waterfront,etc"); 
-define("EST_GEN_FILTER","Filter");
-define("EST_GEN_FILTERBY","Filter By");
-define("EST_GEN_FILE","File");
-define("EST_GEN_FILENOTFOUND","File Not Found");
-define("EST_GEN_FILES","Files");
-define("EST_GEN_FLDREQ1","Fields with * must have a value");
-define("EST_GEN_FLOORCT","Floors/Stories");
-define("EST_GEN_FLOORNO","Floor #");
-define("EST_GEN_FORRENT","For Rent");
-define("EST_GEN_FORSALE","For Sale");
-define("EST_GEN_FORSALEAUCT","For Sale - Auction");
-define("EST_GEN_FORSALESHORT","For Sale - Short Sale");
-define("EST_GEN_FOUND","Found");
-define("EST_GEN_FROM","From");
-define("EST_GEN_FULL","Full");
-define("EST_GEN_FULLADDLIST","Full Add Listing");
-define("EST_GEN_FULLADDR", "Full Address");
-define("EST_GEN_FULLEDIT","Full Edit");
-define("EST_GEN_FUTURE","Future");
-define("EST_GEN_GALLERY", "Gallery");
+define("EST_GEN_FEATURE","Característica");
+define("EST_GEN_FEATURECATS","Categorías de características");
+define("EST_GEN_FEATURES","Características");
+define("EST_GEN_FEATUREHEAD","Encabezado de características");
+define("EST_GEN_FEATURENOPROPID","Debes guardar esta propiedad antes de añadir características adicionales");
+define("EST_GEN_FEATUREHEADHLP","Lista separada por comas (,) de texto que aparece bajo el nombre de la propiedad tras el precio. Las comas se reemplazarán por un punto. Límite de 255 caracteres");
+define("EST_GEN_FEATURESHEADPLCHLDR","3 hab,3 baños,piscina,frente al mar,etc");
+define("EST_GEN_FILTER","Filtrar");
+define("EST_GEN_FILTERBY","Filtrar por");
+define("EST_GEN_FILE","Archivo");
+define("EST_GEN_FILENOTFOUND","Archivo no encontrado");
+define("EST_GEN_FILES","Archivos");
+define("EST_GEN_FLDREQ1","Los campos con * deben tener un valor");
+define("EST_GEN_FLOORCT","Plantas");
+define("EST_GEN_FLOORNO","Planta nº");
+define("EST_GEN_FORRENT","En alquiler");
+define("EST_GEN_FORSALE","En venta");
+define("EST_GEN_FORSALEAUCT","En venta - Subasta");
+define("EST_GEN_FORSALESHORT","En venta - Venta rápida");
+define("EST_GEN_FOUND","Encontrado");
+define("EST_GEN_FROM","Desde");
+define("EST_GEN_FULL","Completo");
+define("EST_GEN_FULLADDLIST","Añadir listado completo");
+define("EST_GEN_FULLADDR", "Dirección completa");
+define("EST_GEN_FULLEDIT","Edición completa");
+define("EST_GEN_FUTURE","Futuro");
+define("EST_GEN_GALLERY", "Galería");
 define("EST_GEN_GENERAL", "General");
-define("EST_GEN_GEATERTHAN", "Greater than");
-define("EST_GEN_GROUP", "Group");
-define("EST_GEN_GROUPINGS","Groupings");
-define("EST_GEN_GROUPS", "Groups");
-define("EST_GEN_HALF","Half");
-define("EST_GEN_HAS","Has");
-define("EST_GEN_HELP01", "Help");
-define("EST_GEN_HIDDEN", "Hidden");
-define("EST_GEN_HIDE", "Hide");
-define("EST_GEN_HOA","HOA");
-define("EST_GEN_HOADEF1","General HOA Information");
-define("EST_GEN_HOADEF2","Property Specific Information");
-define("EST_GEN_HOMEOWNASS","Home Owners Association");
-define("EST_GEN_HOAAPPR1","HOA Approval Required");
-define("EST_GEN_HOAAPPR2","Buyer must meet requirements set by the Home Owners Association.");
-define("EST_GEN_HOALAND","HOA Fees Include Land Lease");
-define("EST_GEN_HOAPLCH","Leave blank if same as Subdivision");
-define("EST_GEN_HOAREQ1","HOA Membership Required");
-define("EST_GEN_HOAREQ2","Voluntary HOA Membership");
-define("EST_GEN_INCINHOAFEE","Included in HOA Fees");
-define("EST_GEN_NOTINCINHOAFEE","NOT Included in HOA Fees");
-define("EST_GEN_INCLANDLEASE","Includes Land Lease");
-define("EST_GEN_INFO","Information");
-define("EST_GEN_INFOCHANGED","Inforamtion has changed");
+define("EST_GEN_GEATERTHAN", "Mayor que");
+define("EST_GEN_GROUP", "Grupo");
+define("EST_GEN_GROUPINGS","Agrupaciones");
+define("EST_GEN_GROUPS", "Grupos");
+define("EST_GEN_HALF","Medio");
+define("EST_GEN_HAS","Tiene");
+define("EST_GEN_HELP01", "Ayuda");
+define("EST_GEN_HIDDEN", "Oculto");
+define("EST_GEN_HIDE", "Ocultar");
+define("EST_GEN_HOA","Comunidad de propietarios");
+define("EST_GEN_HOADEF1","Información general de la comunidad");
+define("EST_GEN_HOADEF2","Información específica de la propiedad");
+define("EST_GEN_HOMEOWNASS","Comunidad de propietarios");
+define("EST_GEN_HOAAPPR1","Requiere aprobación de la comunidad");
+define("EST_GEN_HOAAPPR2","El comprador debe cumplir los requisitos de la comunidad.");
+define("EST_GEN_HOALAND","Las cuotas incluyen alquiler del terreno");
+define("EST_GEN_HOAPLCH","Dejar en blanco si es igual que la urbanización");
+define("EST_GEN_HOAREQ1","Membresía obligatoria en la comunidad");
+define("EST_GEN_HOAREQ2","Membresía voluntaria en la comunidad");
+define("EST_GEN_INCINHOAFEE","Incluido en las cuotas");
+define("EST_GEN_NOTINCINHOAFEE","NO incluido en las cuotas");
+define("EST_GEN_INCLANDLEASE","Incluye alquiler del terreno");
+define("EST_GEN_INFO","Información");
+define("EST_GEN_INFOCHANGED","La información ha cambiado");
 
-define("EST_GEN_IMAGE","Image");
-define("EST_GEN_IMPORT","Import");
-define("EST_GEN_IMPORTDTA","Import Data");
-define("EST_GEN_INSPECTION", "Inspection");
+define("EST_GEN_IMAGE","Imagen");
+define("EST_GEN_IMPORT","Importar");
+define("EST_GEN_IMPORTDTA","Importar datos");
+define("EST_GEN_INSPECTION", "Inspección");
 define("EST_GEN_INTERIOR", "Interior");
-define("EST_GEN_ISNOTACCESS", "Is Not Accessable");
-define("EST_GEN_NOLEASE","No Lease");
-define("EST_GEN_1MONTH","1 Month");
-define("EST_GEN_6MONTH","6 Month");
-define("EST_GEN_ITEM","Item");
-define("EST_GEN_LESSTHAN", "Less than");
-define("EST_GEN_LINKIN", "Linked In");
-define("EST_GEN_LIST", "List");
-define("EST_GEN_LISTEDCOMING", "Listed: Scheduled");
-define("EST_GEN_LISTEDFORSALE", "Listed For Sale");
-define("EST_GEN_LISTING", "Listing");
-define("EST_GEN_LISTINGS", "Listings");
-define("EST_GEN_LISTAGENT", "Listing Agent");
-define("EST_GEN_LOCATION", "Location");
-define("EST_GEN_LOCATIONS", "Locations");
-define("EST_GEN_LOOKUP", "Lookup");
-define("EST_GEN_MAIN","Main");
-define("EST_GEN_MAINLEV","Main Level");
-define("EST_GEN_MANAGER","Manager");
-define("EST_GEN_MANAGERS","Managers");
-define("EST_GEN_MANDATORY","Mandatory");
-define("EST_GEN_MAP","Map");
-define("EST_GEN_MEDIA","Media");
-define("EST_GEN_MEDIAERRORS1","There were Errors with some Media files");
-define("EST_GEN_MEETING","Meeting");
-define("EST_GEN_MENULAYOUTUP", "Menu Layout Updated");
-define("EST_GEN_MENUTMPLUP", "Menu Template Changed");
-define("EST_GEN_MEMBER","Member");
-define("EST_GEN_MESSAGE","Message");
-define("EST_GEN_MESSAGES","Messages");
-define("EST_GEN_MOBILE","Mobile");
-define("EST_GEN_MODELNAME","Model Name");
-define("EST_GEN_MONTH","Month");
-define("EST_GEN_MONTHS","Months");
-define("EST_GEN_MONTHLY","Monthly");
-define("EST_GEN_NAME","Name");
-define("EST_GEN_NAME2","Name Line 2");
-define("EST_GEN_NEW","New");
-define("EST_GEN_NOBODY","Nobody");
-define("EST_GEN_NOEVENTS","There are no events scheduled");
-define("EST_GEN_NOLISTINGS","There are no listings available.");
-define("EST_GEN_NONE","None");
-define("EST_GEN_NONMEMBER","Non-member");
-define("EST_GEN_NOOPENHOUSE","There are no Open House events scheduled");
-define("EST_GEN_NODBRESULTS","No rusults for current criteria");
-define("EST_GEN_NOT","Not");
-define("EST_GEN_NOTAVAIL2","Event Scheduling is not available on this form");
-define("EST_GEN_NOTAVAIL3","The Community Form is only available to Agents");
-define("EST_GEN_NOTAFILE","Not A File");
-define("EST_GEN_NOTBELONGTO","Does Not Belong To");
-define("EST_GEN_NOTCONFIRMED","Not Confirmed");
-define("EST_GEN_NOTDONE","Not Done");
-define("EST_GEN_NOTFOUND","Not Found");
-define("EST_GEN_NOTHING2CHANGE","Nothing To Change");
-define("EST_GEN_NOTREQUIRED","Not Required");
-define("EST_GEN_NOVIEWING","No Viewings");
-define("EST_GEN_NOW","Now");
-define("EST_GEN_NUMBERRESULTS","Number of Results");
-define("EST_GEN_OF","of");
-define("EST_GEN_OFFICE","Office");
-define("EST_GEN_OFFMARKET","Off Market");
-define("EST_GEN_ONLY","Only");
-define("EST_GEN_OPENHOUSE","Open House");
-define("EST_GEN_OPTIONS","Options");
-define("EST_GEN_OPTLIST","Option List");
+define("EST_GEN_ISNOTACCESS", "No es accesible");
+define("EST_GEN_NOLEASE","Sin alquiler");
+define("EST_GEN_1MONTH","1 mes");
+define("EST_GEN_6MONTH","6 meses");
+define("EST_GEN_ITEM","Elemento");
+define("EST_GEN_LESSTHAN", "Menos que");
+define("EST_GEN_LINKIN", "LinkedIn");
+define("EST_GEN_LIST", "Lista");
+define("EST_GEN_LISTEDCOMING", "Listado: Programado");
+define("EST_GEN_LISTEDFORSALE", "Listado en venta");
+define("EST_GEN_LISTING", "Anuncio");
+define("EST_GEN_LISTINGS", "Anuncios");
+define("EST_GEN_LISTAGENT", "Agente del anuncio");
+define("EST_GEN_LOCATION", "Ubicación");
+define("EST_GEN_LOCATIONS", "Ubicaciones");
+define("EST_GEN_LOOKUP", "Buscar");
+define("EST_GEN_MAIN","Principal");
+define("EST_GEN_MAINLEV","Planta principal");
+define("EST_GEN_MANAGER","Gerente");
+define("EST_GEN_MANAGERS","Gerentes");
+define("EST_GEN_MANDATORY","Obligatorio");
+define("EST_GEN_MAP","Mapa");
+define("EST_GEN_MEDIA","Medios");
+define("EST_GEN_MEDIAERRORS1","Hubo errores con algunos archivos multimedia");
+define("EST_GEN_MEETING","Reunión");
+define("EST_GEN_MENULAYOUTUP", "Diseño del menú actualizado");
+define("EST_GEN_MENUTMPLUP", "Plantilla de menú cambiada");
+define("EST_GEN_MEMBER","Miembro");
+define("EST_GEN_MESSAGE","Mensaje");
+define("EST_GEN_MESSAGES","Mensajes");
+define("EST_GEN_MOBILE","Móvil");
+define("EST_GEN_MODELNAME","Nombre del modelo");
+define("EST_GEN_MONTH","Mes");
+define("EST_GEN_MONTHS","Meses");
+define("EST_GEN_MONTHLY","Mensual");
+define("EST_GEN_NAME","Nombre");
+define("EST_GEN_NAME2","Nombre línea 2");
+define("EST_GEN_NEW","Nuevo");
+define("EST_GEN_NOBODY","Nadie");
+define("EST_GEN_NOEVENTS","No hay eventos programados");
+define("EST_GEN_NOLISTINGS","No hay anuncios disponibles.");
+define("EST_GEN_NONE","Ninguno");
+define("EST_GEN_NONMEMBER","No-miembro");
+define("EST_GEN_NOOPENHOUSE","No hay jornadas de puertas abiertas programadas");
+define("EST_GEN_NODBRESULTS","No hay resultados para el criterio actual");
+define("EST_GEN_NOT","No");
+define("EST_GEN_NOTAVAIL2","La programación de eventos no está disponible en este formulario");
+define("EST_GEN_NOTAVAIL3","El formulario de comunidad solo está disponible para agentes");
+define("EST_GEN_NOTAFILE","No es un archivo");
+define("EST_GEN_NOTBELONGTO","No pertenece a");
+define("EST_GEN_NOTCONFIRMED","No confirmado");
+define("EST_GEN_NOTDONE","No hecho");
+define("EST_GEN_NOTFOUND","No encontrado");
+define("EST_GEN_NOTHING2CHANGE","Nada que cambiar");
+define("EST_GEN_NOTREQUIRED","No requerido");
+define("EST_GEN_NOVIEWING","Sin visitas");
+define("EST_GEN_NOW","Ahora");
+define("EST_GEN_NUMBERRESULTS","Número de resultados");
+define("EST_GEN_OF","de");
+define("EST_GEN_OFFICE","Oficina");
+define("EST_GEN_OFFMARKET","Fuera de mercado");
+define("EST_GEN_ONLY","Solo");
+define("EST_GEN_OPENHOUSE","Jornada de puertas abiertas");
+define("EST_GEN_OPTIONS","Opciones");
+define("EST_GEN_OPTLIST","Lista de opciones");
 define("EST_GEN_ORIGINAL", "Original");
-define("EST_GEN_OTHER","Other");
-define("EST_GEN_OTHERPROP1","You are editing a property created by");
-define("EST_GEN_OTHERPROP2","This property was created by");
-define("EST_GEN_OVERVIEW","Overview");
-define("EST_GEN_PHONE","Phone");
-define("EST_GEN_PENDING","Pending");
-define("EST_GEN_PERMISSIONS","Permissions");
-define("EST_GEN_PLAYPAUSESLIDE","Click to Play/Pause Slideshow");
-define("EST_GEN_PLEASE","Please");
-define("EST_GEN_PLEASESAVEPROP","Please Save Property First");
-define("EST_GEN_PLUGUNAVAIL","This section of our website is currently unavailable to the public. Please check back later.");
-define("EST_GEN_PRICEHIST","Price History");
-define("EST_GEN_PRICEHISTFUT0","You can preset a change to the List Price and/or Status up to 14 days in advance.");
-define("EST_GEN_PRICEHISTFUT1","Future Price/Status changes are not shown to the public until the specified date.");
-define("EST_GEN_PRICEHISTFUT2","A Future Price/Status change exists. You can only add a change for today.");
-define("EST_GEN_PRICEHISTFUT3","Upcoming Price/Status change");
-define("EST_GEN_PRICEHISTFUT4","Not visible to the public");
-define("EST_GEN_PRICEHISTFUT5","Current public Price History ");
-define("EST_GEN_PRICEHISTGO","Changed values in this row updates the CURRENT Listing Price and Status");
-define("EST_GEN_PRICEHISTGO1","Changed values in this row ONLY updates the ORIGINAL Listing Price");
-define("EST_GEN_PRICEHISTNOGO","Changed values in this row DO NOT affect the current Listing Price or Status.");
-define("EST_GEN_PRICEHISTUP1","Listing Price and/or Status updated by scheduled Price History change");
-define("EST_GEN_PRIPCTINF0","Click to calculate percent from");
-define("EST_GEN_PRIPCTINF1","Click to choose a new price based on percentage change");
-define("EST_GEN_PRIPCTINF2","Original Price");
-define("EST_GEN_PRIPCTINF3","Concurrent values");
-define("EST_GEN_POSITHNT","Front, Back, East Side, etc.");
-define("EST_GEN_POSITION","Position");
-define("EST_GEN_POWEREDBY","Powered By");
-define("EST_GEN_PREVIEW","Preview");
-define("EST_GEN_PRIVATE","Private");
-define("EST_GEN_PRIVATESELLER","Private Seller");
-define("EST_GEN_PRIVATEVIEWING","Private Viewing");
-define("EST_GEN_PROFILE","Profile");
-define("EST_GEN_PROFILES","Profiles");
-define("EST_GEN_PROPERTY","Property");
-define("EST_GEN_PROPERTYSPACES","Property Spaces");
-define("EST_GEN_PROPERTIES","Properties");
-define("EST_GEN_PUBLIC","Public");
-define("EST_GEN_PUBLICSHOWING","Public Showing");
-define("EST_GEN_QUARTERLY","Quarterly");
-define("EST_GEN_QUICKADDLIST","Quick Add Listing");
-define("EST_GEN_QUICKEDIT","Quick Edit");
-define("EST_GEN_REASSIGN","Reassign");
-define("EST_GEN_RECORDSUPD","Records Updated");
-define("EST_GEN_RECREATION","Recreation");
-define("EST_GEN_REQUIRED","Required");
-define("EST_GEN_ROOM","Room");
-define("EST_GEN_ROOMS", "Rooms");
-define("EST_GEN_ROUNDVALSTO", "Round Values to");
-define("EST_GEN_SAVE", "Save");
-define("EST_GEN_SAVES", "Saves");
-define("EST_GEN_SAVEINQ", "Saves & Inquiries");
-define("EST_GEN_SAVEDLISTINGS", "Saved Listings");
-define("EST_GEN_SAVECONT", "Save & Continue");
-define("EST_GEN_SAVEFIRST","Click Save in order to add");
-define("EST_GEN_SCHEDPRIVATEVIEW","Request Private Viewing");
-define("EST_GEN_SCHEDULING","Scheduling");
-define("EST_GEN_SCHOOLS","Schools");
-define("EST_GEN_SECTION","Section");
-define("EST_GEN_SELECT","Select");
-define("EST_GEN_SELECTONE","Select One");
-define("EST_GEN_SELLER","Seller");
-define("EST_GEN_SEMIANNUAL","Semi-Annual");
-define("EST_GEN_SENDINGEMAILS","Sending Emails");
-define("EST_GEN_SETUP","Setup");
-define("EST_GEN_SIZE","Size");
-define("EST_GEN_SOLD","Sold");
-define("EST_GEN_SORT","Sort");
-define("EST_GEN_SPACE","Space");
-define("EST_GEN_SPACES","Spaces");
-define("EST_GEN_SQR","Square");
-define("EST_GEN_SQRKM","Sq Km");
-define("EST_GEN_SQRMI","Sq Miles");
+define("EST_GEN_OTHER","Otro");
+define("EST_GEN_OTHERPROP1","Estás editando una propiedad creada por");
+define("EST_GEN_OTHERPROP2","Esta propiedad fue creada por");
+define("EST_GEN_OVERVIEW","Resumen");
+define("EST_GEN_PHONE","Teléfono");
+define("EST_GEN_PENDING","Pendiente");
+define("EST_GEN_PERMISSIONS","Permisos");
+define("EST_GEN_PLAYPAUSESLIDE","Haz clic para reproducir/pausar la presentación");
+define("EST_GEN_PLEASE","Por favor");
+define("EST_GEN_PLEASESAVEPROP","Por favor, guarda la propiedad primero");
+define("EST_GEN_PLUGUNAVAIL","Esta sección de nuestra web no está disponible para el público. Vuelve más tarde.");
+define("EST_GEN_PRICEHIST","Historial de precios");
+define("EST_GEN_PRICEHISTFUT0","Puedes programar un cambio de precio y/o estado hasta 14 días antes.");
+define("EST_GEN_PRICEHISTFUT1","Los cambios futuros de precio/estado no se muestran al público hasta la fecha indicada.");
+define("EST_GEN_PRICEHISTFUT2","Existe un cambio futuro de precio/estado. Solo puedes añadir un cambio para hoy.");
+define("EST_GEN_PRICEHISTFUT3","Próximo cambio de precio/estado");
+define("EST_GEN_PRICEHISTFUT4","No visible para el público");
+define("EST_GEN_PRICEHISTFUT5","Historial de precios público actual ");
+define("EST_GEN_PRICEHISTGO","Cambiar valores en esta fila actualiza el precio y estado ACTUAL del anuncio");
+define("EST_GEN_PRICEHISTGO1","Cambiar valores en esta fila SOLO actualiza el precio ORIGINAL del anuncio");
+define("EST_GEN_PRICEHISTNOGO","Cambiar valores en esta fila NO afecta el precio o estado actual del anuncio.");
+define("EST_GEN_PRICEHISTUP1","Precio y/o estado del anuncio actualizado por cambio programado en el historial de precios");
+define("EST_GEN_PRIPCTINF0","Haz clic para calcular el porcentaje desde");
+define("EST_GEN_PRIPCTINF1","Haz clic para elegir un nuevo precio según el cambio porcentual");
+define("EST_GEN_PRIPCTINF2","Precio original");
+define("EST_GEN_PRIPCTINF3","Valores concurrentes");
+define("EST_GEN_POSITHNT","Frente, detrás, lado este, etc.");
+define("EST_GEN_POSITION","Posición");
+define("EST_GEN_POWEREDBY","Desarrollado por");
+define("EST_GEN_PREVIEW","Vista previa");
+define("EST_GEN_PRIVATE","Privado");
+define("EST_GEN_PRIVATESELLER","Vendedor privado");
+define("EST_GEN_PRIVATEVIEWING","Visita privada");
+define("EST_GEN_PROFILE","Perfil");
+define("EST_GEN_PROFILES","Perfiles");
+define("EST_GEN_PROPERTY","Propiedad");
+define("EST_GEN_PROPERTYSPACES","Espacios de la propiedad");
+define("EST_GEN_PROPERTIES","Propiedades");
+define("EST_GEN_PUBLIC","Público");
+define("EST_GEN_PUBLICSHOWING","Visita pública");
+define("EST_GEN_QUARTERLY","Trimestral");
+define("EST_GEN_QUICKADDLIST","Añadir anuncio rápido");
+define("EST_GEN_QUICKEDIT","Edición rápida");
+define("EST_GEN_REASSIGN","Reasignar");
+define("EST_GEN_RECORDSUPD","Registros actualizados");
+define("EST_GEN_RECREATION","Recreación");
+define("EST_GEN_REQUIRED","Requerido");
+define("EST_GEN_ROOM","Habitación");
+define("EST_GEN_ROOMS", "Habitaciones");
+define("EST_GEN_ROUNDVALSTO", "Redondear valores a");
+define("EST_GEN_SAVE", "Guardar");
+define("EST_GEN_SAVES", "Guardados");
+define("EST_GEN_SAVEINQ", "Guardados y consultas");
+define("EST_GEN_SAVEDLISTINGS", "Anuncios guardados");
+define("EST_GEN_SAVECONT", "Guardar y continuar");
+define("EST_GEN_SAVEFIRST","Haz clic en Guardar para añadir");
+define("EST_GEN_SCHEDPRIVATEVIEW","Solicitar visita privada");
+define("EST_GEN_SCHEDULING","Programación");
+define("EST_GEN_SCHOOLS","Colegios");
+define("EST_GEN_SECTION","Sección");
+define("EST_GEN_SELECT","Seleccionar");
+define("EST_GEN_SELECTONE","Selecciona uno");
+define("EST_GEN_SELLER","Vendedor");
+define("EST_GEN_SEMIANNUAL","Semestral");
+define("EST_GEN_SENDINGEMAILS","Enviando correos");
+define("EST_GEN_SETUP","Configuración");
+define("EST_GEN_SIZE","Tamaño");
+define("EST_GEN_SOLD","Vendido");
+define("EST_GEN_SORT","Ordenar");
+define("EST_GEN_SPACE","Espacio");
+define("EST_GEN_SPACES","Espacios");
+define("EST_GEN_SQR","Cuadrado");
+define("EST_GEN_SQRKM","Km cuadrados");
+define("EST_GEN_SQRMI","Millas cuadradas");
 
-define("EST_GEN_STATUS","Status");
-define("EST_GEN_STORY","Story");
-define("EST_GEN_SUBDIVISION", "Subdivision");
-define("EST_GEN_SUBDIVTYPREQ", "Subdivision Type Required");
-define("EST_GEN_SUBDIVTYPE", array("Neighbourhood","Village","Incorporated Village","Town","Township","Parish","Hamlet","Gated Community","Housing Estate","55+ Retirement Community"));
-define("EST_GEN_SUBDIVISIONNONE", "Select or Add New Subdivision Above");
-define("EST_GEN_SUBMITTLISTING", "Submit New Listing");
-define("EST_GEN_SUBMITTEDLIST", "Submitted Listings");
-define("EST_GEN_TEMPLAYOUT", "Template Layout");
-define("EST_GEN_THUMBNAIL","Thumbnail");
-define("EST_GEN_TIMEZONE","Timezone");
-define("EST_GEN_TO","to");
-define("EST_GEN_TODAY","Today");
-define("EST_GEN_TOMODS","To Moderators");
-define("EST_GEN_TOMORROW","Tomorrow");
+define("EST_GEN_STATUS","Estado");
+define("EST_GEN_STORY","Planta");
+define("EST_GEN_SUBDIVISION", "Urbanización");
+define("EST_GEN_SUBDIVTYPREQ", "Tipo de urbanización requerido");
+define("EST_GEN_SUBDIVTYPE", array("Barrio","Aldea","Aldea incorporada","Ciudad","Municipio","Parroquia","Caserío","Comunidad cerrada","Residencial","Comunidad de jubilados 55+"));
+define("EST_GEN_SUBDIVISIONNONE", "Selecciona o añade nueva urbanización arriba");
+define("EST_GEN_SUBMITTLISTING", "Enviar nuevo anuncio");
+define("EST_GEN_SUBMITTEDLIST", "Anuncios enviados");
+define("EST_GEN_TEMPLAYOUT", "Diseño de plantilla");
+define("EST_GEN_THUMBNAIL","Miniatura");
+define("EST_GEN_TIMEZONE","Zona horaria");
+define("EST_GEN_TO","a");
+define("EST_GEN_TODAY","Hoy");
+define("EST_GEN_TOMODS","A moderadores");
+define("EST_GEN_TOMORROW","Mañana");
 define("EST_GEN_TOTAL","Total");
-define("EST_GEN_TOWN","Town");
+define("EST_GEN_TOWN","Pueblo");
 define("EST_GEN_TWITER","X(Twitter)");
-define("EST_GEN_TYPE","Type");
-define("EST_GEN_UNITSBLDG","Units In Bldg");
-define("EST_GEN_UNITSCOMPLX","Units In Complex");
-define("EST_GEN_UNK","Unknown");
-define("EST_GEN_UNNAMEDPROPERTY","Unnamed Listing");
-define("EST_GEN_UPDATETHIS","Update this");
-define("EST_GEN_UPDATE","Update");
-define("EST_GEN_UPDATED","Updated");
-define("EST_GEN_UPLOADING","Uploading");
-define("EST_GEN_UPTODATE","Up to date");
-define("EST_GEN_USE","Use");
-define("EST_GEN_USER","User");
-define("EST_GEN_VIDEO","Video");
-define("EST_GEN_VIEW","View");
-define("EST_GEN_VIEWS","Views");
-define("EST_GEN_VIEWLAYOUTUP", "View Layout Updated");
-define("EST_GEN_VIEWLISTING","View Listing");
-define("EST_GEN_VIEWLISTINGS","View Available Listings");
-define("EST_GEN_VIEWTMPLUP", "View Template Changed");
-define("EST_GEN_VOLANTARY","Voluntary");
-define("EST_GEN_WAITINGAPPROVAL","Waiting For Approval");
-define("EST_GEN_WEBSITE","Website");
-define("EST_GEN_WEEKLY","Weekly");
-define("EST_GEN_WEEKS","Weeks");
-define("EST_GEN_ZONE","Zone");
-define("EST_GEN_ZONECHANGE1","A Zoning change has reset this property's available features. Please review the Features Tab");
-define("EST_GEN_ZONING","Zoning");
-
-
-
-define("EST_MSG_ADDRNOTFOUND","Address Not Found. Edit in field above and try again.");
-define("EST_MSG_ADDRTOOSHORT","Address Too Short");
-
-
-define("EST_PREF_DEFLOCALE","PHP Currency Formatting");
-define("EST_PREF_DEFLOCALE0A","Prefix Currency Symbol");
-define("EST_PREF_DEFLOCALE0B","Postfix Currency Symbol");
-define("EST_PREF_DEFLOCALE1","Use PHP Number Formatter");
-define("EST_PREF_DEFLOCALE2","For Selected Country");
-define("EST_PREF_DEFLOCALE3","Other Countries");
-define("EST_PREF_DEFLOCALEHLP","Use either PHP's Number Formatter Function to format the Listing Price or force whatever currency symbol you choose before or after a non-delineated number. Every listing can have its own setting.");
-define("EST_PREF_DEFLOCALESEL1","Displays the Listing Price as a non-delineated integer and forces the selected currency symbol (if any) to appear either before or after the amount");
-define("EST_PREF_DEFLOCALESEL2","Use PHP Number formatting to display the Listing Price based on selected Locale information.");
-define("EST_PREF_DEFLOCALESEL3","Set the Locale Language and Currency Code ($, €, £, etc) to the desired setting.");
-
-
-
-
-define("EST_PROP_INTSIZE", "Interior Space");
-define("EST_PROP_LANDSIZE", "Property Size");
-define("EST_PROP_YEARBUILT", "Year Built");
-
-define("EST_SEF_LISTINGS", "listings");
-define("EST_SEF_PROPERTY", "property");
-
-
-define("EST_PROP_ADDR1", "Address 1");
-define("EST_PROP_ADDR2", "Address 2");
-
-
-define("EST_PROP_APPROVE00", "This property is waiting for publication approval from a Moderator or Admin. It is currently not visible to the public.");
-define("EST_PROP_APPROVE01", "Your new listing will need to be approved by an Admin or Moderator before it will be visible to the public. As the author of this listing, you will always be able to view and edit this listing prior to its publication.");
-define("EST_PROP_APPROVE02", "This listing is awaiting review by a Moderator or Admin.");
-define("EST_PROP_APPROVE03", "This listing has been approved for publication and is visible to the public.");
-define("EST_PROP_APPROVE04", "Any changes made to an approved listing will need to reviewed and approved by a Moderator or Admin.");
-define("EST_PROP_APPROVE05", "You can make changes to this listing as often as you like while waiting for approval. Once it has been approved, any changes you make will need to be reviewed again before it will be visible to the public.");
-define("EST_PROP_APPROVE06", "An Email requesting review of your listing has already been sent to the Moderators. You may continue to make changes to this listing as often as you like while waiting for approval.");
-
-define("EST_PROP_BYLINE","Byline");
-define("EST_PROP_CITY", "City");
-define("EST_PROP_COUNTRY", "Country");
-define("EST_PROP_COUNTY", "County");
-define("EST_PROP_CURPRICE", "Current Price");
-define("EST_PROP_DATECREATED", "Date Created");
-define("EST_PROP_DATEUPDATE", "Date Updated");
-define("EST_PROP_DATELIVE", "Go Live Date");
-define("EST_PROP_DATEPREVW", "Member Preview Date");
-define("EST_PROP_DATEPULL", "Pull Date");
-define("EST_PROP_DATETEASE", "Date Tease");
-define("EST_PROP_DESCRIPTIONPLCHLDR", "Full Description");
-define("EST_PROP_FEATOPTLISTPLC","A Comma (,) separated List, eg. Walk-in Closets, Pool, Washer & Dryer, etc");
-define("EST_PROP_GEOAREA", "Geo Area");
-define("EST_PROP_HOAAPPR","HOA Approval Required");
-define("EST_PROP_HOAAPPRHLP","Does the HOA require prospective buyers to meet certain critera?");
-define("EST_PROP_HOAAPPRNOTES","The Home Owners Association requires prospective buyers to meet certain critera prior to purchasing properties within the development.");
-define("EST_PROP_HOADISCLAIMER","Specific HOA information known for this property at the time of listing. This information may be incomplete and/or has changed. Always review your Closing Documents and all Covenants, Conditions and Restrictions (CC&Rs) before signing.");
-define("EST_PROP_HOADISCLAIMER0","Please refer to the Association's Covenants, Conditions and Restrictions (CC&Rs) or similar documents for more information.");
-define("EST_PROP_HOADISCLAIMER1","Association fees may vary between properties in the development and are subject to change.");
-define("EST_PROP_HOADISCLAIMER2","Please review your closing documents carefully before signing.");
-define("EST_PROP_HOADISCLAIMER3","There may be requirements that occupants must meet in order to purchase and/or live within the community. A common example of this is a retirement community where occupants must be 55 or more years old.");
-define("EST_PROP_HOADISCLAIMER4","A Land Lease is where you pay rent for the land that the dwelling resides upon and may or may not be included in HOA fees. A typical example is for the parking spot for a mobile home.");
-
-define("EST_PROP_HOAMEMBERSHIP","HOA Membership");
-define("EST_PROP_HOANAME","HOA Name");
-define("EST_PROP_HOAREQ","HOA Required");
-define("EST_PROP_HOAREQHLP","Homeowner is required to join the Home Owner's Association");
-define("EST_PROP_HOAFEE","HOA Fee");
-define("EST_PROP_HOAFEES","HOA Fees");
-define("EST_PROP_HOAFEESHLP","Dues for Home Owner's Association. Enter zero if there are no HOA fees.");
-define("EST_PROP_HOALAND","HOA Fee Includes Land Lease");
-define("EST_PROP_HOALANDHLP","Enable if a Land Lease is included in the HOA fees.");
-define("EST_PROP_HOAFRQ","HOA Frequency");
-define("EST_PROP_HOAUPDTA0","Remove Property HOA Information?");
-define("EST_PROP_HOAUPDTA1","Reset to Previous Values");
-define("EST_PROP_HOAUPDTA2","Reload Last Saved Values");
-define("EST_PROP_HOAUPDTA3","Update to Subdivision Values");
-define("EST_PROP_HOAUPDTA4","Update Property HOA Information?");
-define("EST_PROP_HOAWEB","HOA Website");
-define("EST_PROP_INTSIZE", "Livable Space");
-define("EST_PROP_LANDLEASE", "Land Lease");
-define("EST_PROP_LANDLEASEHLP", "Land Lease amount. Enter zero if there is no land lease OR if a Land Lease is included in HOA Fees.");
-define("EST_PROP_LAT","Lattitude");
-define("EST_PROP_LEASEDUR","Lease Duration");
-define("EST_PROP_LISTPRICE", "List Price");
-define("EST_PROP_LISTYPE", "Listing Type");
-define("EST_PROP_LISTZONE", "Zoning Category");
-define("EST_PROP_LON","Longitude");
-define("EST_PROP_LOTID", "Lot ID");
-define("EST_PROP_MLSNO", "MLS #");
-define("EST_PROP_MODELNAME", "Model Name");
-define("EST_PROP_MODELNAMEPLCHLDR","The Builder's Model Name");
-
-define("EST_PROP_MSG_ADDMAP","setting up Map coordinates");
-define("EST_PROP_MSG_ADDMEDIA","adding Media");
-define("EST_PROP_MSG_ADDSPACES","Adding Spaces");
-define("EST_PROP_MSG_ADDEVENTS","Adding Events");
-define("EST_PROP_MSG_NAUNTILSPACES","Not available until you add a NEW space");
-define("EST_PROP_MSG_CITY", "Please Select a City");
-define("EST_PROP_MSG_CNTY", "Please Select a County");
-define("EST_PROP_MSG_MISSING","Missing");
-define("EST_PROP_MSG_NAT", "Please Select a Country");
-define("EST_PROP_MSG_NEEDSAVE","This Property needs to be saved before");
-define("EST_PROP_MSG_ST", "Please Select a State");
-define("EST_PROP_MSG_TABLE","Table");
-define("EST_PROP_MSG_TYPE1", "Please Select Listing Type");
-define("EST_PROP_MSG_ZONE1", "Please Select a Zoning Category for this property");
-
-define("EST_PROP_NAME", "Property Name");
-define("EST_PROP_NAMEPLCH", "Listing Title (eg Martin Manor, 1234 Bluebelle Lane, etc)");
-define("EST_PROP_ORIGPRICE", "Original Price");
-define("EST_PROP_PARCELID", "Parcel ID");
-define("EST_PROP_PROPOWNER", "Property Owner");
-define("EST_PROP_POSTCODE", "Postal Code");
-define("EST_PROP_POSTCODELIST", "Postal Code List");
-define("EST_PROP_RESETMAP", "Reset/Redraw Map");
-define("EST_PROP_RESETHM","Click to reload thumbnail. Double-Click to change.");
-define("EST_PROP_ROOFSIZE", "Total Space");
-define("EST_PROP_SEF", "Friendly URL");
-define("EST_PROP_SELAGNCY", "Select Agency");
-define("EST_PROP_SELAGNT", "Select Agent");
-define("EST_PROP_SEF", "Friendly URL");
-define("EST_PROP_MAPADDR","Map Address Lookup");
-
-define("EST_PROP_STATE", "State");
-define("EST_PROP_STATUS", "Status");
-define("EST_PROP_SUMMARYPLCHLDR", "Short Summary");
-define("EST_PROP_TIMEZONE","Time Zone");
-define("EST_PROP_THISCLRFRM","This will clear the form");
-define("EST_PROP_TYPE", "Property Type");
-define("EST_PROP_TYPEPLCH", "Single Family, Appartment, Retail, etc.");
-define("EST_PROP_UIDCREATE", "Listed By");
-define("EST_PROP_UNNAMEDPROP", "Unnamed Property");
-define("EST_PROP_UPDTEUID", "Updated By");
-define("EST_PROP_UPHIST1", "Pricing History ID #");
-define("EST_PROP_ZIP", "ZIP Code");
-define("EST_PROP_ZIPLIST", "ZIP Code List");
-
-
-
-define("EST_PROP_CITYHLP","Sets filters for Postal Code and Community/Subdivision options. Click the Edit button to Add or Edit City and ZIP Code options.");
-define("EST_PROP_COUNTRYHLP", "Sets filters for all remaining Address data and also sets filters for other options used throughout the forms in this plugin.");
-define("EST_PROP_COUNTYHLP", "Sets filters for City options. Click the Edit button to Add or Edit  County options.");
-define("EST_GEN_CURRENCYHLP","Sets Currency Symbol and Formatting Options");
-
-define("EST_PROP_DESCRIPTIONHLP", "Provide a full description of the property including information not covered in the interior/exterior sections");
-
-define("EST_PROP_FLAG","Listing Flag");
-define("EST_PROP_FLAGHLP","If a property is not Pending or Sold, this will appear as a flag or banner on the listings page");
-define("EST_PROP_FLAGPLCHLDR","Pool/Waterfront/Newly Renovated/etc.");
-
-define("EST_PROP_HRS","Viewing Hours");
-define("EST_PROP_HRS1","This property is avaible for private showings during listed hours on the following days. Please contact [x] to make an appointment to view this property in person.");
-define("EST_PROP_HRSHLP","Displays when the Agent or Seller is available to show this property.");
-
-define("EST_PROP_INTERIORHLP", "Add/Edit interior features for this property");
-define("EST_PROP_INTSIZEHLP", "Total Interior climate controled living space");
-
-define("EST_PROP_LANDSIZEHLP", "Optional: the size of the lot the property is built upon");
-//define("EST_PROP_LATLONHLP","The lattitude & Longitude Coordinates for the property. Move the pointer on the map or enter the coordinates here.");
-
-define("EST_PROP_LISTAGENTHLP","The Agent & Agency assigned to this property. What you can do here depends on your login credentials.");
-define("EST_PROP_LISTAGENTHLP1","Main Admins and Estate Admins are able to Add/Edit Agencies and Agents.");
-define("EST_PROP_LISTAGENTHLP2","Estate Managers can only Add/Edit Agents.");
-define("EST_PROP_LISTAGENTHLP3","Estate Agents can only edit their own Profile.");
-define("EST_PROP_LISTPRICEHLP", "Click the List Price Button to open the Pricing Form where you can view and change the price history and set currency formatting options.");
-define("EST_PROP_LISTPRICEHLP1", "Whole Numbers Only, No Symbols. This is the Original Price for this listing, which is used later on for various calculations.");
-define("EST_PROP_LISTYPEHLP", "The List Type option sets up For Sale or For Rent pricing options.");
-
-define("EST_PROP_LOTIDHLP", "Optional. The Lot ID for this property");
-
-//EST_PROP_MAPADDRHLP Map Help
-define("EST_PROP_MAPADDRHLP","Find Lattitude/Longitude coordinates for an address using openstreetmap.org");
-
-define("EST_PROP_MAPMAINHLP1", "Use the Map Address Lookup to get the coordinates of the displayed address.");
-define("EST_PROP_MAPMAINHLP2", "If addresses are found, they will be listed below the Reset Map Button. Click a found Address button to update the map");
-
-define("EST_PROP_MAPMAINHLP3", "If no addresses are found, try changing the address to look up. Changing the address in this field does not affect the Property's address on the Address tab.");
-define("EST_PROP_MAPMAINHLP4", "You can also drag the Marker in the map to set the coordinates for this property.");
-
-define("EST_PROP_NAMEHLP","A Name/Title for this property listing");
-
-define("EST_PROP_MLSNOHLP", "Optional. An index for this property from an outside source, such as the Multiple Listing Service association.");
-define("EST_PROP_MODELNAMEHLP","Optional: Model Names can be used to filter and group listings for visitors to your website");
-
-define("EST_PROP_DATELIVEHLP", "The date the listing will become fully visible to the public");
-define("EST_PROP_DATEPREVWHLP", "The date Website Members can preview this listing as if it were live. This can be before or after the ".EST_PROP_DATETEASE." but must be before or equal to the Go Live Date date.");
-define("EST_PROP_DATEPULLHLP", "The date this listing will automatically end. Leave blank to have the listing remain until you manually change it to Inactive");
-define("EST_PROP_DATETEASEHLP", "The date this listing becomes visible, but with limited data available to the public. You can set what data will be included in the ".LAN_PREFS." form.");
-
-define("EST_PROP_ORIGPRICEHLP", "The Original Price must be a whole number (0-9).");
-define("EST_PROP_PARCELIDHLP", "Optional. The Parcel ID for this property");
-define("EST_PROP_ROOFSIZEHLP", "Optional: Total space including non-HVAC areas");
-
-define("EST_PROP_SEFHLP","Leave blank to auto-generate it from the Property Name");
-define("EST_PROP_STATUSHLP", "The Status of the Property controls data and functions available to the public:<ul><li>Off Market hides the property from the public</li><li>Scheduled Publication enables a scheduled publication</li><li>Live Now - Ignore Publication Schedule bypasses any scheduled publication</li><li>Pending hides Viewing Request forms</li><li>Sold hides Pricing, Viewing Request forms, and all media except for the first Gallery Image</li></ul>");
-define("EST_PROP_STATEHLP", "Sets filters for County options. Click the Edit button to Add or Edit options.");
-define("EST_PROP_SUBDIVHLP","Optional. Available options are based on the City chosen. Click the Edit button to Add or Edit Subdivision options for the selected City.");
-define("EST_PROP_SUMMARYHLP", "A short description no more than 255 characters long. Used in Property Gallery, Search, and List pages");
-
-define("EST_PROP_TIMEZONEHLP","The Timezone is used to sync the scheduling with the visitor's browser. This is automatically set when you select the City, but you have the option to change it here if the city has multiple timezones.");
-define("EST_PROP_TYPEHLP","Required. A second Category for this listing, eg. Single Family, Multi Family, Office Space, etc.");
-
-define("EST_PROP_ZIPHLP","Sets the ZIP Code value. Add or Edit ZIP Code options by clicking the Edit button for the City Dropdown");
-define("EST_PROP_POSTCODEHLP","Sets the Postal Code value. Add or Edit Postal Code options by clicking the Edit button for the City Dropdown");
-
-define("EST_PROP_ZONEHLP","Required. For what usage is this property: eg. Residential, Commercial, Industrial, etc.");
-
-define("EST_PROPLIST", "Property List");
-
-
-
-
-
-define("EST_SPCAT_ZERO","Please select a Type/Category on the Main Tab");
-define("EST_SPCID_ZERO","This Space must be Saved in order to add ");
-
-
-define("EST_PLCH15","Enter an address to look up");
-define("EST_PLCH96","eg 1313 Mockingbird Lane");
-define("EST_PLCH96A","eg Apartment 86b");
-
-define("EST_GEN_MAPADDRLOOKUP", "Address to look up");
-define("EST_GEN_MAPHLP1","Use the search button to find the coordinates of the address in the lookup field.");
-define("EST_GEN_MAPHLP2","The address in the Lookup field is automatically updated by changing the Address above.");
-define("EST_GEN_MAPHLP3","You might have to edit the address in the lookup field if it is not found.");
-define("EST_GEN_MAPHLP4","You can also drag the pointer to the exact location desired.");
-define("EST_GEN_MAPHLP5","NOTE: The Zoom level for any map is saved for each individual map as displayed.");
-define("EST_GEN_MAPHLP6","Set the default Map Coordinates used when you create a New Agency.");
-define("EST_GEN_MAPHLP7","New Properties will default to the Agency Location's Map Coordinates or to these coordinates if no Agency Location is assigned.");
-
-
-define("EST_MEDIA_VIEWDELETEDMEDIA", "Click to View Deleted Media Files");
-define("EST_MEDIA_CREATEDFOLDERS", "Created Media Folder:");
-define("EST_MEDIA_CREATEDFOLDERFAIL", "Created Media Folder:");
-define("EST_MEDIA_DELETEDFOLDERS", "files and folders deleted");
-define("EST_MEDIA_FOUNDTHMFILE", "Found Thumb File");
-define("EST_MEDIA_FOUNDFULLFILE", "Found Full File");
-define("EST_MEDIAAVAILABLE","Available Media");
-
-define("EST_MEDIAINUSE","Main Gallery Images");
-
-define("EST_MEDIAREPLACE","Upload Replacement Media");
-define("EST_MEDIA_ZOOMCROP","Zoom & Crop");
-
-
-define("EST_SPEC_LEVS1",array("Community/Subdivision","Property: General","Property Spaces/Rooms","City/Town Individual Amenities","Community/Subdivision Individual Amenities"));
-
-
-define("EST_UPL_FILEFULLREM","Removed Full Size Version");
-define("EST_UPL_FILEFULLNOTREM","FAILED to Remove Full Size Version");
-define("EST_UPL_FILETHUMBREM","Removed Thumb");
-define("EST_UPL_FILETHUMBNOTREM","FAILED to Remove Thumb");
-define("EST_UPL_FILEVIDREM","Removed Video File");
-define("EST_UPL_FILEVIDNOTREM","FAILED to Remove Video File");
-
-
-
-
-define("EST_HLPMNU_ABOUTSPACES0","Spaces are like rooms, though they are also used for other details about a property. In addition to Bedrooms, Bathrooms, and other rooms in a house, a property might have a yard, patio, or other space. Also. the community a listing is in might have a Park, Pool, and other amenities.");
-
-
-
-define("EST_HLPMNU_ADDRESS1","Information about the property's physical location.");
+define("EST_GEN_TYPE","Tipo");
+define("EST_GEN_UNITSBLDG","Unidades en el edificio");
+define("EST_GEN_UNITSCOMPLX","Unidades en el complejo");
+define("EST_GEN_UNK","Desconocido");
+define("EST_GEN_UNNAMEDPROPERTY","Anuncio sin nombre");
+define("EST_GEN_UPDATETHIS","Actualizar esto");
+define("EST_GEN_UPDATE","Actualizar");
+define("EST_GEN_UPDATED","Actualizado");
+define("EST_GEN_UPLOADING","Subiendo");
+define("EST_GEN_UPTODATE","Actualizado");
+define("EST_GEN_USE","Usar");
+define("EST_GEN_USER","Usuario");
+define("EST_GEN_VIDEO","Vídeo");
+define("EST_GEN_VIEW","Ver");
+define("EST_GEN_VIEWS","Vistas");
+define("EST_GEN_VIEWLAYOUTUP", "Diseño de vista actualizado");
+define("EST_GEN_VIEWLISTING","Ver anuncio");
+define("EST_GEN_VIEWLISTINGS","Ver anuncios disponibles");
+define("EST_GEN_VIEWTMPLUP", "Plantilla de vista cambiada");
+define("EST_GEN_VOLANTARY","Voluntario");
+define("EST_GEN_WAITINGAPPROVAL","Esperando aprobación");
+define("EST_GEN_WEBSITE","Web");
+define("EST_GEN_WEEKLY","Semanal");
+define("EST_GEN_WEEKS","Semanas");
+define("EST_GEN_ZONE","Zona");
+define("EST_GEN_ZONECHANGE1","Un cambio de zonificación ha restablecido las características disponibles de esta propiedad. Revisa la pestaña de características");
+define("EST_GEN_ZONING","Zonificación");
+
+define("EST_MSG_ADDRNOTFOUND","Dirección no encontrada. Edita el campo de arriba y vuelve a intentarlo.");
+define("EST_MSG_ADDRTOOSHORT","Dirección demasiado corta");
+
+define("EST_PREF_DEFLOCALE","Formato de moneda PHP");
+define("EST_PREF_DEFLOCALE0A","Símbolo de moneda antes");
+define("EST_PREF_DEFLOCALE0B","Símbolo de moneda después");
+define("EST_PREF_DEFLOCALE1","Usar formateador de números PHP");
+define("EST_PREF_DEFLOCALE2","Para el país seleccionado");
+define("EST_PREF_DEFLOCALE3","Otros países");
+define("EST_PREF_DEFLOCALEHLP","Usa la función de formateo de números de PHP para mostrar el precio del anuncio o fuerza el símbolo de moneda que elijas antes o después del número. Cada anuncio puede tener su propia configuración.");
+define("EST_PREF_DEFLOCALESEL1","Muestra el precio como un número entero sin separadores y fuerza el símbolo de moneda seleccionado (si hay) antes o después de la cantidad");
+define("EST_PREF_DEFLOCALESEL2","Usa el formateo de números de PHP para mostrar el precio según la configuración regional seleccionada.");
+define("EST_PREF_DEFLOCALESEL3","Establece el idioma y el código de moneda ($, €, £, etc) deseados.");
+
+define("EST_PROP_INTSIZE", "Espacio interior");
+define("EST_PROP_LANDSIZE", "Tamaño de la propiedad");
+define("EST_PROP_YEARBUILT", "Año de construcción");
+
+define("EST_SEF_LISTINGS", "anuncios");
+define("EST_SEF_PROPERTY", "propiedad");
+
+define("EST_PROP_ADDR1", "Dirección 1");
+define("EST_PROP_ADDR2", "Dirección 2");
+
+define("EST_PROP_APPROVE00", "Esta propiedad está esperando la aprobación de publicación por parte de un moderador o administrador. Actualmente no es visible para el público.");
+define("EST_PROP_APPROVE01", "Tu nuevo anuncio necesitará ser aprobado por un administrador o moderador antes de ser visible para el público. Como autor de este anuncio, siempre podrás verlo y editarlo antes de su publicación.");
+define("EST_PROP_APPROVE02", "Este anuncio está pendiente de revisión por un moderador o administrador.");
+define("EST_PROP_APPROVE03", "Este anuncio ha sido aprobado para su publicación y es visible para el público.");
+define("EST_PROP_APPROVE04", "Cualquier cambio realizado en un anuncio aprobado deberá ser revisado y aprobado por un moderador o administrador.");
+define("EST_PROP_APPROVE05", "Puedes hacer cambios en este anuncio tantas veces como quieras mientras esperas la aprobación. Una vez aprobado, cualquier cambio que hagas deberá ser revisado de nuevo antes de ser visible para el público.");
+define("EST_PROP_APPROVE06", "Ya se ha enviado un correo solicitando la revisión de tu anuncio a los moderadores. Puedes seguir haciendo cambios en este anuncio tantas veces como quieras mientras esperas la aprobación.");
+
+define("EST_PROP_BYLINE","Autoría");
+define("EST_PROP_CITY", "Ciudad");
+define("EST_PROP_COUNTRY", "País");
+define("EST_PROP_COUNTY", "Provincia");
+define("EST_PROP_CURPRICE", "Precio actual");
+define("EST_PROP_DATECREATED", "Fecha de creación");
+define("EST_PROP_DATEUPDATE", "Fecha de actualización");
+define("EST_PROP_DATELIVE", "Fecha de publicación");
+define("EST_PROP_DATEPREVW", "Fecha de vista previa para miembros");
+define("EST_PROP_DATEPULL", "Fecha de retirada");
+define("EST_PROP_DATETEASE", "Fecha de previsualización");
+define("EST_PROP_DESCRIPTIONPLCHLDR", "Descripción completa");
+define("EST_PROP_FEATOPTLISTPLC","Lista separada por comas, ej: Armarios empotrados, Piscina, Lavadora y secadora, etc");
+define("EST_PROP_GEOAREA", "Área geográfica");
+define("EST_PROP_HOAAPPR","Requiere aprobación de la comunidad");
+define("EST_PROP_HOAAPPRHLP","¿La comunidad requiere que los compradores cumplan ciertos criterios?");
+define("EST_PROP_HOAAPPRNOTES","La comunidad de propietarios requiere que los compradores cumplan ciertos criterios antes de comprar propiedades en la urbanización.");
+define("EST_PROP_HOADISCLAIMER","Información específica de la comunidad conocida para esta propiedad en el momento del anuncio. Esta información puede estar incompleta y/o haber cambiado. Revisa siempre tus documentos de cierre y todos los estatutos antes de firmar.");
+define("EST_PROP_HOADISCLAIMER0","Consulta los estatutos de la comunidad o documentos similares para más información.");
+define("EST_PROP_HOADISCLAIMER1","Las cuotas pueden variar entre propiedades en la urbanización y están sujetas a cambios.");
+define("EST_PROP_HOADISCLAIMER2","Revisa cuidadosamente tus documentos de cierre antes de firmar.");
+define("EST_PROP_HOADISCLAIMER3","Puede haber requisitos que los ocupantes deban cumplir para comprar y/o vivir en la comunidad. Un ejemplo común es una comunidad de jubilados donde los ocupantes deben tener 55 años o más.");
+define("EST_PROP_HOADISCLAIMER4","Un alquiler de terreno es cuando pagas alquiler por el terreno donde está la vivienda y puede o no estar incluido en las cuotas de la comunidad. Un ejemplo típico es la plaza de aparcamiento de una casa móvil.");
+
+define("EST_PROP_HOAMEMBERSHIP","Membresía en la comunidad");
+define("EST_PROP_HOANAME","Nombre de la comunidad");
+define("EST_PROP_HOAREQ","Requiere comunidad");
+define("EST_PROP_HOAREQHLP","El propietario debe unirse a la comunidad de propietarios");
+define("EST_PROP_HOAFEE","Cuota de la comunidad");
+define("EST_PROP_HOAFEES","Cuotas de la comunidad");
+define("EST_PROP_HOAFEESHLP","Cuotas de la comunidad de propietarios. Introduce cero si no hay cuotas.");
+define("EST_PROP_HOALAND","La cuota incluye alquiler del terreno");
+define("EST_PROP_HOALANDHLP","Activa si el alquiler del terreno está incluido en las cuotas.");
+define("EST_PROP_HOAFRQ","Frecuencia de la cuota");
+define("EST_PROP_HOAUPDTA0","¿Eliminar información de la comunidad?");
+define("EST_PROP_HOAUPDTA1","Restablecer a valores anteriores");
+define("EST_PROP_HOAUPDTA2","Recargar últimos valores guardados");
+define("EST_PROP_HOAUPDTA3","Actualizar a valores de la urbanización");
+define("EST_PROP_HOAUPDTA4","¿Actualizar información de la comunidad?");
+define("EST_PROP_HOAWEB","Web de la comunidad");
+define("EST_PROP_INTSIZE", "Espacio habitable");
+define("EST_PROP_LANDLEASE", "Alquiler del terreno");
+define("EST_PROP_LANDLEASEHLP", "Importe del alquiler del terreno. Introduce cero si no hay alquiler o si está incluido en las cuotas.");
+define("EST_PROP_LAT","Latitud");
+define("EST_PROP_LEASEDUR","Duración del alquiler");
+define("EST_PROP_LISTPRICE", "Precio de salida");
+define("EST_PROP_LISTYPE", "Tipo de anuncio");
+define("EST_PROP_LISTZONE", "Categoría de zonificación");
+define("EST_PROP_LON","Longitud");
+define("EST_PROP_LOTID", "ID de parcela");
+define("EST_PROP_MLSNO", "Nº MLS");
+define("EST_PROP_MODELNAME", "Nombre del modelo");
+define("EST_PROP_MODELNAMEPLCHLDR","Nombre del modelo del constructor");
+
+define("EST_PROP_MSG_ADDMAP","configurando coordenadas del mapa");
+define("EST_PROP_MSG_ADDMEDIA","añadiendo medios");
+define("EST_PROP_MSG_ADDSPACES","Añadiendo espacios");
+define("EST_PROP_MSG_ADDEVENTS","Añadiendo eventos");
+define("EST_PROP_MSG_NAUNTILSPACES","No disponible hasta que añadas un NUEVO espacio");
+define("EST_PROP_MSG_CITY", "Selecciona una ciudad");
+define("EST_PROP_MSG_CNTY", "Selecciona una provincia");
+define("EST_PROP_MSG_MISSING","Falta");
+define("EST_PROP_MSG_NAT", "Selecciona un país");
+define("EST_PROP_MSG_NEEDSAVE","Esta propiedad debe guardarse antes de");
+define("EST_PROP_MSG_ST", "Selecciona una comunidad autónoma");
+define("EST_PROP_MSG_TABLE","Tabla");
+define("EST_PROP_MSG_TYPE1", "Selecciona tipo de anuncio");
+define("EST_PROP_MSG_ZONE1", "Selecciona una categoría de zonificación para esta propiedad");
+
+define("EST_PROP_NAME", "Nombre de la propiedad");
+define("EST_PROP_NAMEPLCH", "Título del anuncio (ej: Villa Martín, Calle Azul 1234, etc)");
+define("EST_PROP_ORIGPRICE", "Precio original");
+define("EST_PROP_PARCELID", "ID de parcela");
+define("EST_PROP_PROPOWNER", "Propietario");
+define("EST_PROP_POSTCODE", "Código postal");
+define("EST_PROP_POSTCODELIST", "Lista de códigos postales");
+define("EST_PROP_RESETMAP", "Restablecer/redibujar mapa");
+define("EST_PROP_RESETHM","Haz clic para recargar miniatura. Doble clic para cambiar.");
+define("EST_PROP_ROOFSIZE", "Superficie total");
+define("EST_PROP_SEF", "URL amigable");
+define("EST_PROP_SELAGNCY", "Selecciona agencia");
+define("EST_PROP_SELAGNT", "Selecciona agente");
+define("EST_PROP_SEF", "URL amigable");
+define("EST_PROP_MAPADDR","Búsqueda de dirección en el mapa");
+
+define("EST_PROP_STATE", "Comunidad autónoma");
+define("EST_PROP_STATUS", "Estado");
+define("EST_PROP_SUMMARYPLCHLDR", "Resumen corto");
+define("EST_PROP_TIMEZONE","Zona horaria");
+define("EST_PROP_THISCLRFRM","Esto limpiará el formulario");
+define("EST_PROP_TYPE", "Tipo de propiedad");
+define("EST_PROP_TYPEPLCH", "Unifamiliar, Apartamento, Local, etc.");
+define("EST_PROP_UIDCREATE", "Listado por");
+define("EST_PROP_UNNAMEDPROP", "Propiedad sin nombre");
+define("EST_PROP_UPDTEUID", "Actualizado por");
+define("EST_PROP_UPHIST1", "ID historial de precios");
+define("EST_PROP_ZIP", "Código postal");
+define("EST_PROP_ZIPLIST", "Lista de códigos postales");
+
+
+
+define("EST_PROP_CITYHLP","Establece filtros para las opciones de Código Postal y Comunidad/Urbanización. Haz clic en el botón Editar para añadir o editar opciones de Ciudad y Código Postal.");
+define("EST_PROP_COUNTRYHLP", "Establece filtros para todos los datos de dirección restantes y también para otras opciones usadas en los formularios de este plugin.");
+define("EST_PROP_COUNTYHLP", "Establece filtros para las opciones de Ciudad. Haz clic en el botón Editar para añadir o editar opciones de Provincia.");
+define("EST_GEN_CURRENCYHLP","Establece el símbolo de moneda y las opciones de formato");
+
+define("EST_PROP_DESCRIPTIONHLP", "Proporciona una descripción completa de la propiedad, incluyendo información no cubierta en las secciones de interior/exterior");
+
+define("EST_PROP_FLAG","Bandera del anuncio");
+define("EST_PROP_FLAGHLP","Si una propiedad no está Pendiente o Vendida, esto aparecerá como una bandera o banner en la página de anuncios");
+define("EST_PROP_FLAGPLCHLDR","Piscina/Frente al agua/Reformado/etc.");
+
+define("EST_PROP_HRS","Horario de visitas");
+define("EST_PROP_HRS1","Esta propiedad está disponible para visitas privadas durante las horas indicadas en los siguientes días. Por favor, contacta con [x] para concertar una cita y ver esta propiedad en persona.");
+define("EST_PROP_HRSHLP","Se muestra cuando el Agente o Vendedor está disponible para mostrar esta propiedad.");
+
+define("EST_PROP_INTERIORHLP", "Añade/edita características interiores para esta propiedad");
+define("EST_PROP_INTSIZEHLP", "Espacio interior total con climatización");
+
+define("EST_PROP_LANDSIZEHLP", "Opcional: tamaño del terreno sobre el que está construida la propiedad");
+//define("EST_PROP_LATLONHLP","Las coordenadas de latitud y longitud de la propiedad. Mueve el puntero en el mapa o introduce las coordenadas aquí.");
+
+define("EST_PROP_LISTAGENTHLP","El Agente y la Agencia asignados a esta propiedad. Lo que puedes hacer aquí depende de tus credenciales de acceso.");
+define("EST_PROP_LISTAGENTHLP1","Los Administradores Principales y los Admins Inmobiliarios pueden añadir/editar agencias y agentes.");
+define("EST_PROP_LISTAGENTHLP2","Los Gerentes Inmobiliarios solo pueden añadir/editar agentes.");
+define("EST_PROP_LISTAGENTHLP3","Los Agentes Inmobiliarios solo pueden editar su propio perfil.");
+define("EST_PROP_LISTPRICEHLP", "Haz clic en el botón Precio de salida para abrir el formulario de precios donde puedes ver y cambiar el historial de precios y establecer las opciones de formato de moneda.");
+define("EST_PROP_LISTPRICEHLP1", "Solo números enteros, sin símbolos. Este es el precio original del anuncio, que se usa después para varios cálculos.");
+define("EST_PROP_LISTYPEHLP", "La opción Tipo de anuncio configura las opciones de precio para venta o alquiler.");
+
+define("EST_PROP_LOTIDHLP", "Opcional. El ID de parcela para esta propiedad");
+
+//EST_PROP_MAPADDRHLP Ayuda del mapa
+define("EST_PROP_MAPADDRHLP","Busca las coordenadas de latitud/longitud de una dirección usando openstreetmap.org");
+
+define("EST_PROP_MAPMAINHLP1", "Usa la búsqueda de dirección en el mapa para obtener las coordenadas de la dirección mostrada.");
+define("EST_PROP_MAPMAINHLP2", "Si se encuentran direcciones, aparecerán debajo del botón Restablecer mapa. Haz clic en una dirección encontrada para actualizar el mapa");
+
+define("EST_PROP_MAPMAINHLP3", "Si no se encuentran direcciones, prueba a cambiar la dirección a buscar. Cambiar la dirección en este campo no afecta la dirección de la propiedad en la pestaña de dirección.");
+define("EST_PROP_MAPMAINHLP4", "También puedes arrastrar el marcador en el mapa para establecer las coordenadas de esta propiedad.");
+
+define("EST_PROP_NAMEHLP","Un nombre/título para este anuncio de propiedad");
+
+define("EST_PROP_MLSNOHLP", "Opcional. Un índice para esta propiedad de una fuente externa, como la asociación MLS.");
+define("EST_PROP_MODELNAMEHLP","Opcional: los nombres de modelo pueden usarse para filtrar y agrupar anuncios para los visitantes de tu web");
+
+define("EST_PROP_DATELIVEHLP", "La fecha en la que el anuncio será completamente visible para el público");
+define("EST_PROP_DATEPREVWHLP", "La fecha en la que los miembros de la web pueden previsualizar este anuncio como si estuviera publicado. Puede ser antes o después de ".EST_PROP_DATETEASE." pero debe ser igual o anterior a la fecha de publicación.");
+define("EST_PROP_DATEPULLHLP", "La fecha en la que este anuncio finalizará automáticamente. Déjalo en blanco para que el anuncio permanezca hasta que lo cambies manualmente a Inactivo");
+define("EST_PROP_DATETEASEHLP", "La fecha en la que este anuncio se hace visible, pero con datos limitados para el público. Puedes configurar qué datos se incluirán en el formulario de ".LAN_PREFS.".");
+
+define("EST_PROP_ORIGPRICEHLP", "El precio original debe ser un número entero (0-9).");
+define("EST_PROP_PARCELIDHLP", "Opcional. El ID de parcela para esta propiedad");
+define("EST_PROP_ROOFSIZEHLP", "Opcional: espacio total incluyendo áreas sin climatización");
+
+define("EST_PROP_SEFHLP","Déjalo en blanco para generarlo automáticamente a partir del nombre de la propiedad");
+define("EST_PROP_STATUSHLP", "El estado de la propiedad controla los datos y funciones disponibles para el público:<ul><li>Fuera de mercado oculta la propiedad al público</li><li>Publicación programada habilita una publicación programada</li><li>En directo ahora - Ignorar programación de publicación omite cualquier publicación programada</li><li>Pendiente oculta los formularios de solicitud de visita</li><li>Vendido oculta precios, formularios de solicitud de visita y todos los medios excepto la primera imagen de la galería</li></ul>");
+define("EST_PROP_STATEHLP", "Establece filtros para las opciones de provincia. Haz clic en el botón Editar para añadir o editar opciones.");
+define("EST_PROP_SUBDIVHLP","Opcional. Las opciones disponibles dependen de la ciudad elegida. Haz clic en el botón Editar para añadir o editar urbanizaciones para la ciudad seleccionada.");
+define("EST_PROP_SUMMARYHLP", "Una descripción corta de no más de 255 caracteres. Se usa en la galería de propiedades, búsqueda y páginas de lista");
+
+define("EST_PROP_TIMEZONEHLP","La zona horaria se usa para sincronizar la programación con el navegador del visitante. Se establece automáticamente al seleccionar la ciudad, pero puedes cambiarla aquí si la ciudad tiene varias zonas horarias.");
+define("EST_PROP_TYPEHLP","Obligatorio. Una segunda categoría para este anuncio, ej: Unifamiliar, Multifamiliar, Local, etc.");
+
+define("EST_PROP_ZIPHLP","Establece el valor del código postal. Añade o edita opciones de código postal haciendo clic en el botón Editar del desplegable de ciudad");
+define("EST_PROP_POSTCODEHLP","Establece el valor del código postal. Añade o edita opciones de código postal haciendo clic en el botón Editar del desplegable de ciudad");
+
+define("EST_PROP_ZONEHLP","Obligatorio. ¿Para qué uso es esta propiedad? Ej: Residencial, Comercial, Industrial, etc.");
+
+define("EST_PROPLIST", "Lista de propiedades");
+
+define("EST_SPCAT_ZERO","Por favor, selecciona un tipo/categoría en la pestaña principal");
+define("EST_SPCID_ZERO","Debes guardar este espacio para poder añadir ");
+
+define("EST_PLCH15","Introduce una dirección para buscar");
+define("EST_PLCH96","ej: Calle Falsa 123");
+define("EST_PLCH96A","ej: Apartamento 86b");
+
+define("EST_GEN_MAPADDRLOOKUP", "Dirección a buscar");
+define("EST_GEN_MAPHLP1","Usa el botón de búsqueda para encontrar las coordenadas de la dirección en el campo de búsqueda.");
+define("EST_GEN_MAPHLP2","La dirección en el campo de búsqueda se actualiza automáticamente al cambiar la dirección de arriba.");
+define("EST_GEN_MAPHLP3","Puede que tengas que editar la dirección en el campo de búsqueda si no se encuentra.");
+define("EST_GEN_MAPHLP4","También puedes arrastrar el puntero a la ubicación exacta deseada.");
+define("EST_GEN_MAPHLP5","NOTA: El nivel de zoom de cada mapa se guarda individualmente para cada mapa mostrado.");
+define("EST_GEN_MAPHLP6","Establece las coordenadas de mapa predeterminadas que se usarán al crear una nueva agencia.");
+define("EST_GEN_MAPHLP7","Las nuevas propiedades usarán por defecto las coordenadas de la ubicación de la agencia asignada o estas coordenadas si no hay agencia asignada.");
+
+define("EST_MEDIA_VIEWDELETEDMEDIA", "Haz clic para ver archivos multimedia eliminados");
+define("EST_MEDIA_CREATEDFOLDERS", "Carpeta de medios creada:");
+define("EST_MEDIA_CREATEDFOLDERFAIL", "Error al crear la carpeta de medios:");
+define("EST_MEDIA_DELETEDFOLDERS", "archivos y carpetas eliminados");
+define("EST_MEDIA_FOUNDTHMFILE", "Miniatura encontrada");
+define("EST_MEDIA_FOUNDFULLFILE", "Archivo completo encontrado");
+define("EST_MEDIAAVAILABLE","Medios disponibles");
+
+define("EST_MEDIAINUSE","Imágenes principales de la galería");
+
+define("EST_MEDIAREPLACE","Subir medio de reemplazo");
+define("EST_MEDIA_ZOOMCROP","Zoom y recorte");
+
+define("EST_SPEC_LEVS1",array("Comunidad/Urbanización","Propiedad: General","Espacios/Habitaciones de la propiedad","Servicios individuales de ciudad/pueblo","Servicios individuales de comunidad/urbanización"));
+
+define("EST_UPL_FILEFULLREM","Versión completa eliminada");
+define("EST_UPL_FILEFULLNOTREM","NO se pudo eliminar la versión completa");
+define("EST_UPL_FILETHUMBREM","Miniatura eliminada");
+define("EST_UPL_FILETHUMBNOTREM","NO se pudo eliminar la miniatura");
+define("EST_UPL_FILEVIDREM","Archivo de vídeo eliminado");
+define("EST_UPL_FILEVIDNOTREM","NO se pudo eliminar el archivo de vídeo");
+
+define("EST_HLPMNU_ABOUTSPACES0","Los espacios son como habitaciones, aunque también se usan para otros detalles de una propiedad. Además de dormitorios, baños y otras habitaciones de una casa, una propiedad puede tener un patio, jardín u otro espacio. También la comunidad donde está el anuncio puede tener un parque, piscina y otros servicios.");
+
+define("EST_HLPMNU_ADDRESS1","Información sobre la ubicación física de la propiedad.");
 define("EST_HLPMNU_ADDRESS2","");
 
-define("EST_HLPMNU_INIT19","Use the Address Search function to retrieve a list of possible coordinates. This field is filled in when you edit the Agency's Address, though you may need to further edit the Search Field if no results are found. You can also move the Map Pointer to the correct location if needed.");
+define("EST_HLPMNU_INIT19","Usa la función de búsqueda de dirección para obtener una lista de posibles coordenadas. Este campo se rellena al editar la dirección de la agencia, aunque puede que tengas que editar el campo de búsqueda si no se encuentran resultados. También puedes mover el puntero del mapa a la ubicación correcta si es necesario.");
 
+define("EST_INSTR000","Resumen");
+define("EST_INSTR001","El plugin Estate para el CMS e107 empezó como una forma para que un agente individual pudiera crear fácilmente una web personal para sus anuncios inmobiliarios y ha evolucionado para gestionar toda una empresa con varios agentes y ubicaciones de agencia. No estaba pensado para que el público general vendiera su propia propiedad, pero ahora incluye una opción en las preferencias del plugin para permitir que los miembros publiquen sus propios anuncios.");
+define("EST_INSTR001a","También hay un formulario de contacto de agente que puede usarse para solicitar presupuesto o concertar una visita. El formulario de contacto está disponible para todos por defecto y puede configurarse solo para miembros en las preferencias del plugin. Cada agente puede cambiar este ajuste en su propio perfil de agente.");
 
+define("EST_INSTR002","Agentes con nivel de administrador");
+define("EST_INSTR002a","Este plugin usa tres clases de usuario especiales (niveles de permiso) que controlan lo que un usuario puede hacer en el área de administración del plugin. Cualquier usuario que sea administrador principal del sitio siempre puede acceder a todo. Los usuarios con acceso a este plugin como AGENTE INMOBILIARIO, GERENTE INMOBILIARIO o ADMIN INMOBILIARIO pueden crear, editar y eliminar anuncios desde los formularios del backend SOLO SI son administradores y están asignados a una de esas clases de usuario. También puedes permitir que los miembros de tu web publiquen sus propios anuncios privados, pero eso lo explicamos más adelante.");
+define("EST_INSTR002b","El menú del área de administración del plugin para los tres niveles de acceso:");
+define("EST_INSTR002c","tienen acceso completo a ubicaciones de agencia, agentes, anuncios y todos los demás datos.");
+define("EST_INSTR002d","pueden acceder al perfil de la agencia a la que están asignados y a los perfiles de agentes y anuncios asignados a esa misma agencia.");
+define("EST_INSTR002e","solo pueden acceder a su propio perfil de agente y anuncios de propiedad.");
 
+define("EST_INSTR003","Esta jerarquía se establece mediante la configuración de clases de usuario del sistema e107. Aunque puedes hacer las asignaciones de usuario desde la interfaz de clases de usuario de e107, se recomienda gestionarlas desde este plugin: al quitar el acceso de un usuario al plugin, puede determinar si ese usuario tiene derechos de administrador en otras secciones de tu web e107 y mantener o quitar su estado de administrador según esa información. Puedes encontrar una lista completa de tus usuarios en la pestaña de lista de usuarios del formulario de agentes y agencias, siempre que tengas los permisos adecuados.");
+define("EST_INSTR003a","Tienes permiso");
+define("EST_INSTR003b","NO tienes permiso");
+define("EST_INSTR003c","Los agentes siempre pueden crear, editar o eliminar sus propios anuncios, igual que los gerentes y administradores. Algunos datos usados en cada anuncio, como categoría de zonificación, tipo de propiedad, países, provincias, ciudades y comunidades autónomas (y muchas otras cosas) se guardan por separado de los anuncios, convirtiéndose así en opciones para que otros agentes las seleccionen (datos compartidos).");
 
+define("EST_INSTR004","Asignar usuarios como agentes");
+define("EST_INSTR004a","Solo los Admins Inmobiliarios y Gerentes Inmobiliarios pueden establecer usuarios de tu web e107 como agentes. Cuando das acceso al plugin Estate a un usuario que no es administrador, se le conceden automáticamente derechos de administrador SOLO para este plugin.");
+define("EST_INSTR004b","Los Admins Inmobiliarios tienen un botón de menú llamado Agentes y Agencias que muestra todas las agencias y usuarios. La pestaña de agencias tiene una lista de agencias. Haz clic en el botón Editar para modificar esa agencia y ver la lista de agentes asignados a ella (ver sección de gerentes inmobiliarios más abajo). Para añadir una nueva agencia, haz clic en el botón + en la parte superior de la lista.");
 
-define("EST_INSTR000","Overview");
-define("EST_INSTR001","The Estate Plugin for the e107 Content Management System started as a way for an individual Agent to easily create a personal website for their property listings and has evolved to handle an entire company with multiple agents and agency locations. It was not intended for use by the general public to sell thier own property but now includes a setting in the plugin's Preferences that you can turn on to allow Members to list their own property. ");
-define("EST_INSTR001a","There is also an Agent Contact Form that can be used to request a quote or arrange a viewing. The contact form is available to everyone by default, and can be set to Members Only in the plugin's Preferences. Each Agent can change this setting for themselves in their own Agent Profile.");
+define("EST_INSTR004b1","Esta es tu lista de agencias/ubicaciones. El desplegable de filtro de ubicaciones en la parte superior te permite mostrar solo las ubicaciones de agencia de una zona concreta. Añade una nueva agencia haciendo clic en el botón + en la parte superior de la lista.");
+define("EST_INSTR004b2","Cada fila incluye un botón para mostrar/ocultar esa agencia al público (incluir o no incluir con la ficha de información del agente), un botón de editar y un botón de eliminar. Eliminar una agencia afectará a tus anuncios y agentes asignados a esa agencia, y se te pedirá reasignar esos agentes y anuncios antes de eliminarla.");
 
-define("EST_INSTR002","Admin Level Agents");
-define("EST_INSTR002a","This plugin uses three special User Classes (Permission Levels) that control what a user can do within this plugin's Admin Area. Any user set as a Main Site Admin can always access everything. Users with access to this plugin as an ESTATE AGENT, ESTATE MANAGER, or ESTATE ADMIN can create, edit, and delete listings via the back end forms ONLY IF they are an Admin and assigned one of those specific User Classes. You can also grant your Website Members the ability to post their own Private Listings, but more on that later.");
-define("EST_INSTR002b","The plugin's Admin Area Menu for the three access levels:");
-define("EST_INSTR002c","have full access to Agency Locations, Agents, Listings, and all other data.");
-define("EST_INSTR002d","can access the Agency Profile to which they are assigned and any Agent Profiles and Listings assigned to the same Agency Location.");
-define("EST_INSTR002e","can only access their own Agent Profile and Property Listings.");
+define("EST_INSTR004c","La pestaña de lista de usuarios muestra todos los usuarios de tu web e107, independientemente de su estado de administrador o afiliación a agencia. Esta lista se divide en 3 secciones: tú mismo, administradores y usuarios no administradores.");
+define("EST_INSTR004d","Nota: los usuarios que sean administradores principales de e107 no pueden cambiar su configuración desde este formulario ya que automáticamente son Admins Inmobiliarios.");
+define("EST_INSTR004e","Esta lista muestra los usuarios que tienes permiso para asignar como agentes, ordenados por su nombre de usuario de e107. Las opciones para cada usuario se guardan automáticamente al hacer cambios. Aquí puedes establecer los permisos y el nivel de acceso de cada usuario. Si desmarcas el permiso de administrador de un agente, se eliminará su nivel de acceso y se te preguntará si quieres eliminar su perfil de agente (no es obligatorio, por si quieres volver a activarlo más adelante). Haciendo clic en el botón de perfil de agente irás al formulario para editar el perfil de ese usuario.");
 
-define("EST_INSTR003","This hierarchy is established through the e107 Website System's User Class settings. While you can make your user assignments through the e107 User Class interface, it is recommended that you manage your users through this plugin: When remove a user's access to this plugin it can determine if a user has Admin rights to other sections of your e107 website and keep or remove their Admin status based on that information. You can find a complete list of your users on the User List tab on the Agents & Agencies Form, provided that you yourself have the correct permissions to do so");
-define("EST_INSTR003a","You do have permission");
-define("EST_INSTR003b","You do NOT have permission");
-define("EST_INSTR003c","Agents can always create, edit, or delete their own listings, as can Managers and Admins. Some data used in each listing, such as Zoning Category, Property Type, Countries, Counties, Cities, and States (and many other things) are saved separately from Property Listings, thus becoming options for other Agents to select from (Shared Data).");
+define("EST_INSTR004f","También puedes añadir rápidamente un nuevo usuario con un nuevo perfil de agente a tu web e107 desde este plugin. Los nuevos usuarios añadidos desde este formulario tendrán automáticamente estado de administrador con acceso solo a este plugin. La información de este nuevo usuario se usará para crear un nuevo perfil de agente que podrás editar después. Este formulario imita el formulario rápido de añadir usuario de e107 (v2.3.3) pero también permite subir su imagen de perfil si la tienes.");
+define("EST_INSTR004g","NOTA: Un administrador principal puede controlar quién puede acceder al formulario de añadir nuevo usuario desde la página de preferencias del plugin Estate. Por defecto solo los Admins Principales y Admins Inmobiliarios pueden acceder a este formulario. Puedes permitir que los Gerentes Inmobiliarios también accedan, aunque cualquier nuevo usuario añadido se asignará a la misma agencia que el gerente.");
 
-define("EST_INSTR004","Assigning Users As Agents");
-define("EST_INSTR004a","Only Estate Admins and Estate Managers can set your e107 website Users as Agents. When you grant acces to the Estate plugin to a Non-Admin user of your e107 website they will be automatically granted Admin Rights and ONLY for accessing this plugin.");
-define("EST_INSTR004b","Estate Admins have Menu button labeled Agents & Agencies which will list all Agencies and all Users. The Agencies Tab has a list of Agencies. Click the Edit button to make changes to that Agency and also see a list of Agents assigned to that Agency (See the Estate Managers section below). To add a new Agency, Click the + button at the top of the list.");
-
-define("EST_INSTR004b1","This is your list of Agencies/Locations. The Locations Filter Dropdown at the top lets you show only Agency Locations in a select area. Add a New Agency by clicking the + button at the top of the list.");
-define("EST_INSTR004b2","Each row includes a button to Show/Hide that Agency from the public (Include or Not Include with an Agent's Information Card), an Edit Button, and a Delete Button. Deleting an Agency Location will affect your Property Listings and Agents assigned to that Agency, and you should be asked to re-assign those Agents and listings before Deletion will happen.");
-
-define("EST_INSTR004c","The User List Tab lists all users of your e107 Website regardless of Admin status or Agency affiliation. This list is devided into 3 sections: Yourself, Admins, and Non-Admin users.");
-define("EST_INSTR004d","Note: Users who are an e107 Main Admin cannot have their settings changed via this form since they are automatically an Estate Admin.");
-define("EST_INSTR004e","This list shows Users that you have permission to assign as Agents, Listed by their e107 Login Name. The options for each user will auto-save when any changes are made. Here you can set a User's Permissions and their Admin Access Level. Unchecking an Agent's Admin Permission will remove their Access Level and you will be asked if you want to delete their Agent Profile (you do not have to, in case you intend to bring them back later). Clicking the Agent Profile button will take you to the form to edit tht User's Agent profile.");
-
-define("EST_INSTR004f","You can also quickly add a New User with a New Agent Profile to your e107 website from this plugin. New Users added via this form will be automatically given Admin Status with access only to this plugin. Information about this New User will be used to create a New Agent Profile that can be edited later. This form mimics the e107 Quick Add User form (v2.3.3) but also allows you to upload their User Profile Image if you have one.");
-define("EST_INSTR004g","NOTE: A Main Admin can control who can access the Add New User form from the Estate Plugin's Preferences Page. The default setting allows only Estate Main Admins and Estate Admins to access this form. You can allow your Estate Managers to also access this form, though any New User added will be assigned to the same Agency as the Manager.");
-
-
-
-define("EST_INSTR004g","Estate Managers have a Menu button labeled Agency Profile, which allows them to modify the Agency to whch they are assigned, inclusing adding and removing Agents for that Agency. Additionally, the Agent List Tab allows Estate Managers to Select from and Add Users to your e107 website to be assigned as Agents.");
-define("EST_INSTR004h","The Agent List Tab lists Agents currently assigned to that Agency as well as e107 website Users not assigned to another Agency. ");
+define("EST_INSTR004g","Los Gerentes Inmobiliarios tienen un botón de menú llamado Perfil de agencia, que les permite modificar la agencia a la que están asignados, incluyendo añadir y quitar agentes de esa agencia. Además, la pestaña de lista de agentes permite a los gerentes seleccionar y añadir usuarios de tu web e107 para asignarlos como agentes.");
+define("EST_INSTR004h","La pestaña de lista de agentes muestra los agentes asignados actualmente a esa agencia y también los usuarios de la web e107 que no están asignados a otra agencia.");
 define("EST_INSTR004i","***");
 define("EST_INSTR004j","***");
 
+define("EST_INSTR005a","Puedes permitir que los miembros registrados en tu web publiquen sus propios anuncios activando esta función en las preferencias de Estate. Esta opción está desactivada por defecto. Si la activas, los usuarios que no sean agentes pueden crear, editar y eliminar sus propios anuncios usando un formulario básico accesible desde el frontend. No necesitan derechos de administrador y no podrán acceder a ninguna parte del área de administración de tu web e107, incluido el área de administración del plugin Estate. Los usuarios que no sean agentes pueden añadir (pero no editar) algunos datos compartidos, como provincia, ciudad y código postal, pero no pueden añadir datos predefinidos como tipo de anuncio, categoría de zonificación o tipo de propiedad: deben seleccionar entre las opciones ya existentes en el sistema.");
+define("EST_INSTR005b","Los anuncios publicados por usuarios que no sean agentes pueden ser moderados por Gerentes Inmobiliarios o Admins Inmobiliarios, pero no por agentes, y por defecto requieren que un administrador o gerente apruebe el anuncio antes de que sea visible para el público. Estos anuncios se guardan en las mismas tablas de base de datos que los anuncios de agentes, pero no tienen un ID de agente asignado y aparecerán en una lista separada.");
 
-define("EST_INSTR005a","You can allow Members who have joined your website to post their own listings by enabling this feature in the Estate Preferences. This option is disabled by default. If you enable this feature, Non-Agent users can create, edit, and delete their own listings using a basic form accessable via the Front end. They do not need Admin rights and will not be able to access any part of the Admin area of your e107 website, including the Estate plugin Admin area. Non-Agent users are able to add (but not Edit) some shared-data, such as State, City, and Postal Code, but cannot add Preset Data such as Listing Type, Zoning Category, Property Type: they are forced to select from options already in the system.");
-define("EST_INSTR005b","Listings posted by Non-Agents can be moderated by Estate Managers or Estate Admins, but not by Agents, and by default require an Admin or Manager to approve the listing before it is visible to the public. These listings are saved to the same Database tables as your Agent listings, but do not have an Agent ID assigned to the Property Listing and will appear in a separate list.");
+define("EST_INSTR008","Página de anuncios");
+define("EST_INSTR008a","La página principal de anuncios");
+define("EST_INSTR008b","Esta es la lista principal de propiedades. Desde aquí puedes revisar tus anuncios, cambiar rápidamente su estado y actualizar el precio actual. También pueden editarse o eliminarse desde esta lista. Al hacer clic en las etiquetas de la barra superior se abre una función de filtro para refinar la lista según criterios relacionados con esa columna. También puedes controlar cuántos resultados se muestran.");
+define("EST_INSTR008c","A continuación tienes algunos ejemplos de cómo se vería cada lista según el nivel de acceso del usuario.");
 
+define("EST_INSTR008d","Un administrador principal o admin inmobiliario vería todo, incluidos los anuncios privados/no agentes en su propia pestaña (ver abajo).");
+define("EST_INSTR008e","Los gerentes inmobiliarios solo verían los anuncios hechos por ellos mismos y los agentes inmobiliarios asignados a la misma agencia que gestionan (pero no los anuncios hechos por otros gerentes inmobiliarios, incluso si están en la misma agencia). Si los anuncios de no agentes están habilitados y los gerentes pueden moderarlos, aparecerá una pestaña adicional de \"Anuncios de no agentes\".");
+define("EST_INSTR008f","Los agentes inmobiliarios solo pueden acceder a sus propios anuncios. Recuerda que este plugin utiliza los permisos de administración y clases de usuario de e107 de forma que tus agentes inmobiliarios (y gerentes y admins) pueden restringirse solo al backend del plugin Estate y se evita el acceso a otras áreas de administración de e107.");
 
-define("EST_INSTR008","Listings Page");
-define("EST_INSTR008a","The Main Listings Page");
-define("EST_INSTR008b","This is the main list of the properties. From here you can review your listings, quickly change their status and update their current Price. They can also be Editied or Deleted from this list. Clicking on the top Header Bar Labels will open a Filter Function to further refine the list based on critera related to that column. You can also control how many results are returned.");
-define("EST_INSTR008c","Below are some examples of what each list would look like based on that user's Access Level.");
+define("EST_INSTR008g","Si los anuncios privados/no agentes están habilitados y tienes permisos para moderarlos, verás una pestaña de anuncios de no agentes, que mostrará esos anuncios en una tabla separada.");
 
+define("EST_INSTR008h","Todos los administradores, gerentes y agentes pueden crear un nuevo anuncio. Esta pestaña contiene un formulario sencillo para empezar el proceso. Solo tienes que rellenar el nombre de la propiedad y algunos datos básicos y hacer clic en Guardar y continuar. Esto guardará la nueva propiedad y abrirá el formulario de edición del anuncio donde podrás añadir más información, definir características especiales y subir imágenes.");
 
-define("EST_INSTR008d","An Estate Main Admin or Estate Admin would see everything, including any Non-Agent/Private Listings in their own tab (see below). ");
-define("EST_INSTR008e","Estate Managers would only see listings made by themselves and Estate Agents assigned to the same Agency that they manage (but not listings made by other Estate Managers, even if they are in the same Agency). If Non-Agent Listings have been enabled and Estate Managers are allowed to Moderate them, then an addition \"Non-Agent Listings\" Tab will be accessable.");
-define("EST_INSTR008f","Estate Agents can only access their own listings. As a reminder, this plugin utilizes the e107 Admin Permissions and User Class settings in such a way that your Estate Agents (and Estate Managers and Estate Admins) can be restricted to only the Estate Plugin's Back End and prevents access to other e107 Admin Areas.");
-
-define("EST_INSTR008g","If Private, Non-Agent Listings have been enabled and you have premissions to moderate those listings, you will see a Non-Agent Listings tab, which will display those listings is a separate table.");
-
-
-define("EST_INSTR008h","Every Admin, Manager, and Agent can Create a New Listing. This tab contains a simple form that is used to start the process. Simply fill in the Property Name and some basci information and click the Save & Continue button. This will save the new property and open the Listing Edit form where you can add more information, define special features, and upload images.");
-
-
-define("EST_INSTR009","Listing Edit Page");
+define("EST_INSTR009","Página de edición de anuncio");
 define("EST_INSTR009a","");
 
-
-
-define("EST_INSTR010","Shared Data");
-define("EST_INSTR011","Many Dropdown lists used in this plugin can be edited in order to update the options for that dropdown without interrupting a user's workflow. Estate Managers and Estate Admins can change existing information while Estate Agents can only add new options. Any new options added by one user will become available for all other users and any changes made to existing data, such as correcting a misspelled name, will update all listings. ");
-define("EST_INSTR012","In this example the Edit button opens a form for City data:");
-define("EST_INSTR013","As you can see, this is more than just the City's name: the city belongs to a county (which itself belongs to a state) and also has a list of Zip Codes (used for the Zip Code Field), a Time Zone selection (for adjusting scheduled events), and  a spot for entering a website address for the city. These editable dropdown lists can also act as filters for other dropdown lists, making it easier for Agents to find the data they are looking for.");
+define("EST_INSTR010","Datos compartidos");
+define("EST_INSTR011","Muchas listas desplegables usadas en este plugin pueden editarse para actualizar las opciones sin interrumpir el flujo de trabajo del usuario. Los gerentes y admins inmobiliarios pueden cambiar información existente mientras que los agentes solo pueden añadir nuevas opciones. Cualquier opción nueva añadida por un usuario estará disponible para todos los demás y cualquier cambio en datos existentes, como corregir un nombre mal escrito, actualizará todos los anuncios. ");
+define("EST_INSTR012","En este ejemplo el botón Editar abre un formulario para los datos de ciudad:");
+define("EST_INSTR013","Como ves, es más que solo el nombre de la ciudad: la ciudad pertenece a una provincia (que a su vez pertenece a una comunidad autónoma) y también tiene una lista de códigos postales (usados para el campo de código postal), una selección de zona horaria (para ajustar eventos programados) y un campo para la web de la ciudad. Estas listas desplegables editables también pueden actuar como filtros para otras listas, facilitando a los agentes encontrar los datos que buscan.");
 define("EST_INSTR014","");
 
-define("EST_INSTR020","Filtered Data");
-define("EST_INSTR021","When a dropdown list option is selected, the options for other dropdown fields may also change. In this example, changing the State will change the options for County (which in turn affects the options for City, Postal Code, Subdivision, and so on). If no options are available for the filtered dropdown lists, you will see an animated \"sonar\" blip prompting you to add a new option to the affected field.");
+define("EST_INSTR020","Datos filtrados");
+define("EST_INSTR021","Cuando se selecciona una opción en una lista desplegable, las opciones de otros campos desplegables pueden cambiar. Por ejemplo, cambiar la comunidad autónoma cambiará las opciones de provincia (lo que a su vez afecta a ciudad, código postal, urbanización, etc). Si no hay opciones disponibles para los desplegables filtrados, verás un indicador animado que te invita a añadir una nueva opción al campo afectado.");
 define("EST_INSTR022","");
 
+define("EST_INSTR030","Espacios");
+define("EST_INSTR031","Los espacios son habitaciones del edificio o lugares exteriores: cualquier cosa relacionada con un espacio en la propiedad. Los espacios están vinculados a la zonificación del anuncio: cambiar la zonificación cambia los tipos de espacios que puedes añadir. Cada espacio tiene su propio conjunto de datos como dimensiones, descripción, lista de características y galería de imágenes. Los espacios se agrupan en tablas separadas en la pestaña Espacios. Añade un nuevo espacio haciendo clic en el botón + en el encabezado de la tabla. Puedes cambiar el orden de los espacios arrastrando las flechas arriba/abajo en cada fila, y puedes reordenar los grupos arrastrando las flechas arriba/abajo en el encabezado de cada grupo. Incluso puedes arrastrar un espacio entre diferentes grupos.");
 
-define("EST_INSTR030","Spaces");
-define("EST_INSTR031","Spaces are rooms in the building or exterior places - anything related to a space on the property. Spaces are keyed to the listing's Zoning: changing the Zoning changes the Types of Spaces you can add. Each space has it's own set of data points such as dimensions, description, feature list, and image gallery. Spaces are grouped into separate tables on the Spaces tab. Add a new space by clicking the + button in the table headder. You can change the order of your spaces by dragging the up/down arrows in each row, and you can reorder the groups by dragging the up/down arrows in each group's table headder. You can even drag a Space between different Group Tables.");
+define("EST_INSTR032","Los espacios se agrupan por el nombre de grupo seleccionado al crear un espacio, como Planta principal, Primera planta, Exterior, etc. Los nuevos grupos se añaden al guardar un espacio asignado a un grupo nuevo, lo que añade una nueva tabla de grupo a la pestaña Espacios del formulario principal del anuncio. Estos nombres de grupo se comparten con otros anuncios de la misma categoría de zonificación. Cualquiera puede añadir un grupo nuevo, pero solo gerentes y admins pueden editar nombres de grupos existentes.");
 
-define("EST_INSTR032","Spaces are grouped together by the Group Name selected when creating a Space, such as Main Floor, First Floor, Exterior, etc. New Groups are added when you save a space assigned to a new Group, which will add a new Group Table to the Spaces Tab on the main listing form. These group Names are shared with other property listings with the same Zoning Category. Anyone can add a New Group, but only Managers and Admins can edit existing group names.");
+define("EST_INSTR033","Al crear o editar un espacio, se abre un subformulario para añadir esos datos. Este formulario se divide en pestañas para diferentes opciones. Cualquier campo con * es obligatorio antes de poder guardar el espacio.");
+define("EST_INSTR033a","Algunas opciones de este formulario, como características y medios, no están disponibles hasta que el espacio se haya guardado. La pestaña principal del formulario de espacios incluye información básica sobre el espacio, como ubicación, grupo, categoría y dimensiones.");
+define("EST_INSTR034","La ubicación ayuda a identificar dónde está el espacio en la propiedad pero no es obligatoria.");
+define("EST_INSTR034a","El grupo es obligatorio para agrupar espacios que comparten una zona, como Planta principal, Segunda planta o Exterior. Selecciona un grupo para este espacio o añade uno nuevo para crear un nuevo grupo de espacios.");
+define("EST_INSTR034b","La categoría define el tipo de espacio y filtra las características disponibles en la pestaña de características de ese espacio. Selecciona o crea una categoría para el espacio. Las categorías se guardan por separado del anuncio y estarán disponibles para otros anuncios de la misma categoría de zonificación (residencial, comercial).");
+define("EST_INSTR034c","Las dimensiones son útiles para un posible comprador pero no son obligatorias. Introduce el largo y ancho del espacio y la superficie se calculará automáticamente. Puedes alternar la unidad de medida entre pies cuadrados o metros cuadrados para cada espacio. Un espacio nuevo usará por defecto la unidad de medida predefinida en las preferencias de Estate.");
 
-define("EST_INSTR033","When you create or edit a Space, you will open a sub-form for adding that data. This form is divided into tabs for different options. Any item with an * is required to have a value before you can save the space.");
-define("EST_INSTR033a","Some options on this form, such as Features and Media, are not available until the Space has been saved. The Main tab on the Spaces form includes basic information about the space, including its Location, Group, Category, and Dimensions for that Space.");
+define("EST_INSTR035","La pestaña de características tiene una lista de características disponibles a la izquierda y una lista de las asignadas al espacio a la derecha.");
+define("EST_INSTR035a","Puedes añadir una característica nueva haciendo clic en el botón Nueva característica en la parte superior de la columna izquierda, y editar cualquier característica haciendo clic en el botón de editar junto a su nombre. Las características se guardan independientemente del anuncio, por lo que están disponibles para otros anuncios. Si cambias el nombre de una característica en un anuncio, se actualizará en todos los demás.");
+define("EST_INSTR035b","Haz clic en cualquier característica de la columna izquierda para añadirla al espacio: se moverá a la columna derecha. Si la característica tiene opciones adicionales predefinidas, el botón incluirá un desplegable donde puedes seleccionar las que correspondan o ninguna.");
 
-define("EST_INSTR034","Location helps identify where the Space is on the property but is not required.");
-define("EST_INSTR034a","The Group is required to group Spaces that share an area, like Main Floor, Second Floor, or Exterior. Select a Group for this Space or add a new Group to create a new group of Spaces.");
-define("EST_INSTR034b","The Category defines what type of Space the room is and filters the available Features on the Features tab for that Space. Select or create a Category for the Space. Categories are saved separately from the listing and they will be available for other listings of the same Zoning Category (Residential, Commercial).");
-define("EST_INSTR034c","Demensions are helpful to a potential buyer but are not required. Enter the Length and Width of the Space and the Square Footage will be automatically calculated. You can toggle the unit of measurement between Square Foot or Square Meter for each Space. A new Space will default to the Unit of Measurement preset in Estate Preferences.");
+define("EST_INSTR036","Al hacer clic en el icono de editar junto a una característica podrás cambiarla.");
+define("EST_INSTR036a","Este formulario te permite cambiar el nombre y añadir/quitar opciones*");
+define("EST_INSTR036b","Las opciones se guardan como una lista separada por comas y aparecen en el formulario de selección de características como un desplegable con casillas para seleccionar las opciones incluidas para esa característica en el anuncio.");
+define("EST_INSTR036c","*Cambiar el nombre se propagará a todos los anuncios del plugin Estate porque las características se guardan en una base de datos indexada. Las opciones, sin embargo, se copian a cada anuncio como texto. Cambiar o eliminar opciones no afecta a los anuncios existentes.");
 
-define("EST_INSTR035","The Features Tab has list of available features on the left side and a list of features currently assigned to the space on the right.");
-define("EST_INSTR035a","You can Add a new Feature by clicking the New Feature button at the top of the Left column, and Edit any Feature by clicking the edit button next to that Feature's name. Features are saved independent of the listing, making them available to use for other listings. If you change the Feature Name on one listing, it will update for all other listings.");
+define("EST_INSTR037","La pestaña de descripción tiene un formulario de texto simple donde puedes añadir detalles sobre este espacio. Un par de frases bastan.");
+define("EST_INSTR037a","Se conservan los párrafos y saltos de línea y puedes añadir BBCode manualmente, ej:");
+define("EST_INSTR037b","para texto en negrita,");
+define("EST_INSTR037c","para texto en cursiva, y");
+define("EST_INSTR037d","para texto en negrita y cursiva");
 
-define("EST_INSTR035b","Click any Feature in the Left Column to add it to the Space: it will move to the Right Column. If the Fesature has additional predefined options, the button will include a drop-down list where you can select any that apply or none at all. ");
-
-define("EST_INSTR036","Clicking the Edit icon next to a feature will allow you to change that feature.");
-define("EST_INSTR036a","This form lets you change the Name and add/remove Options*");
-define("EST_INSTR036b","Options are saved as a Comma Separated List, and appear in the Feature Select Form as a Dropdown list with check boxes to select those options as included for that Feature in the Listing.");
-define("EST_INSTR036c","*Changing the Name will propagate to all listings across the Estate plugin because the Features are saved in an indexed Database. The Options, however, are copied over to each listing as text. Changing or removing the Options will not affect existing listings.");
-
-define("EST_INSTR037","The Description Tab has a simple Text form where you can add some details about this Space. A couple of sentences should do.");
-define("EST_INSTR037a","Paragraphs and Line Breaks are preserved and BB Code can be added manually eg.");
-define("EST_INSTR037b","for bold text,");
-define("EST_INSTR037c","for italic text, and");
-define("EST_INSTR037d","for bold italic text");
-
-
-define("EST_INSTR038","Here is where you can add Pictures specific to this Space. Images here are also available to add to the Main Gallery of your listing.");
-define("EST_INSTR038a","Upload pictures by clicking the Upload Media button. You can upload multiple images in one go, and each will appear in the Thumbnail Tray as they load. Any changes to Thumbnails (Adding, Editing, Removing, or Recaptioning) are automatically saved.");
-define("EST_INSTR038b","NOTE: Uploaded Files are scanned by e107 and can fail to upload IF:");
-define("EST_INSTR038b1","The File is not a standard JPG or PNG file");
-define("EST_INSTR038b2","The File Size is too big (as set by your server settings)");
-define("EST_INSTR038b3","The file type/extension is not allowed by your e107 settings");
-define("EST_INSTR038b4","The file is corrupt in some way");
-define("EST_INSTR038c","Once loaded, you can Drag and Drop the thumbnails to change their order. Reordering does NOT affect the order of thumbnails in the Main Gallery for the Listing.");
-define("EST_INSTR038d","Each thumbnail has a Caption bar at the bottom used to Name the image. You can change the name to anything you like. By default they will be captioned after the Name of the Space and the Order they are in.");
-define("EST_INSTR038e","Hovering over a Thumbnail will show a Menu Bar with Icons to Crop, Replace, or Remove the image. Removing an Image from a Space will remove it from the Main Gallery, too.");
+define("EST_INSTR038","Aquí puedes añadir imágenes específicas de este espacio. Las imágenes aquí también están disponibles para añadir a la galería principal del anuncio.");
+define("EST_INSTR038a","Sube imágenes haciendo clic en el botón Subir medios. Puedes subir varias imágenes a la vez y cada una aparecerá en la bandeja de miniaturas a medida que se cargan. Cualquier cambio en las miniaturas (añadir, editar, eliminar o cambiar el título) se guarda automáticamente.");
+define("EST_INSTR038b","NOTA: Los archivos subidos son escaneados por e107 y pueden fallar si:");
+define("EST_INSTR038b1","El archivo no es un JPG o PNG estándar");
+define("EST_INSTR038b2","El tamaño del archivo es demasiado grande (según la configuración del servidor)");
+define("EST_INSTR038b3","El tipo/extensión de archivo no está permitido por la configuración de e107");
+define("EST_INSTR038b4","El archivo está dañado de alguna manera");
+define("EST_INSTR038c","Una vez cargados, puedes arrastrar y soltar las miniaturas para cambiar su orden. Reordenarlas NO afecta el orden de las miniaturas en la galería principal del anuncio.");
+define("EST_INSTR038d","Cada miniatura tiene una barra de título en la parte inferior para nombrar la imagen. Puedes cambiar el nombre a lo que quieras. Por defecto se titularán según el nombre del espacio y el orden en el que están.");
+define("EST_INSTR038e","Al pasar el ratón sobre una miniatura aparece una barra de menú con iconos para recortar, reemplazar o eliminar la imagen. Eliminar una imagen de un espacio también la elimina de la galería principal.");
 
 define("EST_INSTR039","");
 
-define("EST_INSTRHEAD00","Instructions for the Estate Agency e107 Plugin");
+define("EST_INSTRHEAD00","Instrucciones para el plugin Agencia Inmobiliaria de e107");
 
-define("EST_INSTRHEAD01","This page is for the general public to learn how the Estate Plugin works without accessing the Admin section of this website. The Tab sections below detail the various features of this plugin and are included in the Admin Area.");
-define("EST_INSTRHEAD02","This plugin is in development and this section is incomplete. Many more features are in development that are not documented here yet. Please check back often to see what has changed.");
+define("EST_INSTRHEAD01","Esta página es para que el público general aprenda cómo funciona el plugin Estate sin acceder al área de administración de esta web. Las secciones de pestañas detallan las distintas funciones del plugin y están incluidas en el área de administración.");
+define("EST_INSTRHEAD02","Este plugin está en desarrollo y esta sección está incompleta. Hay muchas más funciones en desarrollo que aún no están documentadas aquí. Vuelve a menudo para ver qué ha cambiado.");
 
-define("EST_INSTRHEAD11a","Admins - Agencies Tab");
-define("EST_INSTRHEAD11b","Managers - Agency Tab");
-define("EST_INSTRHEAD12a","Admins - User List Tab");
-define("EST_INSTRHEAD12b","Managers - User List Tab");
-define("EST_INSTRHEAD13a","Admins - Add New User Tab");
+define("EST_INSTRHEAD11a","Admins - Pestaña Agencias");
+define("EST_INSTRHEAD11b","Gerentes - Pestaña Agencia");
+define("EST_INSTRHEAD12a","Admins - Pestaña Lista de usuarios");
+define("EST_INSTRHEAD12b","Gerentes - Pestaña Lista de usuarios");
+define("EST_INSTRHEAD13a","Admins - Pestaña Añadir nuevo usuario");
 
-define("EST_INSTRHEAD61","The Spaces Form - Main Tab");
-define("EST_INSTRHEAD62","The Spaces Form - Features Tab");
-define("EST_INSTRHEAD63","The Spaces Form - Description Tab");
-define("EST_INSTRHEAD64","The Spaces Form - Media Tab");
+define("EST_INSTRHEAD61","Formulario de espacios - Pestaña principal");
+define("EST_INSTRHEAD62","Formulario de espacios - Pestaña de características");
+define("EST_INSTRHEAD63","Formulario de espacios - Pestaña de descripción");
+define("EST_INSTRHEAD64","Formulario de espacios - Pestaña de medios");
 
+define("LAN_EST_ADDNEWFEAT","Añadir nueva característica");
+define("LAN_EST_ADDNEWCAT","Añadir nueva categoría");
+define("LAN_EST_FEATURECAT","Categoría de característica");
 
-
-define("LAN_EST_ADDNEWFEAT","Add New Feature");
-define("LAN_EST_ADDNEWCAT","Add New Category");
-define("LAN_EST_FEATURECAT","Feature Category");
-
-
-define("LAN_EST_USER01","User Display Name");
-define("LAN_EST_USER02","User Login Name");
-define("LAN_EST_USER03","User Signature");
+define("LAN_EST_USER01","Nombre público de usuario");
+define("LAN_EST_USER02","Nombre de usuario para iniciar sesión");
+define("LAN_EST_USER03","Firma de usuario");
